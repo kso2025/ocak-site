@@ -365,6 +365,26 @@ mesaj iletilir; yazmamışsa Meta reddeder (`131047`). **Mail her hâlükârda
 gider** — iki `try/catch` ayrı, biri diğerini engellemez.
 Kalıcı çözüm: Meta'da onaylı **utility** şablonu (açık borç).
 
+**Hata yüzeyi — `Devir Mail` yeniden yazıldı (22 Ağu akşamı).** Üç değişiklik:
+
+1. **Erken `return` kaldırıldı.** `RESEND_API_KEY` yoksa fonksiyon **en başta**
+   duruyordu — yani mail anahtarının yokluğu **kriz WhatsApp'ını da öldürüyordu.**
+   İki bacak bağımsız olmalıydı, değildi. Yukarıdaki "iki `try/catch` ayrı" cümlesi
+   bu düzeltmeden **önce** yalnız kâğıt üzerinde doğruydu.
+2. **WA sonucu maile yazılıyor** — hangi numaraya gitti, gitmediyse neden. `131047`
+   okunur cümleye çevriliyor. Konu satırında **`· WA GİTMEDİ`** uyarısı.
+3. **Krizde mail de düşerse `throw`** → `OCAK · Hata` devreye girer. Kriz devrinde
+   iki bacağın birden **sessizce ölmesi artık imkânsız** (KARAR 525).
+
+⚠ **Kod gerçek bir başarısızlıkla sınanmadı → B126.** Test yordamı: `OCAK_KRIZ_WA`'ya
+**bota hiç yazmamış** bir numara ekle → kendine kriz mesajı at → mailde kırmızı satır
+ve konuda `· WA GİTMEDİ` görünmeli.
+
+⚠ **Şablon onaylandı ama Marketing'e düşürüldü (22 Ağu) → B125.** Meta *"utility
+yönergelerine uymuyor"* dedi. **Marketing şablonları 24 saat penceresi dışında
+ulaşmayabilir — şablonun varlık sebebi tam olarak buydu.** Request review gönderildi
+(metin alanı çıkmadı, gerekçesiz gitti). **İtiraz penceresi: 22 Ekim 2026.**
+
 ### Mail tasarımı (22 Ağu)
 Düz metinden HTML'e geçildi. Köz rengi `#C44B2F`, kriz `#8F1D14`.
 Üstte **ne yapmalı** satırı + dönüş süresi. Tıklanabilir WhatsApp düğmesi,
@@ -439,6 +459,56 @@ Numara değişim talimatı hangi yüzeyi hedeflediğini adlandırmak zorundadır
 
 ## 14 · INSTAGRAM
 
+⚠ **Bu bölüm 22 Ağustos sabahı yazıldı, aynı gün akşamı eskidi.** Kanal **canlı**;
+güncel hâli hemen aşağıdaki `14a` alt başlığında. Aşağıdaki gövde tarihsel kayıttır.
+
+### 14a · Kanal canlı (22 Ağu akşamı, KARAR 538 · 539)
+
+**Varsayım yanlıştı: engel App Review değil, app'in yayınlanmamış olmasıydı.**
+
+Meta app `861407993595884` hem WhatsApp hem Instagram use case'ini taşıyor —
+**tek app, iki ürün.** `Ocak-IG` ayrı bir app değil, Instagram ürününün alt adı;
+önce ayrı sanıldı, düzeltildi.
+
+App *In development* durumundayken `messages` webhook alanı **abone görünse bile
+gerçek mesaj taşımıyor** — yalnız `message_edit` geliyor, o da `sender` alanı taşımıyor.
+Publish engeli **tek bir boş alandı: Privacy policy URL.** Doldurulunca Publish açıldı,
+`messages` olayları akmaya başladı.
+
+**Standard Access + tester rolü yeterli.** Advanced Access (App Review) yalnız
+**sahibi olunmayan** müşteri hesaplarının DM'lerini yönetmek için gerekiyor —
+kendi hesabın için değil.
+
+Instagram tarafı: `@ocak.biz` Professional · Facebook Sayfası'na bağlı · app'te
+tester rolünde · token `instagram_business_basic` + `instagram_business_manage_messages`
+kapsamlarıyla · webhook `messages` abone · **app Published**.
+
+⚠ **Bir mesaj iki webhook olayı üretir.** Asıl mesaj (API'ye gider, saniyeler sürer) ve
+`message_edit` (milisaniye, elenir). Executions listesinde hep sonuncuya bakılırsa hep
+edit görünür. **Süre farkı ayırt edicidir:** 4 saniyelik execution gerçek çağrıdır,
+70 ms'lik değil.
+
+**Değişen kod — `IG Bot`:**
+- `IG_TOKEN` ve `IG_USER_ID` artık `$env`'den (önce `Secrets`'tan, orası boştu → B135)
+- `IG_USER_ID` yoksa **`throw`** — sessiz kalmıyor (KARAR 525)
+- **`ilkTemas`** hesabı eklendi (KARAR 539): geçmiş boşsa "kendini tanıt", doluysa
+  "TANITMA". **Modele bırakılmadı, koda alındı.**
+- `max_tokens` **1024 → 600** — WhatsApp ile hizalandı, duran borç kapandı
+- Bakım dalı da `ig_user_id`'yi doğru veriyor — bakım mesajının gitmemesinin ikinci
+  sebebi buydu
+
+**Değişen sorgu — `IG Geçmiş Oku`:** `gecmis_saat` penceresi eklendi (KARAR 539).
+Öncesinde yalnız `LIMIT 20` vardı, **zaman filtresi yoktu**; aynı bot iki kanalda iki
+farklı hafızaya sahipti. Sınandı: `gecmis_saat=0` → tanıtım yapıldı · `=6` →
+*"Merhaba tekrar"*, tanıtmadı.
+
+**Değişen node — `IG Gönder`:** URL ve Authorization `$env` okuyor; **`=` işareti
+kaldırıldı** (URL'den, Authorization değerinden ve JSON gövdeden — üç ayrı yerde aynı
+hataya düşüldü). ⚠ Node'da **"Continue On Fail" hâlâ açık** — üç hata da yutulmuştu,
+workflow yeşil yazıyordu. → **B134**
+
+### 14b · Tarihsel kayıt — 22 Ağustos sabahı
+
 Kod tam, workflow **pasif**. İki kat kilit: `ig_aktif=hayir` + workflow pasif.
 Dev mode'da webhook gelmiyor — App Review duvarı.
 
@@ -466,7 +536,8 @@ Railway, `n8n-production-57a6.up.railway.app`, sürüm **2.34.6**, Community Edi
 |---|---|---|
 | `OCAK · Bağlam` | `HbvV4uXXPIAgOtXK` | Published |
 | `OCAK · WhatsApp` | `go2MLHs8IAD3V8xE` | Published |
-| `OCAK · Instagram` | `KUmAqNvN9cofOtTV` | Pasif |
+| `OCAK · Instagram` | `KUmAqNvN9cofOtTV` | **Published** (22 Ağu akşamı, KARAR 538) |
+| `OCAK · Panel` | — | **Published** (22 Ağu, `panel.ocak.biz` — §15d) |
 | `OCAK · Gecelik Rebuild` | `BlS7CuDb7Mbktq0k` | Published |
 | `OCAK · Hata` | — | Error Trigger |
 | `WhatsApp BotZ` (router) | — | Published, GELaiL |
@@ -570,6 +641,86 @@ Error Trigger kendiliğinden dinler. Dört workflow'un Settings'inde seçili.
 tek volume'de. Railway'de günlük yedek açılabiliyor. Açık borç.
 
 **Ölü değişken:** `OCAK_WA_PNID` — `Filtre` pnid'i webhook'tan okuyor.
+
+---
+
+## 15d · `OCAK · Panel` — denetim yüzeyi (22 Ağu, KARAR 536)
+
+`panel.ocak.biz` üzerinden üç sekmeli denetim yüzeyi. Postgres'ten okur, tek dosyalık
+HTML döner. **Sıfır commit — Vercel'e dokunulmaz, n8n'den servis edilir.**
+
+Doğuş sebebi: execution budaması (§15) botun geçmişini denetlenemez hâle getiriyordu —
+61 turluk konuşma panelde 5 görünüyordu. Tek gerçek kayıt Postgres'ti, okunmuyordu.
+
+**İki bağımsız dal.**
+
+**Okuma dalı** — `Webhook → Oku → Token Oku → Bayrak Oku → HTML → Respond to Webhook`
+
+| node | tip | ayar |
+|---|---|---|
+| `Webhook` | webhook | GET · path `panel` · Respond: Using 'Respond to Webhook' Node |
+| `Oku` | postgres | **ExecOnce ✓** · son 1000 `ocak_konusma` satırı |
+| `Token Oku` | postgres | **ExecOnce ✓** · son 5000 `ocak_token_log` satırı, `id` dahil |
+| `Bayrak Oku` | postgres | **ExecOnce ✓** · dokuz anahtar `ocak_gizli`'den |
+| `HTML` | code | tek dosyalık HTML üretir, `AYAR` bloğu parametrik |
+| `Respond to Webhook` | respond | Text · `Content-Type: text/html; charset=utf-8` |
+
+⚠ **`Execute Once` üçünde de zorunlu.** Kapalıyken **item çarpımı** oluşur: panel 79
+çağrıyı **1.248** olarak saydı, maliyeti **kırk kat** şişirdi ($75.73 → $1.58).
+Korpusta `Geçmiş Oku` için aynı not vardı (`:500` civarı) — **aynı tuzak, yeni yer.**
+Kodda ikinci savunma hattı olarak `id` bazlı tekilleştirme de eklendi.
+
+**Yazma dalı** — `Webhook2 → Bayrak Doğrula → Bayrak Yaz → Respond2`
+
+| node | tip | ayar |
+|---|---|---|
+| `Webhook2` | webhook | POST · path `panel-bayrak` · Respond: Using 'Respond to Webhook' Node |
+| `Bayrak Doğrula` | code | token + beyaz liste + biçim doğrulaması |
+| `Bayrak Yaz` | postgres | `UPDATE ocak_gizli` — **yalnız `ok=true` ise** |
+| `Respond2` | respond | JSON · `{ok: …}` |
+
+**Güvenlik modeli:**
+- Erişim tek `PANEL_TOKEN` (Railway env). Yoksa **`throw`**.
+- Yanlış token → **200 + "Bu sayfa yok"**, 404 değil — **varlık sızdırmaz.**
+- Yazma dalında **beyaz liste**: yalnız `wa_aktif` · `ig_aktif` (evet/hayir) ve beş
+  sayısal fiyat/kur anahtarı. **Anahtar adı da değer de** doğrulanır.
+- Doğrulama **sunucu tarafında.** Tarayıcıdan gelen hiçbir şeye güvenilmez.
+
+**Üç sekme:** **sohbetler** (konuşma görünümü · kanal süzgeci · arama · WhatsApp'ta aç) ·
+**maliyet** (günlük/kanal/model kırılımı, konuşma ve çağrı başına, cache tasarrufu) ·
+**kontrol** (bot aç/kapa, fiyat ve kur düzenleme).
+
+**Maliyet hesabı:**
+`bedel = (girdi×f.girdi + çıktı×f.çıktı + yazma×f.yazma + okuma×f.okuma) / 1e6`
+Fiyatlar `ocak_gizli`'den gelir (**KARAR 540**), koda gömülü değil.
+Cache tasarrufu: `okuma × (f.girdi − f.okuma) / 1e6`.
+
+Doğrulanmış fiyatlar (22 Ağu, Anthropic liste fiyatı, milyon token başına):
+girdi **$3.00** · çıktı **$15.00** · cache okuma **$0.30** · cache yazma **$6.00**.
+⚠ Cache yazma **bir saatlik** cache fiyatıdır (temel girdinin **2 katı**); kod
+`ttl: '1h'` kullanıyor. Beş dakikalık cache 1.25 kat ($3.75) olurdu — ilk yazımda
+yanlış girilmişti, düzeltildi.
+
+**Doğrulandı (22 Ağu, 79 çağrı):** toplam **$1.58** · çağrı başına **$0.0171** ·
+cache okuma oranı **%71** · WhatsApp **%93** / Instagram **%7**.
+Anthropic Console'un Sonnet 4.6 satırıyla aynı büyüklükte.
+
+⚠ **Console'un toplam rakamı ($1.91, 30 gün) botun değil tüm hesabın** — içinde Opus 5
+ve Haiku 4.5 kullanımı da var. Panel yalnız botu sayar. **İki rakam karşılaştırılabilir
+değil**; yalnız Sonnet 4.6 satırı karşılaştırılır.
+
+⚠ **Railway Data paneli çok sütunlu sorguda güvenilmez.** `SELECT model, count(*),
+sum(a), sum(b), sum(c), sum(d)` çalıştırıldı; ekranda tek bir `sum` sütunu göründü ve
+`input_tokens` sanıldı — gerçekte başka bir sütundu. Bu yanlış okuma **panelin doğru
+rakamına "yanlış" dedirtti.** Tek sütunlu sorguyla çürütüldü. **Teşhiste tek sütun sor.**
+
+**Çoğaltma:** parametrik `AYAR` bloğu ile başka bir markaya kopyalanabilir tasarlandı.
+⚠ **Denenmedi** — ikinci bir kurulum yapılmadan yeterliliği bilinemez. Kurulum notu da
+yazılmadı. → **B133**
+
+**Eksikler (B133):** kriz işareti yok (devredilen konuşmalar listede ayırt edilmiyor) ·
+otomatik yenileme yok · 1000/5000 satır tavanı · tarih aralığı süzgeci yok ·
+**günlük maliyet tavanı/alarmı yok.**
 
 ---
 
