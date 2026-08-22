@@ -2083,7 +2083,20 @@ yerinde. Robots açıldığında Taslak sayfa sitemap üzerinden sızmaz.
   Bu akış yalnız tam-kayıt kategorisindeki formatlar içindir; kayıt bildirimi zorunludur.
 - **Sabit ayrım:** video hiçbir varyantta Notion'da veya sitede durmaz — barınakta durur, yüzey yalnız işaret tutar.
 
-## B121 — 🔴 Davet akışı açılmalı — LANSMAN ENGELİ
+## B121 — 🔴 Davet akışı açılmalı — LANSMAN ENGELİ ✅ KAPANDI (22 Ağu, şartsız açıldı)
+
+- [x] **Kapanış:** `DAVET_AKISI=acik`, **üç ortamda** (Production · Preview · Development),
+  redeploy yapıldı. Preview'da da açık olması bilinçli: kapalı kalsaydı her test canlıya
+  bakmayı gerektirirdi.
+- **Zincir uçtan uca sınandı** — "build başarılı" ile yetinilmedi: (1) davet kutusu kayıt
+  sayfasında render oldu ✓ · (2) Resend maili gitti ✓ · (3) Notion Davetler DB'ye satır
+  düştü ✓ · (4) `Hatırlatma Atıldı` boş — **beklenen**, A→B zinciri n8n tarafında.
+- ⚠ **Aşağıdaki üç açma şartının hiçbiri yapılmadı.** Akış şartsız açıldı; karar bilinçlidir
+  (**KARAR 537**, KARAR 535'i gevşetir). Üç şart **kapanmadı, devredildi → B132.**
+  KARAR 535 iptal değil, **ertelendi.**
+- **Geri dönüş yordamı:** `DAVET_AKISI=kapali` + redeploy, iki dakika.
+
+**Kapanıştan önceki gövde — olduğu gibi durur:**
 
 - [ ] **Sahip:** CC (kod) → Kaan (env + redeploy)
 - **Kaynak:** `brief-davet-honeypot` + merge turu (22 Ağu, `58ed14c` · `a5ade5a`), KARAR 535.
@@ -2104,45 +2117,106 @@ yerinde. Robots açıldığında Taslak sayfa sitemap üzerinden sızmaz.
 - ⚠ **Unutulmaya en açık borç.** Kapalı bir yüzey hata vermez, log'a düşmez, kimse şikâyet etmez —
   yalnız sessizce yok olur. Öncelik işareti (🔴) korunacak.
 
-## B122 — Zoom kaydı süreci yok — LANSMAN ENGELİ
+## B122 — Zoom kaydı süreci yok — LANSMAN ENGELİ · ⚠ SAHİP DEĞİŞTİ (22 Ağu → Advaita)
 
-- [ ] **Sahip:** Kaan
+- ⚠ **Borç kapanmadı, sahip değişti.** Bot işi değil; Kaan'ın listesinden düştü,
+  **Advaita'ya** geçti. Vaat duruyor, sorumluluk taşındı. Lansman engeli işareti durur.
+- [ ] **Sahip:** ~~Kaan~~ → **Advaita** (22 Ağu)
 - **Çelişki:** site *"Açık Kapı kaydedilir, kayıt katılımcılarla paylaşılır"* diye vaat ediyor;
   süreç kurulmadı (Vimeo yok).
 - ⚠ **31 Ağustos'ta ilk Açık Kapı var.** Vaat edilip yerine getirilmeyen ilk şey olur.
 - **Bağ:** KARAR 57 etik duvarı — kayıt bildirimi zorunlu, çember/ritüel kaydedilmez. Bu akış
   yalnız tam-kayıt kategorisindeki formatlar için. B120 (arşiv yolu) ile aynı aileden.
 
-## B123 — Sohbet paneli yok — botun geçmişi denetlenemiyor
+## B123 — Sohbet paneli yok — botun geçmişi denetlenemiyor ✅ KAPANDI (22 Ağu, `panel.ocak.biz` canlı)
+
+- [x] **Kapanış:** **KARAR 536.** `OCAK · Panel` workflow'u kuruldu, `panel.ocak.biz` canlı.
+  Sıfır commit — Vercel'e dokunulmadı, n8n'den servis ediliyor.
+- **Üç sekme:** sohbetler (konuşma görünümü · kanal süzgeci · arama · WhatsApp'ta aç) ·
+  maliyet (günlük/kanal/model kırılımı, konuşma ve çağrı başına, cache tasarrufu) ·
+  kontrol (bot aç/kapa, fiyat ve kur düzenleme — KARAR 540).
+- **DNS:** CNAME + `_railway-verify` TXT eklendi, `dig` ile doğrulandı. Railway'in kendi
+  kontrolü gecikti ama webhook gövdesindeki `webhookUrl` alanı alan adının çalıştığını gösterdi.
+- **Erişim:** tek `PANEL_TOKEN` (Railway env). Yoksa `throw`; yanlışsa "Bu sayfa yok" —
+  404 değil, **200 + boş sayfa** (varlık sızdırmaz).
+- ⚠ **Eksikler v2'ye devredildi → B133.** Parametrik `AYAR` bloğuyla başka markaya
+  kopyalanabilir tasarlandı; **denenmedi.**
+- **Mimari tam hâli:** `20-ref-bot.md` §5a.
+
+**Kapanıştan önceki gövde — olduğu gibi durur:**
 
 - [ ] **Sahip:** CC (n8n)
 - **Ölçüm:** n8n execution budaması nedeniyle 61 turluk bir konuşma panelde **5** görünüyor.
 - **Tek gerçek kayıt Postgres.** Denetim yapılamıyor, arıza sonrası ne konuşulduğu okunamıyor.
 - **Çözüm:** n8n workflow, webhook → Postgres → HTML. **Sıfır commit** — site kodu değişmez.
 
-## B124 — Postgres yedeği yok
+## B124 — Postgres yedeği yok → ⚠ İLK YEDEK ALINDI (22 Ağu), OTOMATİK YEDEK YOK
 
-- [ ] **Sahip:** Kaan (Railway)
+- ⚠ **Borç kapanmadı, daraldı.** 22 Ağustos'ta `pg_dump` ile **ilk yedek alındı**: 16 MB,
+  doğrulandı (`head -3` → `PostgreSQL database dump`), iCloud'da `OCAK-yedek/` klasöründe.
+  **Bu tek seferlik bir fotoğraftır. Cron yok.**
+- ⚠ **Yedek repoya konulmaz.** İçinde kadınların konuşma metinleri var; commit'lenen şey
+  kalıcıdır ve KARAR 57 md. 4 ("veri kadının", "sil" derse silinir) ile çelişir.
+- **Kalan iş:** otomatik yedek. Hedef Drive/S3 ya da eşdeğeri — **Kaan'ın seçimi.**
+  Yordam: `pg_dump "$DATABASE_PUBLIC_URL" > ocak-YYYYMMDD.sql`.
+- [ ] **Sahip:** CC (n8n cron) → Kaan (hedef seçimi)
+
+**İlk yedekten önceki gövde — olduğu gibi durur:**
+
+- [ ] ~~**Sahip:** Kaan (Railway)~~
 - **Risk:** 122+ konuşma, `ocak_gizli` secret'ları, **tek volume**. Kaybı geri alınamaz.
 - **Çözüm:** Railway'de günlük yedek açılabiliyor — açılmadı.
 
-## B125 — Kriz WhatsApp şablonu onaylı değil
+## B125 — Kriz WhatsApp şablonu onaylı değil → ⚠ ONAYLANDI AMA **MARKETING**'E DÜŞÜRÜLDÜ (22 Ağu)
 
-- [ ] **Sahip:** Kaan (Meta)
+- ⚠ **Borç kapanmadı, şekil değiştirdi.** `ocak_kriz_devri` şablonu gönderildi; Meta
+  *"utility yönergelerine uymuyor"* diyerek kategoriyi **Utility değil Marketing** yaptı.
+- ⚠ **Sonuç ciddi:** Marketing şablonları 24 saat penceresi dışında **ulaşmayabilir** —
+  şablonun **varlık sebebi tam olarak buydu.** Kategori yanlışken borç fiilen açık sürüyor.
+- **Request review gönderildi (22 Ağu).** Formda **metin alanı çıkmadı**, itiraz gerekçesiz gitti.
+- **İtiraz penceresi: 22 Ekim 2026.** Reddedilirse: metni daha kuru yazıp yeniden gönder.
+- [ ] **Sahip:** Kaan (Meta) — itiraz takibi
 - **Sorun:** Meta 24 saat penceresi kapalıyken mesaj gitmiyor. Kriz devri tam da pencere kapalıyken
   gerekebilir.
 - **Çözüm:** Utility kategorisinde onaylı şablon. **Onay birkaç gün sürüyor — erken başlat.**
 - **Bağ:** KARAR 532 (kriz hattı) bu şablon olmadan yarım çalışıyor; mail ayağı duruyor, WA ayağı düşüyor.
 
-## B126 — Kriz WA hatası sessiz
+## B126 — Kriz WA hatası sessiz → ⚠ KOD YAZILDI (22 Ağu), **GERÇEK BAŞARISIZLIKLA SINANMADI**
 
-- [ ] **Sahip:** CC (n8n)
+- ⚠ **Borç kapanmadı, test ayağına indi.** `Devir Mail` node'u yeniden yazıldı. Üç değişiklik:
+  1. **Erken `return` kaldırıldı.** `RESEND_API_KEY` yoksa fonksiyon **en başta** duruyordu —
+     yani mail anahtarının yokluğu **kriz WhatsApp'ını da öldürüyordu.** İki bacak bağımsız
+     olmalıydı, değildi.
+  2. **WA sonucu maile yazılıyor.** Hangi numaraya gitti, gitmediyse neden. `131047`
+     (24 saat penceresi kapalı) okunur cümleye çevriliyor. Konu satırında `· WA GİTMEDİ` uyarısı.
+  3. **Krizde mail de düşerse `throw`** → `OCAK · Hata` devreye girer. Kriz devrinde iki
+     bacağın birden sessizce ölmesi artık imkânsız.
+- ⚠ **Kalan iş — test.** Kod gerçek bir başarısızlıkla denenmedi. Yordam: `OCAK_KRIZ_WA`'ya
+  **bota hiç yazmamış** bir numara ekle → kendine kriz mesajı at → mailde kırmızı satır ve
+  konuda `· WA GİTMEDİ` görünmeli. İkinci düzeltme de sınanmadı: `RESEND_API_KEY` yokken
+  kriz WhatsApp'ının yine de denenmesi.
+- [ ] **Sahip:** ~~CC (n8n)~~ → **Kaan** (test)
 - **Sorun:** kriz WhatsApp gönderimi patlarsa yalnız n8n log'una yazıyor. Kimse bakmıyor.
 - **Bağ:** KARAR 525 (sessiz kırılma yasağı) bu noktada uygulanmamış — tam da o kararın yasakladığı şey.
 
-## B127 — Token maliyeti ölçülmedi
+## B127 — Token maliyeti ölçülmedi ✅ KAPANDI (22 Ağu, panelin maliyet sekmesi)
 
-- [ ] **Sahip:** CC
+- [x] **Kapanış:** **KARAR 536.** Panelin maliyet sekmesi ölçümü **tek ekranda** veriyor —
+  günlük/kanal/model kırılımı, konuşma ve çağrı başına bedel, cache tasarrufu.
+- **Ölçüm (22 Ağu, 79 çağrı):** toplam **$1.58** · çağrı başına **$0.0171** ·
+  **cache okuma oranı %71** · kanal kırılımı WhatsApp %93 / Instagram %7.
+  Anthropic Console'un Sonnet 4.6 satırıyla aynı büyüklükte.
+- **Cache disiplini (KARAR 527) işe yarıyor** — sorunun aslı buydu, cevaplandı.
+- ⚠ **Hesabın iki girdisi artık `ocak_gizli`'de** (KARAR 540): model fiyatları + USD/TRY kuru.
+  Panelin kontrol sekmesinden düzenlenir, deploy gerekmez.
+- ⚠ Console'un toplam rakamı ($1.91, 30 gün) botun değil **tüm hesabın** — Opus 5 ve
+  Haiku 4.5 kullanımı da içinde. İki rakam **karşılaştırılabilir değil.**
+- ⚠ **Kapanışın dışında kalan ayak: günlük tavan alarmı yok.** Ölçüm var, eşik yok —
+  o iş **B133**'e (panel v2) yazıldı.
+
+**Kapanıştan önceki gövde — olduğu gibi durur:**
+
+- [ ] ~~**Sahip:** CC~~
 - **Ölçüm:** `ortak` blok ~20.500 karakter (~7-8 bin token). Yetenek Evreni'ndeki **3.740 token**
   ölçümü bayat — o ölçüm bugünkü bloğu görmedi.
 - **Neden önemli:** `ortak` cache'li, `kisisel` cache'siz (KARAR 527). Maliyet ölçülmeden cache
@@ -2186,3 +2260,84 @@ yerinde. Robots açıldığında Taslak sayfa sitemap üzerinden sızmaz.
   `20-ref-bot.md`'de tam hâliyle duruyor; `00-durum.md` ona referansla bırakıldı.
 - **Çözüm iki adımlı:** (a) tahliye — en eski dönem bloğu kronolojiye **iner**, silinmez
   (KARAR 61); (b) boşalan yerde bot için tek blok açılır.
+
+## B132 — Davet akışı koruma katmanları (KARAR 535'ten devir)
+
+- [ ] **Sahip:** CC (kod) → Kaan (doğrulama)
+- **Kaynak:** KARAR 535 üç şart koşuyordu; **KARAR 537** ile ertelendi, iptal edilmedi.
+- **Üç madde:** **Cloudflare Turnstile** · **IP başına hız sınırı** ·
+  **davet edenin kendi adresini doğrulaması.**
+- **Akış şu an şartsız açık** (B121 ✅). Mevcut korumalar: musluk + Origin + honeypot +
+  zaman damgası (`a5ade5a`). Bunlar **rastgele bot trafiğini** keser; üç şart **hedefli**
+  saldırıya karşıdır. Fark bilinerek üstlenildi.
+- **Gerekçe (KARAR 537):** 31 Ağustos lansmanında davet halkası eksik kalamaz.
+- ⚠ **Anormallik belirtisi:** Notion Davetler DB'de ani kayıt artışı, Resend kota uyarısı.
+  Görülürse **`DAVET_AKISI=kapali` + redeploy** — iki dakika.
+
+## B133 — Panel v2
+
+- [ ] **Sahip:** CC (n8n)
+- **Kaynak:** B123 ✅ kapanışının artığı (KARAR 536).
+- **v1'de olan:** sohbet listesi · konuşma görünümü · kanal süzgeci · arama · WhatsApp'ta aç ·
+  maliyet analizi · bot aç/kapa · fiyat/kur düzenleme · marka kimliği · `panel.ocak.biz` ·
+  parametrik `AYAR` bloğu.
+- **Eksikler:** kriz işareti (devredilen konuşmalar listede ayırt edilmiyor) · otomatik
+  yenileme yok · 1000/5000 satır tavanı · tarih aralığı süzgeci yok ·
+  ⚠ **günlük maliyet tavanı/alarmı yok** (B127 ✅ ölçümü verdi, eşiği vermedi).
+- **Sıradakiler:** okunmamış/son bakılan işareti · ödeme durumu rozeti (`odeme_durumu`) ·
+  Kayıtlar DB eşlemesi (telefon yerine isim) · not alanı · tek konuşmayı dışa aktarma ·
+  Advaita için ikinci token (`PANEL_TOKEN_2`) · günlük özet · bot dili sızıntısı taraması ·
+  mobil düzen · silinme yordamı (KARAR 57 md. 4) · lansman sıfırlaması sonrası boş durum kopyası.
+- ⚠ **Çoğaltma denenmedi.** `AYAR` bloğunun yeterliliği **ikinci bir kurulum yapılmadan
+  bilinemez.** Kurulum notu da yazılmadı.
+
+## B134 — `IG Gönder` sessiz kalıyor
+
+- [ ] **Sahip:** CC (n8n)
+- **Sorun:** node'da **"Continue On Fail" açık** — Meta hatası yutuluyor, workflow **yeşil**
+  yazıyor.
+- ⚠ **22 Ağustos'ta tam da bu yüzden saatler kaybedildi.** Node hiç çalışmamış gibi
+  görünüyordu; gerçekte **üç ayrı hata** veriyordu ve hiçbiri yüzeye çıkmıyordu.
+  `IG Bot` "no items" diyordu; teşhis oradan başladı, hata mesajına ulaşmak saatler aldı.
+- **Çözüm:** kriz WA'da yapılanın aynısı (B126) — hata `OCAK · Hata`ya bağlanmalı ya da
+  en azından bir yere yazılmalı.
+- **Bağ:** KARAR 525 (sessiz kırılma yasağı). B126'nın kardeşi, aynı sınıf.
+
+## B135 — `Secrets` node'ları ölü
+
+- [ ] **Sahip:** CC (n8n)
+- **Ölçüm (22 Ağu):** `OCAK · Instagram`'daki `Secrets` node'u **üç alanı da boş** döndürüyordu.
+  `ig_user_id` oradan bekleniyordu; boş gelince URL `//messages` oluyordu.
+- **Yapılan:** `IG Gönder` ve `IG Bot` artık doğrudan `$env` okuyor (KARAR 538 turu).
+  Node zincirde **duruyor ama hiçbir şey üretmiyor.**
+- ⚠ **Silinmeden önce:** `Bağlam Üret` son çare olarak `$('Secrets')` referansı taşıyor
+  (`20-ref-bot.md` §4). **Node silinirse o referans patlar.** Önce referans, sonra node.
+
+## B136 — `Referans No` property'si Kayıtlar'da yok
+
+- [ ] **Sahip:** CC
+- ⚠ **Önceki brief yanlış yazmıştı, CC düzeltti.** `Kadın` property'si Kayıtlar'da **var**
+  (`api/kayit.ts:259-263`, `rich_text` olarak yazılıyor). Kırık olan **`Referans No`** —
+  o property Kayıtlar DB'de yok, referans `Kayıt ID` title'ının içinde yaşıyor.
+- **İki ayrı property, iki ayrı iş.** Tek satır olarak yazılsaydı yanlış şey düzeltilirdi.
+- **Ders:** brief'in iddiası dosyanın gerçeğiyle çelişince durup raporlamak doğru refleks
+  (KARAR 102).
+
+## B137 — `/odeme/tamam` davet dalı doğrulanamıyor
+
+- [ ] **Sahip:** CC → Kaan
+- **Sorun:** `KART_AKISI` kapalı (KARAR 488), sayfa 404. Davet kutusunun o daldaki davranışı
+  **sınanamadı** — B121 uçtan uca testi bu dalı kapsamıyor.
+- **Tetikleyici:** kart akışı açıldığında ayrıca test edilecek.
+
+## B138 — Secret hijyeni
+
+- [ ] **Sahip:** Kaan
+- **Bu turda sohbete giren değerler:** `PANEL_TOKEN` (iki kez — biri rotate edildi) ·
+  **Postgres bağlantı dizesi (şifre dahil)** · `OCAK_IG_TOKEN` (ekran görüntüsünde).
+- ⚠ **Postgres şifresi rotate edilirse n8n credential'ı da güncellenmeli** — yoksa bot durur.
+  Bilinçli karar olsun, unutulmasın.
+- ⚠ `PANEL_TOKEN` bookmark'ta duruyor; Safari iCloud senkronu açıksa **tüm cihazlara gider.**
+  Kabul edilebilir ama bilinsin.
+- **Bağ:** KARAR 469 — sır dokümanda yaşamaz. Bu defterde yalnız **hangi değerin sızdığı**
+  yazılıdır, değerin kendisi değil.

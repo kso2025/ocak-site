@@ -35,6 +35,8 @@ robots Allow + duyuru; bu satır o tanımın önünde duruyor.
 ⛔ **Bu bölümün dışında iki lansman engeli daha var** (22 Ağu bot turu, aşağıdaki
 🤖 BOT HATTI bölümü): **B121** davet akışı kapalı 🔴 · **B122** Zoom kaydı süreci yok.
 İkisi de "sitenin canlı olması" ile ölçülmez, **vaadin karşılanmasıyla** ölçülür.
+→ **B121 ✅ kapandı** (22 Ağu, şartsız açıldı — KARAR 537; koruma katmanları **B132**'ye devretti).
+**B122** açık; sahip Kaan → **Advaita**.
 
 ✅ **Marka işareti mühürlendi ve yerleşti (18–19 Ağu, KARAR 522 · 523).** Doküman
 hattının dışından gelen ilk iş — ürün tarafına dönüşün başlangıcı.
@@ -53,7 +55,15 @@ Sırada iki hat (B106 aynı gün kapandı — `c45332e`):
 *Sıra Kaan'ındır (22 Ağu). İlk üç madde lansmana bakar; kalanı bot borç kuyruğudur.
 Tam gerekçe ve ölçümler `20-ref-bot.md`'de, tur anlatısı `90-kronoloji/2026-08.md`'de.*
 
-1. 🔴 **Davet akışını aç — LANSMAN ENGELİ (B121, KARAR 535).** Önce üç şart: Cloudflare
+⚠ **22 Ağustos akşamı bu kuyruğun dördü kapandı ya da daraldı** — biten satırlar `✅` alır,
+**silinmez** (KARAR 61). Turun tam anlatısı `90-kronoloji/2026-08.md`, 22 Ağustos kaydında.
+
+**Instagram kanalı açıldı (KARAR 538) — App Review gerekmedi, engel app'in yayınlanmamış
+olmasıydı.** Privacy policy URL boştu; doldurulunca Publish açıldı ve `messages` olayları
+akmaya başladı. Standard Access + tester rolü yeterli. Bot artık **iki kanalda canlı**:
+WhatsApp `+90 532 555 52 26` · Instagram `@ocak.biz`.
+
+1. ✅ 🔴 **Davet akışını aç — LANSMAN ENGELİ (B121, KARAR 535).** Önce üç şart: Cloudflare
    Turnstile + IP başına hız sınırı + davet edenin kendi adresini doğrulaması. Sonra
    `DAVET_AKISI=acik` **ve redeploy** (değer build zamanında sabitleniyor, env değiştirmek
    tek başına yetmez — KARAR 488 deseni).
@@ -61,24 +71,67 @@ Tam gerekçe ve ölçümler `20-ref-bot.md`'de, tur anlatısı `90-kronoloji/202
    kimse şikâyet etmez — yalnız sessizce yok olur. Davet kayıt akışının parçasıdır; kapalı
    kaldığı sürece **lansman tam değildir.** Musluk kapalıyken Resend maili **ve** Notion
    Davetler DB kaydı birden susuyor (KARAR 271).
-2. **Sohbet paneli (B123).** n8n workflow: webhook → Postgres → HTML. **Sıfır commit.**
+   ✅ **KAPANDI (22 Ağu).** Üç şart **beklenmeden** açıldı — KARAR 537, bilinçli karar.
+   `DAVET_AKISI=acik` üç ortamda, zincir uçtan uca sınandı (kutu render ✓ · Resend maili ✓ ·
+   Notion Davetler DB satırı ✓). **Üç şart B132'ye devretti**, KARAR 535 iptal değil ertelendi.
+   Geri dönüş: `DAVET_AKISI=kapali` + redeploy, iki dakika.
+2. ✅ **Sohbet paneli (B123).** n8n workflow: webhook → Postgres → HTML. **Sıfır commit.**
    Bugün 61 turluk konuşma panelde 5 görünüyor; tek gerçek kayıt Postgres.
+   ✅ **KAPANDI (22 Ağu, KARAR 536).** `panel.ocak.biz` canlı, üç sekme (sohbetler ·
+   maliyet · kontrol). Eksikler **B133**'e (panel v2) devretti.
 3. **Zoom kaydı süreci (B122) — LANSMAN ENGELİ.** Site vaat ediyor, süreç yok.
    **31 Ağustos'ta ilk Açık Kapı var.** Etik duvar KARAR 57 — kayıt bildirimi zorunlu.
+   ⚠ **Sahip değişti (22 Ağu): Kaan → Advaita.** Bot işi değil; borç kapanmadı, taşındı.
 4. **Postgres yedeği (B124).** 122+ konuşma + `ocak_gizli` secret'ları, tek volume.
    Railway'de günlük yedek açılabiliyor.
+   ⚠ **Daraldı (22 Ağu): ilk yedek alındı, otomatik yedek yok.** `pg_dump`, 16 MB,
+   doğrulandı, iCloud'da. **Tek seferlik fotoğraf — cron yok.** Yedek **repoya girmez**
+   (kadınların konuşma metinleri; KARAR 57 md. 4). Hedef seçimi Kaan'da.
 5. **Bot dili turu (B129).** Prompt sayfasının toplu elden geçirilmesi — iç mekanizma
    sızıntısı (*"Sistem bana göstermiyor"*). Ders: modele "şunu yazma" demek yetmiyor,
    kalıcı çözüm koda alınır.
 6. **Kriz WA şablonu (B125).** Utility kategorisinde Meta onayı gerekiyor, **onay birkaç
    gün sürüyor — erken başlat.** KARAR 532 bu şablon olmadan yarım çalışıyor.
-7. **Token maliyeti ölçümü (B127).** `ortak` blok ~20.500 karakter; Yetenek Evreni'ndeki
+   ⚠ **Gönderildi ama Marketing'e düşürüldü (22 Ağu).** Meta *"utility yönergelerine
+   uymuyor"* dedi. **Sonuç ciddi:** Marketing şablonları 24 saat penceresi dışında
+   ulaşmayabilir — şablonun varlık sebebi tam olarak buydu. Request review gönderildi
+   (metin alanı çıkmadı, gerekçesiz gitti). **İtiraz penceresi: 22 Ekim 2026.**
+   Ayrıca **kriz WA hata yüzeyi kodu yazıldı (B126) ama gerçek başarısızlıkla sınanmadı** —
+   test Kaan'da: `OCAK_KRIZ_WA`'ya bota hiç yazmamış bir numara ekle, kendine kriz mesajı at,
+   mailde kırmızı satır ve konuda `· WA GİTMEDİ` görünmeli.
+7. ✅ **Token maliyeti ölçümü (B127).** `ortak` blok ~20.500 karakter; Yetenek Evreni'ndeki
    3.740 token ölçümü bayat. Cache disiplininin (KARAR 527) işe yarayıp yaramadığı
    ölçülmeden bilinemez.
+   ✅ **KAPANDI (22 Ağu).** Panelin maliyet sekmesi ölçtü: **79 çağrı · $1.58 · çağrı başına
+   $0.0171 · cache okuma %71 · WhatsApp %93 / Instagram %7.** Cache disiplini işe yarıyor.
+   ⚠ **Günlük tavan alarmı hâlâ yok** — ölçüm var, eşik yok; o ayak **B133**'e yazıldı.
 8. **Operasyon el kitabı.** BOTZ komutları, arıza akışları, rotate prosedürü.
 9. **GELaiL hijyeni + n8n/Railway envanteri.** Router Notion bağımlılığı, credential
    rotate, sahipsiz değişkenler, `IG Bot` `max_tokens` 1024 (WhatsApp'ta 600'e çekilmişti,
    IG'de kalmış), `DB_POSTGRESDB_HOST` public/private, Advaita'nın kill switch yetkisi.
+   ⚠ `IG Bot` `max_tokens` **600'e çekildi (22 Ağu)** — duran o ayak kapandı, kalanı durur.
+   Secret hijyeni ayrı borç oldu: **B138.**
+
+
+### 🎯 LANSMANA KALAN ÜÇ İŞ (22 Ağustos turundan)
+
+*Bot hattının kuyruğu yukarıda duruyor; bunlar **31 Ağustos'a** bakan üç iş.*
+
+1. **Bot dili turu (B129).** Notion prompt sayfası **toplu** elden geçirilecek, parça parça
+   değil. İç mekanizma sızıntıları (*"sistem bana göstermiyor"*). Kadının gördüğü yüzey;
+   **31 Ağustos'ta ilk kez gerçek kadınlar yazacak.**
+2. **Ses kalite testi.** Temiz bağlamla yeniden (Yetenek Evreni §10).
+3. **Lansman sıfırlaması.** Site açılmadan **hemen önce** `ocak_konusma` + `ocak_token_log`
+   boşaltılır; **öncesinde kapanış ölçümü alınır.**
+   ⚠ Panelin maliyet sekmesi bu ölçümü artık **tek ekranda** veriyor (KARAR 536).
+
+**Bekleyen dış süreçler** — Kaan'dan bugün eylem istemiyor:
+`ocak_kriz_devri` itirazı (22 Ekim'e kadar, B125) · `panel.ocak.biz` sertifikası ·
+davet maili canlı doğrulaması (deploy sonrası).
+
+⚠ **Bot adı kararı (KARAR 541, ONERI) kayıt açılmadan önce verilmeli** — *Ocak Kadın
+Topluluğu* tercih edildi ama **uygulanmadı**; değişiklik kadınların gördüğü sohbet
+başlığını etkiler.
 
 
 

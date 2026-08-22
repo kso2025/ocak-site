@@ -534,3 +534,9 @@ no	tarih	baslik	durum	iliski	kaynak
 533	2026-08-22	Devir kutusu Kaan'da — `devir@ocak.biz` grubu kurulmaz, Gmail yönlendirme kullanılır	AKTIF	↔532	2026-08.md#k533
 534	2026-08-22	Sistem maili gönderen adresi `sistem@mail.ocak.biz` — `onboarding@resend.dev` terk edildi	AKTIF	↔524	2026-08.md#k534
 535	2026-08-22	Davet akışı geçici olarak kapalı — `DAVET_AKISI` varsayılan kapalı, lansmandan önce açılmalı	AKTIF	←488 · ↔271	2026-08.md#k535
+536	2026-08-22	Sohbet paneli `OCAK · Panel` — Postgres'ten okur, tek dosyalık HTML döner, `panel.ocak.biz`; sıfır commit	AKTIF	↔540	2026-08.md#k536
+537	2026-08-22	KARAR 535 gevşetildi — davet akışı üç şart beklemeden açıldı; şartlar borç olarak sürer (B132)	AKTIF	←535 · ↔488	2026-08.md#k537
+538	2026-08-22	Instagram kanalı açıldı — engel App Review değil app'in yayınlanmamış olmasıydı; Standard Access yeterli	AKTIF	↔539	2026-08.md#k538
+539	2026-08-22	IG konuşma penceresi WA ile hizalandı — `gecmis_saat` IG sorgusuna eklendi, `ilkTemas` koda alındı	AKTIF	←526 · ↔538	2026-08.md#k539
+540	2026-08-22	Panel fiyat ve kur `ocak_gizli`'de — beş anahtar, sunucu tarafında beyaz liste, deploy gerekmez	AKTIF	↔536	2026-08.md#k540
+541	2026-08-22	Bot adı "Ocak Kadın Topluluğu" — "Çember" bot adına girmez (KORUNACAK İFADE #8); uygulanmadı	ONERI	↔521	2026-08.md#k541
