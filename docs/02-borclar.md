@@ -2392,3 +2392,37 @@ yerinde. Robots açıldığında Taslak sayfa sitemap üzerinden sızmaz.
   erişilemez olursa yeniden yükleyip yeni URL üretmek gerekir — ve `--sref` çapası değişince
   seri tutarlılığı kaybolur.
 - **Kapanış şartı:** kalıcı bir yere kopya (Drive / repo `public/`).
+
+## B142 — `02-borclar.md`'de kapanış konvansiyonu tek biçim değil
+
+- [ ] **Sahip:** CC · **Tetikleyici:** bir sonraki arşivci turu · **tek tur işi**
+- **Belirti:** kapanmış bir borcun `Sahip:` satırı üç farklı biçimde yaşıyor —
+  `- [x] **Sahip:**` · `~~üstü çizili~~` · **ve kutusu hâlâ açık** `- [ ] **Sahip:**`.
+  Üçüncüsü sadece tutarsız değil, **yanlış bilgi**: kapanmış borç açık kutu taşıyor.
+- **Ölçüm (23 Ağu, `02-borclar.md` 2379 satır):** `^## B.*KAPANDI` eşleşen **32 başlık**;
+  her başlığın **ilk 8 satırlık** penceresinde `Sahip:` satırı aranınca → **8** `[x]` ·
+  **15** açık kutu · **9** pencerede `Sahip:` satırı yok. Dosya genelinde üstü çizili
+  `Sahip` satırı **4**. *Yöntem: `grep -n "^## B.*KAPANDI"` + satır ofseti, elle takip;
+  8 satırdan uzun girdilerde `Sahip:` pencerenin dışına düşmüş olabilir — "9 yok"
+  rakamı üst sınır değil, o pencerenin ölçümüdür.*
+- **İş:** tek biçime indir. Öneri `- [x] **Sahip:**` — çoğunluk o ve kutu durumu
+  borcun durumunu doğru söylüyor. **Mekanik dönüşüm**, semantik iş değil; KARAR 61
+  gereği ayrı commit'te yürür.
+- **Bağ:** 23 Ağustos arşivci turunda doğdu — o tur `[x]` kullandı, bir önceki tur
+  `~~...~~` kullanmıştı. Karıştırmamak için o turda **dokunulmadı**, borç açıldı.
+
+## B143 — Kart derleyici Google Fonts'a bağlı; fontlar gömülü değil
+
+- [ ] **Sahip:** Kaan + Claude.ai
+- **Belirti:** `tools/ocak-kart-derleyici.html` "tek başına çalışır" sayılıyor — build ve
+  paket bağımlılığı gerçekten yok, `fetch`/XHR sıfır. Ama dosya **dört Google Fonts linki**
+  taşıyor (`fonts.googleapis.com` · `fonts.gstatic.com`, aileler **Cormorant Garamond**
+  ve **Jost**). Ölçüm 23 Ağu: dosyadaki toplam `http(s)://` geçişi 4, dördü de font.
+- ⚠ **Sessiz kırılma:** çevrimdışı ya da fontlar yüklenmeden basılan kart, Cormorant
+  yerine tarayıcının yedek fontuyla çıkar. Kart görsel olarak "çalışır" görünür —
+  **fark edilmeden yayına gidebilir.** Marka tipografisi kartın kimliğidir.
+- **Çözüm:** font dosyalarını **base64 gömme** (`@font-face` + `data:` URI). Dosya
+  büyür ama araç gerçekten tek parça olur — Safari `file://` kısıtı zaten aynı yönü
+  gösteriyordu (ön ayarlar da bu yüzden gömülü).
+- **Bağ:** B86 ✅ / B114 ✅ kapanışlarının taşıyıcısı bu araç; KARAR 543 · 544 · 545
+  kart standardını buraya yazıyor.
