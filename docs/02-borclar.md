@@ -2706,8 +2706,9 @@ yerinde. Robots açıldığında Taslak sayfa sitemap üzerinden sızmaz.
 - [x] **Kapanış:** **KARAR 551** mühürlendi — rename yapılıyor, gerekçe **hiyerarşinin
   kaldırılması**; rolün içeriği ve K4 yapısı aynı. Karar Kaan'ın (23 Ağu). Bu bir **karar
   borcuydu**, karar verildi. Kalan mekanik/Notion işi `03-sira.md`'de yaşar.
-- **Yapılan (23 Ağu, ayrı commit — mekanik dönüşüm):** canlı `docs/` altındaki **altı geçiş**
-  dönüştürüldü. **`_uretilen/site-icerik.md`'ye dokunulmadı** — script çıktısıdır, Notion
+- **Yapılan (23 Ağu, ayrı commit — mekanik dönüşüm):** canlı `docs/` altındaki **yedi geçiş**
+  dönüştürüldü (`10-marka.md` 1 · `20-ref-program.md` 2 · `20-ref-marka.md` 1 ·
+  `20-ref-icerik-dili.md` 1 · `Ocak-Mufredat.md` 2). **`_uretilen/site-icerik.md`'ye dokunulmadı** — script çıktısıdır, Notion
   hâlâ *"Lider"* diyor; dönüştürülseydi üretilen dosya **kaynağından ileri giderdi.**
   `_arsiv/` dokunulmadı.
 - **Kalan (Sayfalar DB turu, Notion):** `/sen-neredesin` 8. Taşıyıcı · `/ekip`.

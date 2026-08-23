@@ -98,7 +98,7 @@ Link 1: `ocak.biz` · Link 2: WhatsApp Kanalı daveti — `[KAAN: kanal davet li
 13. **Nesneleştirme yasağı:** "kadın X yapsın diye" kalıbı kullanılmaz.
 14. **"Bilgi vermeyiz" kalıbı kullanılmaz.** Bilgi OCAK'ta vardır ve elden ele geçer; verilmeyen şey reçete, kurulmayan şey kürsü. Güvenli kalıp: "Bilgi araç, asıl olan deneyim."
 15. **Eylül dil kapısı:** Kayıt/başvuru "açık" dili ancak Kaan "sayfaları açtım" dediğinde kullanılır. O güne kadar düzey: "Eylül'de yola çıkıyor; detaylar sitede."
-16. **"Çember Lideri Eğitimi"** adı kesinleşti — içeriklerde bu adla geçer, alternatif ad tartışması kapalı.
+16. **"Çember Rehberi Eğitimi"** — ad **KARAR 551** ile mühürlendi (23 Ağu); içeriklerde bu adla geçer. Gerekçe hiyerarşinin kaldırılması, rolün içeriği aynı. ⚠ **Bu maddenin önceki hâli yanlıştı:** *"Çember Lideri Eğitimi adı kesinleşti, alternatif ad tartışması kapalı"* diyordu; öyle bir ledger kararı **hiç yoktu** ve kronoloji iddiayı Temmuz'da iki kez çürütmüştü (`90-kronoloji/2026-07.md:1227` · `:54(b)` — *"karar açık kalır"*). Tartışma kapalı değildi, **şimdi kapandı.**
 
 ---
 
