@@ -235,8 +235,13 @@ Notion turuna binerler.*
 lansman hattı. Yukarıdaki iki sırayla **paralel** yürür. **37 gün** (AÇILIŞ 24–27 Eylül,
 KARAR 492) bu hattın tamamını süreye bağlıyor.
 
-1. **Gün 0 kurucu görsel** *(Kaan)* — **tek gerçek üretim darboğazı.** Çıkmadan Gün 1
+1. ✅ **Gün 0 kurucu görsel** *(Kaan)* — **tek gerçek üretim darboğazı.** Çıkmadan Gün 1
    yok (KARAR 450). `KURUCU-URL` ara-değiştir buna bağlı.
+   ✅ **KAPANDI (23 Ağu, KARAR 542).** Görsel üretildi ve mühürlendi — `--sref` çapası +
+   `--v 8.1` motor kilidi. Yedi tur sürdü, altısı elendi; kazanan formül **tepeden bakan
+   kül + noktasal kor + düşük stylize.** **B114 kapandı.**
+   ⚠ **`KURUCU-URL` ara-değiştir hâlâ açık** — URL mühürlendi ama `30-sosyal.md` Bölüm 16'nın
+   P1–P9 seti dosyada eski hâliyle duruyor. Darboğaz kalktı, **ara-değiştir kaldı.**
 2. **Fiyat bandı** *(Kaan + Advaita)* — mekân (**B84**), dar hat ve İ5 metni buna bakıyor.
 3. **`/etkinlik/yolculuk-acilis` gövdesi** *(Kaan · Notion)* — **B81.** Bugün karara
    bağlanan AÇILIŞ sayfası sitede içeriksiz duruyor.
@@ -247,8 +252,16 @@ KARAR 492) bu hattın tamamını süreye bağlıyor.
 6. **robots Allow + Gün 1** — 1–4 kapanınca. ⚠ Yukarıdaki **iade cümlesi ön koşulu**
    bu maddenin de önünde durur; ilk sosyal post duyurudur, yani Gün 1 aynı zamanda
    robots kararıdır (KARAR 149).
-7. **Kart derleyici sınaması** *(Kaan + Claude, gözle)* — **B86.** İlk gerçek görselle;
+7. ✅ **Kart derleyici sınaması** *(Kaan + Claude, gözle)* — **B86.** İlk gerçek görselle;
    fotoğrafsız zemin kararı.
+   ✅ **KAPANDI (23 Ağu, KARAR 546).** İ1 kartı gerçek zeminle basıldı. Fotoğrafsız zemin
+   **yedek değil tasarım** oldu; iki zemin tipi ayrı ön ayar taşıyor, karışmıyorlar.
+   Araç repoya alındı — `tools/ocak-kart-derleyici.html`, altı gömülü ön ayar.
+
+**Sıra madde 2'ye düştü — fiyat bandı** *(Kaan + Advaita)*. Madde 1 ve 7 kapandı (23 Ağu).
+⚠ Gün 1'in önündeki engeller **değişmedi**: robots kararı (KARAR 149 — ilk sosyal post aynı
+zamanda robots kararıdır) · iade cümlesi ön koşulu · **B83** (sosyal ana sahne) · **B85**
+(üç kayıt cümlesi sözlü teyidi). İ1 kartı **basıma hazır ama yayınlanabilir değil.**
 
 *Sözlü kapı bekleyen tek kalem: **B85** (İ5 · İ11 · İ20 kayıt cümleleri, ~1 dk).
 Sıraya girmez, önüne gelen konuşmaya biner.*

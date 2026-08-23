@@ -540,3 +540,8 @@ no	tarih	baslik	durum	iliski	kaynak
 539	2026-08-22	IG konuşma penceresi WA ile hizalandı — `gecmis_saat` IG sorgusuna eklendi, `ilkTemas` koda alındı	AKTIF	←526 · ↔538	2026-08.md#k539
 540	2026-08-22	Panel fiyat ve kur `ocak_gizli`'de — beş anahtar, sunucu tarafında beyaz liste, deploy gerekmez	AKTIF	↔536	2026-08.md#k540
 541	2026-08-22	Bot adı "Ocak Kadın Topluluğu" — "Çember" bot adına girmez (KORUNACAK İFADE #8); uygulanmadı	ONERI	↔521	2026-08.md#k541
+542	2026-08-23	Kurucu görsel mühürlendi; MJ motoru `--v 8.1`'e kilitlendi — `--sref` çapası tek kaynak	AKTIF	←450 · B114 kapandı	2026-08.md#k542
+543	2026-08-23	Kart köşe imzası nokta değil OCAK işaretidir — kart genişliğinin %7'si, opaklık 0.85, yatayda ortalı	AKTIF	↔544 · ↔B105 · `30-sosyal.md` Bölüm 5 nokta kuralını geçersiz kılar (kural numarasız, supersede oku yok)	2026-08.md#k543
+544	2026-08-23	İmza ışığın karşı ucunda durur; konum zemin tipinden çıkar — fotoğraflı zeminde metnin üstünde, glow zeminde kart dibinde	KALICI	↔543	2026-08.md#k544
+545	2026-08-23	Söz kartı metni iki kademelidir: iddia büyük, fısıltı ana puntonun 0.62'sinde	AKTIF		2026-08.md#k545
+546	2026-08-23	Fotoğrafsız kart zemini tasarımdır, yedek değil — kömür zemin + metin merkezine kilitli kor glow	AKTIF	B86 kapandı	2026-08.md#k546

@@ -6,7 +6,7 @@
 > İçerik **silinmez, taşınır** (KIRPMA YASAĞI, KARAR 61). Bu dosya karar durumlarını ve
 > borçları **tekrar etmez, işaret eder** — ikisi de kendi dosyasında yaşar.
 >
-> *Şu an: 200 satır (`wc -l`, 19 Ağustos üç-format turu) — **pay 0, tavan doldu**. Önceki turda üç dönem
+> *Şu an: 195 satır (`wc -l`, 23 Ağustos ölçümü) — **pay 5, tavan dolmak üzere** (B131). Önceki turda üç dönem
 > bloğu daha tahliye edildi (7–8 Ağu · 10 Ağu · 11 Ağu ikinci tur, 11 satır); özetleri
 > `90-kronoloji/2026-08.md` sonuna **taşındı**, silinmedi ve inmeden önce kalem kalem
 > kronolojiye karşı doğrulandı. Sonraki tahliye adayı: `11 Ağustos` (B47 · B58).
@@ -109,8 +109,8 @@ Detay ve sahipler `02-borclar.md`'de. Burada yalnız kilit zinciri:
 
 1. **B19 — WhatsApp display name** (Kaan). `…5226` hattında **"Ocak Kadın Çemberi" ONAYLI** (19 Ağu). Kalan iş yalnız `…0888` hattı: ad başvurusu (KARAR 521) + bot bağlama — **B104**.
    Numara yayını buna kilitli **değil** — KARAR 396 kapandı, bot hattı `905325555226` canlı (`354fb14`). Bot hattı ≠ yasal sayfa telefonu (`+90 532 208 0888`, beş yasal sayfa) — kasıtlı iki yüzey, eşitlenmez (KARAR 518).
-2. **Sosyal v2 `[KAAN]` önkoşulları** — kurucu görsel + `KURUCU-URL` ara-değiştir.
-   Gün 1 yayını bunsuz başlamaz (KARAR 450).
+2. **Sosyal v2 `[KAAN]` önkoşulları** — kurucu görsel **✅ mühürlendi** (23 Ağu, KARAR 542);
+   kalan iş `KURUCU-URL` ara-değiştir. Gün 1 yayını bunsuz başlamaz (KARAR 450).
 3. **Yolculuk fiyat bandı → ilk Yolculuk etkinliği.** Eylül kohortu duyurusunun önkoşulu.
 
 **Kapanan halka — etkinlik tarihleri.** 15 yayında etkinlik (6 Açık Kapı · 4 Çember ·
@@ -170,7 +170,7 @@ Sayı ve detay `02-borclar.md`'de; burada yalnız cephe adı + sahip.
 |---|---|
 | WhatsApp/Meta onay hattı | Kaan |
 | Yolculuk fiyatlandırma → ilk etkinlik | Kaan + Advaita |
-| Sosyal medya Gün 0/Gün 1 önkoşulları | Kaan |
+| Sosyal medya **Gün 1** önkoşulları (Gün 0 ✅ 23 Ağu, KARAR 542) | Kaan |
 | CC kod kuyruğu (hash listener, Turnstile, Safari banding, ilk hafta paketi) | CC |
 | İçerik tarama turları (Uluslararası sweep, "sembolik ücret") | Claude.ai → Notion |
 | Sığ çapa onarımı **B36-a ✅** — iş B36-b'ye devretti | — |

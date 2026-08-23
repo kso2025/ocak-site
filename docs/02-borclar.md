@@ -1659,8 +1659,16 @@ Bu gözlem KARAR 465'in doğrudan kaynağıdır.
 - **Kapanış şartı:** Kaan onaylar ya da reddeder. İtiraz hâlinde silinecek üç cümle
   `30-sosyal.md` değişiklik günlüğünde tek tek yazılı.
 
-## B86 — Kart derleyici: fotoğrafsız kart zemini
-- [ ] **Sahip:** Kaan + Claude (gözle)
+## B86 — Kart derleyici: fotoğrafsız kart zemini ✅ KAPANDI (23 Ağu, glow zemin tasarım oldu)
+- [x] **Kapanış:** **KARAR 546.** Radial artık yedek değil, **tasarım**: kömür zemin +
+  metin bloğunun merkezine **kilitli** kor glow, şiddeti ve kaydırması ayarlı. Sitenin hero
+  ilişkisinin kart karşılığı — metin ışığın içinde oturur.
+- **Gerilim çözüldü:** "iki aileli sistem doğar" korkusu karşılanmadı; iki zemin tipi
+  (fotoğraflı · glow) **ayrı ön ayar** taşıyor, karışmıyorlar. İmza konumu da zemin tipinden
+  türüyor (KARAR 544).
+- **Kapanış şartı karşılandı:** gerçek görselle yan yana kondu, gözle karar verildi —
+  İ1 kartı basıldı (`03-sira.md` B-turu madde 7).
+- [x] **Sahip:** Kaan + Claude (gözle)
 - **Belirti:** araç üretildi ve beklemede. Şu anki **radial zemin yedek, tasarım değil.**
 - **Gerilim:** sitenin glow'u taşınırsa iki aileli sistem doğar; o hâlde **dokulu glow**
   olmalı — düz degrade + serif italik internetin en çok gördüğü alıntı kartıdır.
@@ -2013,9 +2021,16 @@ yerinde. Robots açıldığında Taslak sayfa sitemap üzerinden sızmaz.
   kırılganlık doruğu vurgulanır; süs vurgu ayıklanır.
 - **Not:** `manifesto-vurgu` section'ı ayrı iştir (kanonik section), bu madde onun yerine geçmez.
 
-## B114 — Görsel stil kodu kilitlenmedi; üretim tek tek yürüyor
+## B114 — Görsel stil kodu kilitlenmedi; üretim tek tek yürüyor ✅ KAPANDI (23 Ağu, kurucu görsel + --v 8.1 kilidi)
 
-- [ ] **Sahip:** Kaan
+- [x] **Kapanış:** **KARAR 542.** İstenen "sabit stil kodu + format seti" karşılandı:
+  `--sref` çapası mühürlendi (kurucu görsel URL'i `_arsiv/2026-08-23-devir.md` §2'de),
+  MJ motoru `--v 8.1`'e kilitlendi, format seti kart derleyicisinde **altı gömülü ön ayar**
+  olarak yaşıyor — F1 fotoğraf · F1 glow · F1 altın · F2 kapak · F2 iç kart · F4 story 9:16.
+  Araç `tools/ocak-kart-derleyici.html`.
+- ⚠ **Kapanışın dışında kalan ayak: OG kartı (1200×630, B105'in dördüncü ayağı) açık kalır.**
+  Derleyicide o oran yok. Bu borç kapandı, o ayak **B105'te yaşamaya devam ediyor.**
+- [x] **Sahip:** Kaan
 - **Kaynak:** claude.ai 19 Ağu sohbeti.
 - **İçerik:** Atmosferik görsellerin stil kodu sabitlenmediği için her görsel kendi denemesiyle çıkıyor;
   yüzeyler arası tutarlılık üretim anına bırakılmış. İstenen: sabit stil kodu + format seti
@@ -2341,3 +2356,39 @@ yerinde. Robots açıldığında Taslak sayfa sitemap üzerinden sızmaz.
   Kabul edilebilir ama bilinsin.
 - **Bağ:** KARAR 469 — sır dokümanda yaşamaz. Bu defterde yalnız **hangi değerin sızdığı**
   yazılıdır, değerin kendisi değil.
+
+## B139 — P3–P9'un `--no` listeleri Gün 0 derslerini içermiyor
+
+- [ ] **Sahip:** Claude.ai · **Tetikleyici:** o promptların ilk kullanımı
+- **Belirti:** P1 ve P2 23 Ağustos seansında üç tur harcanarak düzeltildi; **P3–P9 aynı
+  tuzakları taşıyor** — özellikle P4 *"fire bowl"*, P8 *"campfire"*, P9 *"low flame"*:
+  üçü de modelden alev talep ediyor.
+- **Malzeme:** altı elenen turun teşhisi `_arsiv/2026-08-23-devir.md` §4'te — "ember glow"
+  + "charcoal" birlikte alev/lav/volkan üretir · "room" pencere çizdirir · "hairline cracks"
+  çatlamış toprak verir · "underexposed" tek başına soğuk gri belgesel verir ·
+  `--no sparks` karedeki tek sıcak öğeyi siler · **yasak liste kelimeyi engeller, kavramı
+  engellemez** ("heat seeping out" yazıldığı sürece `--no fire` alevi durdurmaz).
+- **Boyut:** tek tur işi — ama **kart basılmadan** yapılmalı, yoksa aynı üç tur her prompt
+  için tekrarlanır.
+- **Bağ:** KARAR 542 · `30-sosyal.md` Bölüm 16. ⚠ Bölüm 16'nın P1–P9 tam set değişimi
+  (ADIM 3d) bu borçtan **ayrıdır** — o `KURUCU-URL` + `--v 8.1` + hex işidir, bu `--no` işidir.
+
+## B140 — İ1 kartının ikinci satırı dosyada italik, derleyicide değil
+
+- [ ] **Sahip:** Claude.ai · **Küçük.**
+- **Belirti:** `30-sosyal.md` İ1 bindirmesi — *"İçindeki ateş sönmedi. / **Üstü küllendi
+  sadece.**"* — ikinci satır italik işaretli, birincisi düz. Derleyici tek stil uyguluyor,
+  ikisini de italik basıyor.
+- **Neden acil değil:** iki kademe farkı **puntoyla** kuruluyor (KARAR 545, alt blok 0.62);
+  kart bozulmuyor.
+- **Kapanış şartı:** ayrım gerçekten gerekirse derleyiciye satır bazlı stil eklenir.
+
+## B141 — Kurucu ve İ1 zemini yalnız MJ CDN'inde + yerel diskte
+
+- [ ] **Sahip:** Kaan · **Küçük ama kritik.**
+- **Belirti:** iki çapa görsel — `--sref` kurucusu ve İ1 kart zemini — kalıcı bir yerde
+  yedekli değil. URL'ler `_arsiv/2026-08-23-devir.md` §2'de.
+- ⚠ **Otuz günlük görsel sistemin tamamı kurucu URL'ine bağlıdır** (KARAR 542). CDN
+  erişilemez olursa yeniden yükleyip yeni URL üretmek gerekir — ve `--sref` çapası değişince
+  seri tutarlılığı kaybolur.
+- **Kapanış şartı:** kalıcı bir yere kopya (Drive / repo `public/`).
