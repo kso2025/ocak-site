@@ -4,13 +4,13 @@
 **Metin kaynağı:** `ocak-site-dump-fable-2026-08-19.md` (canlı prod, sha=3683ca4, 49 route). Site metniyle çelişki görürsen site kazanır.
 
 **v2.1 DEĞİŞİKLİK GÜNLÜĞÜ (19 Ağustos ölçümü: 27 aynen · 3 cümle düzeltmesi · 0 yeniden yazım · 5 yeni malzeme kalemi):**
-1. İ5: "İLK KAMU DUYURUSU" çerçevesi düştü — katman kararı gereği İ5 motor değil, eko. Protokol bloğu revize; kart metni ve karusel aynen.
-2. İ5 · İ11 · İ20 caption'larına Bölüm 15/4'ün beklettiği tek cümle eklendi — kayıt/başvuru route'ları canlıda doğrulandı (7 format kayıt sayfası + /anadolu/basvuru yayında). İtiraz hâlinde silinecek üç cümle: "Başvuru ve kayıt sayfaları açık." / "Başvuru sayfası açık." / "Kayıt sayfası açık."
+1. C5: "İLK KAMU DUYURUSU" çerçevesi düştü — katman kararı gereği C5 motor değil, eko. Protokol bloğu revize; kart metni ve karusel aynen.
+2. C5 · C11 · C20 caption'larına Bölüm 15/4'ün beklettiği tek cümle eklendi — kayıt/başvuru route'ları canlıda doğrulandı (7 format kayıt sayfası + /anadolu/basvuru yayında). İtiraz hâlinde silinecek üç cümle: "Başvuru ve kayıt sayfaları açık." / "Başvuru sayfası açık." / "Kayıt sayfası açık."
 3. Bölüm 6: takvim artık dolu — on beş yayında etkinlik. İlk etkinlik 31 Ağustos Açık Kapı "Bir Eşikte Duruyorsun"; Gün 1 penceresi bunu ıskalamamalı.
 4. Bölüm 10: K-ETKİNLİK örnekleri Temmuz şablonundan gerçek takvime çevrildi (31 Ağustos Açık Kapı · 17 Eylül Kakao Seremonisi).
 5. E7 eklendi: Atölye günü kartı — ilk kullanım Ritüel Tasarımı, 3 Ekim.
 6. 30-60 gün tohumları dosya sonuna işlendi: Dünya Yolculuğu hattı, /adimiz Takvim katmanı, on beş etkinlik-tema havuzu.
-7. Hatırlatma borcu duruyor: İ14 MJ-zoom → gerçek söz değneği makrosu (F2) gelince değişir. Gün 0 kilidi ve [KAAN] 1-2-5-6 açık.
+7. Hatırlatma borcu duruyor: C14 MJ-zoom → gerçek söz değneği makrosu (F2) gelince değişir. Gün 0 kilidi ve [KAAN] 1-2-5-6 açık.
 
 **Bu dosya uygulama dosyasıdır.** Her günün kartında görsel, bindirme metni, caption, ilk yorum ve story kelimesi kelimesine hazır. Uygulayıcı hiçbir gün "burada ne demek istemiş" diye düşünmez. Boşluk kalan yerler `[KAAN]` ile işaretli — dosyanın sonunda tek liste hâlinde toplandı. `[KAAN]` alanı dolmadan o kart yayınlanmaz.
 
@@ -47,8 +47,8 @@ glowing embers under a thin layer of grey ash, extreme close-up, single warm lig
 
 ### 0c · Seçilen görselin `--sref` URL'i nasıl alınır ve dosyaya işlenir
 1. Seçilen varyantı upscale et. Açılan görsele sağ tık → "Copy image address" (Discord'da: görsele tıkla → "Open in Browser" → adres çubuğundan URL kopyala). `.png`/`.webp` ile biten tam URL olmalı.
-2. Bu dosyada **ara-değiştir** yap: `KURUCU-URL` yazan her yeri o URL ile değiştir. (Bölüm 8'deki P1-P9 promptlarının tamamında `--sref KURUCU-URL --sw 60` geçiyor; tek ara-değiştir hepsini doldurur.)
-3. Kurucu görselin kendisi de Gün 1 söz kartının zemini olarak kullanılabilir — ayrıca P1 üretimi şart değil, uygunsa doğrudan crop'la.
+2. Bu dosyada **ara-değiştir** yap: `KURUCU-URL` yazan her yeri o URL ile değiştir. (Bölüm 8'deki V1-V9 promptlarının tamamında `--sref KURUCU-URL --sw 60` geçiyor; tek ara-değiştir hepsini doldurur.)
+3. Kurucu görselin kendisi de Gün 1 söz kartının zemini olarak kullanılabilir — ayrıca V1 üretimi şart değil, uygunsa doğrudan crop'la.
 4. Kurucu görsel + `--sref` işlenmiş dosya → Kaan onayı → yayın takvimi başlar.
 
 ---
@@ -56,7 +56,7 @@ glowing embers under a thin layer of grey ash, extreme close-up, single warm lig
 ## 1 · NE İÇİN VARIZ (30 günün üç işi)
 
 1. **Ses kurulumu:** İlk 30 gün markanın sesini ve görsel dilini Instagram'da kurma dönemi — takipçi avı değil, doğru kadının "burası benim yerim olabilir" demesi.
-2. **Eylül penceresi:** İki yolculuk Eylül 2026'da yola çıkıyor — Anadolu Yolculuğu (başvurulu, on iki on altı kadın) ve Yolculuk online (yirmi yirmi dört kadın; Açılış 24-27 Eylül, sitede yayında). **Katman kararı (19 Ağustos):** Kohort dönüşümü feed'den geçmez — motor Halka 1'dir: birebir davet ağı + Advaita'nın kendi hesabı. İ5 feed'de kalır ama omuzlamaz; eko olur, kaynak değil. Feed'in işi birikim: marka dili, görsel tutarlılık, "burası duruyor" hissi. Çözüm asla aciliyet değil: daha net ve daha sıcak davet. "Son yerler" tipi tek bir cümle bile yazılmaz.
+2. **Eylül penceresi:** İki yolculuk Eylül 2026'da yola çıkıyor — Anadolu Yolculuğu (başvurulu, on iki on altı kadın) ve Yolculuk online (yirmi yirmi dört kadın; Açılış 24-27 Eylül, sitede yayında). **Katman kararı (19 Ağustos):** Kohort dönüşümü feed'den geçmez — motor Halka 1'dir: birebir davet ağı + Advaita'nın kendi hesabı. C5 feed'de kalır ama omuzlamaz; eko olur, kaynak değil. Feed'in işi birikim: marka dili, görsel tutarlılık, "burası duruyor" hissi. Çözüm asla aciliyet değil: daha net ve daha sıcak davet. "Son yerler" tipi tek bir cümle bile yazılmaz.
 3. **Alışkanlık:** Ateş Mektupları (bülten) + WhatsApp Kanalı sürekli akışın varış noktaları. Her içerik zinciri bu ikisinden birine veya siteye yumuşakça bağlanır — S5 hediye içerikler hariç.
 
 **Hedef kitle — Eşik Kadını, çift yol:** Kimini kriz getirdi (tükenmişlik, kayıp, sıkışma), kimini çağrı ("dahası var" sesi). İki yol eşit ağırlıkta; yalnız kriz diline yaslanmak yasak. İmza: *"Bir eşikte duruyorsun — seni oraya ne getirdiyse."*
@@ -128,53 +128,53 @@ Kısa cümle. Nokta cesareti. Soru sorar, cevabı dayatmaz. Sayılar yazıyla ("
 
 Site takvimi artık dolu: on beş yayında etkinlik (altı Açık Kapı, dört Çember, üç Seremoni, bir Yolculuk, bir Atölye), hepsi tarihli ve saatli. **İlk etkinlik 31 Ağustos — Açık Kapı "Bir Eşikte Duruyorsun"; Gün 1 penceresi bunu ıskalamamalı.** Sabit akış yine gerçek tarihe KİLİTLENMEZ:
 
-- **Sabit akış (İ1–İ24):** Tarihten bağımsız numaralı içerik. Ritim: haftada dört feed postu (Salı–Perşembe–Cumartesi–Pazar çekirdek). Gün 0 onayı hangi gün biterse, ilk Salı İ1 ile başlanır ve sıra bozulmadan akar. Altı haftada biter.
+- **Sabit akış (C1–C24):** Tarihten bağımsız numaralı içerik. Ritim: haftada dört feed postu (Salı–Perşembe–Cumartesi–Pazar çekirdek). Gün 0 onayı hangi gün biterse, ilk Salı C1 ile başlanır ve sıra bozulmadan akar. Altı haftada biter.
 - **Esnek etkinlik kartları (E1–E6):** `[ETKİNLİK GÜNÜ — takvime göre kaydır]` kartları. Bir etkinlik tarihi netleştiğinde ilgili E-kartı o güne oturur; o hafta sabit akış bir gün kayar (sıra bozulmaz, sadece ötelenir). Aynı güne iki feed postu binmez.
 - **Tarih sorusu kapandı (v2.1):** E1–E5 ve E7 tarihlerini siteden okur (ocak.biz/takvim — canlı ve dolu); Kaan'a ay başında tek teyit yeter. E6 çekim gününe bağlı kalır. Başka hiçbir kart tarih beklemez.
-- **İ5 özel protokolü:** Bölüm 7, İ5 kartında yazılı — Kanal + Ateş Mektupları önce, feed ertesi gün; kart eko, motor Halka 1.
+- **C5 özel protokolü:** Bölüm 7, C5 kartında yazılı — Kanal + Ateş Mektupları önce, feed ertesi gün; kart eko, motor Halka 1.
 - **Haftalık story ritüelleri** feed'den bağımsız akar: her Pazartesi PS-kartı, her Perşembe PP-kartı (Bölüm 9). Gün kartlarındaki "STORY: yok" bu ritüelleri iptal etmez.
 
 **Sıra tablosu (sabit akış):**
 
 | # | Sütun | Format | İçerik | Hafta |
 |---|---|---|---|---|
-| İ1 | S1 | F1 | LANSMAN — "İçindeki ateş sönmedi" | 1 |
-| İ2 | S1 | F2 | Çember miti — "Bir ateş vardı" (6 kart) | 1 |
-| İ3 | S2 | F1 ALTIN | İmza — "Bir eşikte duruyorsun" | 1 |
-| İ4 | S5 | F3 | Reels — "Bir mum, bir nefes" | 1 |
-| İ5 | S4 | F2 | EYLÜL'DE İKİ YOL (eko — motor Halka 1) | 2 |
-| İ6 | S1 | F2 | Adımız 1/3 — od, Od Ana | 2 |
-| İ7 | S2 | F1 | Portre — UYKU | 2 |
-| İ8 | S5 | F1 | Pratik — telefon kapıda (linksiz) | 2 |
-| İ9 | S3 | F2 | Yedi kapı, bir ateş | 3 |
-| İ10 | S1 | F2 | Adımız 2/3 — kor devri, ritüeller | 3 |
-| İ11 | S4 | F1 | Anadolu evre 1/6 — AÇILIŞ | 3 |
-| İ12 | S2 | F1 | Portre — MERAK | 3 |
-| İ13 | S6 | F1 ALTIN | Felsefe — "Bir kursa gidersin..." | 4 |
-| İ14 | S5 | F3 | Reels — Söz değneği | 4 |
-| İ15 | S4 | F1 | Anadolu evre 2/6 — İNİŞ | 4 |
-| İ16 | S1 | F2 | Adımız 3/3 — dilin belleği, şifa | 4 |
-| İ17 | S2 | F1 | Portre — İLK DOKUNUŞ | 5 |
-| İ18 | S6 | F1 | Çember Kutsaldır — "kayıt yoktur" | 5 |
-| İ19 | S3 | F1 | Açık Kapı daveti — "Çember değil, pencere" | 5 |
-| İ20 | S4 | F2 | Yolculuk online — bir durağın anatomisi | 5 |
-| İ21 | S5 | F1 | Pratik — "Aklımdaydın" (linksiz) | 6 |
-| İ22 | S1 | F1 | Kül kartı — "Kül öldürmez" | 6 |
-| İ23 | S4 | F1 | Anadolu evre 3/6 — UYANIŞ | 6 |
-| İ24 | S2+S3 | F2 | Kapanış — "Sen neredesin?" | 6 |
+| C1 | S1 | F1 | LANSMAN — "İçindeki ateş sönmedi" | 1 |
+| C2 | S1 | F2 | Çember miti — "Bir ateş vardı" (6 kart) | 1 |
+| C3 | S2 | F1 ALTIN | İmza — "Bir eşikte duruyorsun" | 1 |
+| C4 | S5 | F3 | Reels — "Bir mum, bir nefes" | 1 |
+| C5 | S4 | F2 | EYLÜL'DE İKİ YOL (eko — motor Halka 1) | 2 |
+| C6 | S1 | F2 | Adımız 1/3 — od, Od Ana | 2 |
+| C7 | S2 | F1 | Portre — UYKU | 2 |
+| C8 | S5 | F1 | Pratik — telefon kapıda (linksiz) | 2 |
+| C9 | S3 | F2 | Yedi kapı, bir ateş | 3 |
+| C10 | S1 | F2 | Adımız 2/3 — kor devri, ritüeller | 3 |
+| C11 | S4 | F1 | Anadolu evre 1/6 — AÇILIŞ | 3 |
+| C12 | S2 | F1 | Portre — MERAK | 3 |
+| C13 | S6 | F1 ALTIN | Felsefe — "Bir kursa gidersin..." | 4 |
+| C14 | S5 | F3 | Reels — Söz değneği | 4 |
+| C15 | S4 | F1 | Anadolu evre 2/6 — İNİŞ | 4 |
+| C16 | S1 | F2 | Adımız 3/3 — dilin belleği, şifa | 4 |
+| C17 | S2 | F1 | Portre — İLK DOKUNUŞ | 5 |
+| C18 | S6 | F1 | Çember Kutsaldır — "kayıt yoktur" | 5 |
+| C19 | S3 | F1 | Açık Kapı daveti — "Çember değil, pencere" | 5 |
+| C20 | S4 | F2 | Yolculuk online — bir durağın anatomisi | 5 |
+| C21 | S5 | F1 | Pratik — "Aklımdaydın" (linksiz) | 6 |
+| C22 | S1 | F1 | Kül kartı — "Kül öldürmez" | 6 |
+| C23 | S4 | F1 | Anadolu evre 3/6 — UYANIŞ | 6 |
+| C24 | S2+S3 | F2 | Kapanış — "Sen neredesin?" | 6 |
 
 Seri kuralı: evre serisi (4/6–6/6) ve portre serisi (Aidiyet→Spiral) 30-60 gün planında devam eder — seri yarıda kesilmez.
 
 ---
 
-## 7 · GÜN KARTLARI — SABİT AKIŞ (İ1–İ24)
+## 7 · GÜN KARTLARI — SABİT AKIŞ (C1–C24)
 
 Her kartın yapısı: GÖRSEL (prompt no + format + bindirme metni + renk) · CAPTION (birebir) · İLK YORUM · STORY. Hashtag satırı caption'ın son satırıdır; yazmıyorsa hashtag yok.
 
 ---
 
-### İ1 · S1 · F1 — LANSMAN
-**GÖRSEL:** Kurucu görsel (Gün 0 çıktısı) veya P1 · 4:5 · Bindirme (krem, üst negatif alan):
+### C1 · S1 · F1 — LANSMAN
+**GÖRSEL:** Kurucu görsel (Gün 0 çıktısı) veya V1 · 4:5 · Bindirme (krem, üst negatif alan):
 > İçindeki ateş sönmedi.
 > *Üstü küllendi sadece.*
 **CAPTION:**
@@ -188,8 +188,8 @@ Her kartın yapısı: GÖRSEL (prompt no + format + bindirme metni + renk) · CA
 
 ---
 
-### İ2 · S1 · F2 — ÇEMBER MİTİ (6 kart)
-**GÖRSEL:** P1 tek üretim → 6 crop · 4:5 · Kart metinleri (krem):
+### C2 · S1 · F2 — ÇEMBER MİTİ (6 kart)
+**GÖRSEL:** V1 tek üretim → 6 crop · 4:5 · Kart metinleri (krem):
 > K1: Bir ateş vardı.
 > K2: Kadınlar binlerce yıl onun etrafında oturdu. Ne guru vardı, ne reçete, ne uzman.
 > K3: Sadece ateş, birbirlerinin tanıklığı, bedenlerinin zaten bildiği bilgelik.
@@ -205,8 +205,8 @@ Her kartın yapısı: GÖRSEL (prompt no + format + bindirme metni + renk) · CA
 
 ---
 
-### İ3 · S2 · F1 — İMZA (ALTIN KART)
-**GÖRSEL:** P3 (eşik/kapı) · 4:5 · Bindirme (ALTIN #D4A855):
+### C3 · S2 · F1 — İMZA (ALTIN KART)
+**GÖRSEL:** V3 (eşik/kapı) · 4:5 · Bindirme (ALTIN #D4A855):
 > Bir eşikte duruyorsun —
 > seni oraya ne getirdiyse.
 **CAPTION:**
@@ -218,8 +218,8 @@ Her kartın yapısı: GÖRSEL (prompt no + format + bindirme metni + renk) · CA
 
 ---
 
-### İ4 · S5 · F3 — REELS "BİR MUM, BİR NEFES"
-**GÖRSEL:** Gerçek çekim (evde, telefonla — Bölüm 11 / EV-1 ve EV-2 kareleri): karanlık oda, kibrit çakılır, mum yanar, makro, 30 sn. Çekim yoksa yedek: P8 · 9:16 · yavaş zoom.
+### C4 · S5 · F3 — REELS "BİR MUM, BİR NEFES"
+**GÖRSEL:** Gerçek çekim (evde, telefonla — Bölüm 11 / EV-1 ve EV-2 kareleri): karanlık oda, kibrit çakılır, mum yanar, makro, 30 sn. Çekim yoksa yedek: V8 · 9:16 · yavaş zoom.
 Ekran metni (üç kademe, krem):
 > Telefonu kapıda bırak.
 > Bir mum yak.
@@ -232,13 +232,13 @@ Ses: ateş çıtırtısı loop veya sessiz ambient.
 
 ---
 
-### İ5 · S4 · F2 — EYLÜL'DE İKİ YOL
+### C5 · S4 · F2 — EYLÜL'DE İKİ YOL
 **PROTOKOL (sıra kesin):**
 1. **Akşam 1:** Kanal mesajı K-EYLÜL (Bölüm 10) Kanal'a atılır + Ateş Mektupları'na aynı içerikli mektup gider — her duyuru önce Kanal'a düşer kuralı burada da geçerli.
 2. **Ertesi gün:** Bu karusel feed'e girer.
 3. **Katman notu (v2.1):** Bu kart artık motor değil, eko. Kohort daveti Halka 1'den yürür (birebir ağ + Advaita'nın hesabı); feed'deki bu kart o davetin arkasında duran kamu izidir. Takvimdeki yeri korunur (2. hafta) — Gün 0 geç kalırsa Halka 1 feed'i beklemez.
 4. Dil kapısı: Kayıt/başvuru sayfaları canlıda doğrulandı (19 Ağustos dump'ı); caption'daki kayıt cümlesi buna dayanır.
-**GÖRSEL:** P1 tek üretim → 6 crop · 4:5 · Kart metinleri (krem; K1 altın olabilir — o hafta başka altın kart yok):
+**GÖRSEL:** V1 tek üretim → 6 crop · 4:5 · Kart metinleri (krem; K1 altın olabilir — o hafta başka altın kart yok):
 > K1: Eylül'de iki yol açılıyor.
 > K2: Anadolu Yolculuğu — on bir ay, bu toprakların kadim eşiklerinde. Göbeklitepe, Aphrodisias, Tuz Gölü, Yanartaş, Kapadokya. On iki on altı kadın; başvuruyla.
 > K3: Yolculuk — aynı eşikler, bulunduğun yerden. Altı durak, online. Yirmi yirmi dört kadın.
@@ -253,8 +253,8 @@ Ses: ateş çıtırtısı loop veya sessiz ambient.
 
 ---
 
-### İ6 · S1 · F2 — ADIMIZ 1/3 (6 kart)
-**GÖRSEL:** P2 (kül dokusu) tek üretim → 6 crop · 4:5 · Kart metinleri (krem):
+### C6 · S1 · F2 — ADIMIZ 1/3 (6 kart)
+**GÖRSEL:** V2 (kül dokusu) tek üretim → 6 crop · 4:5 · Kart metinleri (krem):
 > K1: Bir kelimeyi kazıyalım: OCAK.
 > K2: Eski Türkçede od, ateş demek. Ocak: od-çak — ateşin yeri.
 > K3: Kelimenin yaşı yazıdan eski. Bozkırdan Anadolu'ya, hangi Türkçe konuşulduysa orada bir ocak yandı.
@@ -269,8 +269,8 @@ Ses: ateş çıtırtısı loop veya sessiz ambient.
 
 ---
 
-### İ7 · S2 · F1 — PORTRE: UYKU
-**GÖRSEL:** P3 · 4:5 · Bindirme (krem):
+### C7 · S2 · F1 — PORTRE: UYKU
+**GÖRSEL:** V3 · 4:5 · Bindirme (krem):
 > Bir kadın var: hayatı işliyor.
 > İçinde bir kopukluk var ama adını koyamıyor.
 **CAPTION:**
@@ -282,8 +282,8 @@ Ses: ateş çıtırtısı loop veya sessiz ambient.
 
 ---
 
-### İ8 · S5 · F1 — PRATİK: TELEFON KAPIDA (hediye — linksiz)
-**GÖRSEL:** P7 (natürmort) · 4:5 · Bindirme (krem):
+### C8 · S5 · F1 — PRATİK: TELEFON KAPIDA (hediye — linksiz)
+**GÖRSEL:** V7 (natürmort) · 4:5 · Bindirme (krem):
 > Bu akşam telefonu kapıda bırak.
 > Bir mum yak. Beş nefes. Bu kadar.
 **CAPTION:**
@@ -293,8 +293,8 @@ Ses: ateş çıtırtısı loop veya sessiz ambient.
 
 ---
 
-### İ9 · S3 · F2 — YEDİ KAPI, BİR ATEŞ (8 kart)
-**GÖRSEL:** P4 (çember soyutlaması) tek üretim → 8 crop · 4:5 · Kart metinleri (krem):
+### C9 · S3 · F2 — YEDİ KAPI, BİR ATEŞ (8 kart)
+**GÖRSEL:** V4 (çember soyutlaması) tek üretim → 8 crop · 4:5 · Kart metinleri (krem):
 > K1: Yedi kapı, bir ateş.
 > K2: Açık Kapı — bir saat, online, taahhüt yok. Çember değil, pencere.
 > K3: Çember — aylık ritim, sekiz on altı kadın, söz değneği. OCAK'ın kalp atışı.
@@ -311,8 +311,8 @@ Ses: ateş çıtırtısı loop veya sessiz ambient.
 
 ---
 
-### İ10 · S1 · F2 — ADIMIZ 2/3: RİTÜELLER (6 kart)
-**GÖRSEL:** P1 tek üretim → 6 crop · 4:5 · Kart metinleri (krem):
+### C10 · S1 · F2 — ADIMIZ 2/3: RİTÜELLER (6 kart)
+**GÖRSEL:** V1 tek üretim → 6 crop · 4:5 · Kart metinleri (krem):
 > K1: Adımızı kazıyoruz — ikinci katman: ritüeller.
 > K2: Gelin yeni evine girdiğinde önce insanlarla değil, ocakla tanıştırılır.
 > K3: Ateşe yağ atar — alev parlar, evin anası selamı almıştır. Artık bu ocağın kadınıdır.
@@ -327,8 +327,8 @@ Ses: ateş çıtırtısı loop veya sessiz ambient.
 
 ---
 
-### İ11 · S4 · F1 — ANADOLU EVRE 1/6: AÇILIŞ
-**GÖRSEL:** P5, MEKAN = `olive grove hills of the Aegean, Urla` · 4:5 · Bindirme (krem; alt satır italik):
+### C11 · S4 · F1 — ANADOLU EVRE 1/6: AÇILIŞ
+**GÖRSEL:** V5, MEKAN = `olive grove hills of the Aegean, Urla` · 4:5 · Bindirme (krem; alt satır italik):
 > AÇILIŞ — Ege
 > *Bu yıl boyunca neyi taşıyacağım?*
 **CAPTION:**
@@ -341,8 +341,8 @@ Ses: ateş çıtırtısı loop veya sessiz ambient.
 
 ---
 
-### İ12 · S2 · F1 — PORTRE: MERAK
-**GÖRSEL:** P3 · 4:5 · Bindirme (krem):
+### C12 · S2 · F1 — PORTRE: MERAK
+**GÖRSEL:** V3 · 4:5 · Bindirme (krem):
 > Henüz girmedi ama tıkladı.
 > "Bu ne acaba? Bana mı?"
 **CAPTION:**
@@ -353,8 +353,8 @@ Ses: ateş çıtırtısı loop veya sessiz ambient.
 **STORY:** yok
 
 ---
-### İ13 · S6 · F1 — FELSEFE (ALTIN KART)
-**GÖRSEL:** P1 · 4:5 · Bindirme (ALTIN #D4A855):
+### C13 · S6 · F1 — FELSEFE (ALTIN KART)
+**GÖRSEL:** V1 · 4:5 · Bindirme (ALTIN #D4A855):
 > Bir kursa gidersin, eve bilgiyle dönersin.
 > Bir çembere gelirsin, eve kendinle dönersin.
 **CAPTION:**
@@ -366,8 +366,8 @@ Ses: ateş çıtırtısı loop veya sessiz ambient.
 
 ---
 
-### İ14 · S5 · F3 — REELS: SÖZ DEĞNEĞİ
-**GÖRSEL:** P4'ü `--ar 9:16` ile yeniden üret (aynı prompt, sadece oran değişir) · yavaş zoom, 30 sn · Ekran metni (dört kademe, krem):
+### C14 · S5 · F3 — REELS: SÖZ DEĞNEĞİ
+**GÖRSEL:** V4'ü `--ar 9:16` ile yeniden üret (aynı prompt, sadece oran değişir) · yavaş zoom, 30 sn · Ekran metni (dört kademe, krem):
 > Çemberde bir kural var.
 > Söz değneği kimdeyse, o konuşur.
 > Kalanlar dinler. Tavsiye verilmez, yargılanmaz.
@@ -381,8 +381,8 @@ Ses: ateş çıtırtısı loop.
 
 ---
 
-### İ15 · S4 · F1 — ANADOLU EVRE 2/6: İNİŞ
-**GÖRSEL:** P5, MEKAN = `megalithic stone pillars of Göbeklitepe at night` · 4:5 · Bindirme (krem; alt satır italik):
+### C15 · S4 · F1 — ANADOLU EVRE 2/6: İNİŞ
+**GÖRSEL:** V5, MEKAN = `megalithic stone pillars of Göbeklitepe at night` · 4:5 · Bindirme (krem; alt satır italik):
 > İNİŞ — Göbeklitepe · Harran
 > *Nereden geliyorum? Hangi soydan?*
 **CAPTION:**
@@ -393,8 +393,8 @@ Ses: ateş çıtırtısı loop.
 
 ---
 
-### İ16 · S1 · F2 — ADIMIZ 3/3: DİLİN BELLEĞİ (7 kart)
-**GÖRSEL:** P2 tek üretim → 7 crop · 4:5 · Kart metinleri (krem):
+### C16 · S1 · F2 — ADIMIZ 3/3: DİLİN BELLEĞİ (7 kart)
+**GÖRSEL:** V2 tek üretim → 7 crop · 4:5 · Kart metinleri (krem):
 > K1: Adımızı kazıyoruz — son katman: dilin belleği.
 > K2: Ocak soy demek. Bir ailenin yaşadığı "ocağı tütüyor" diye anlatılır. En sıcak dua: ocağın tütsün.
 > K3: Ocak sığınak demek. Dara düşen tek cümle kurar: "Ocağına düştüm." O cümleden sonra geri çevirmek yoktur.
@@ -411,8 +411,8 @@ Ses: ateş çıtırtısı loop.
 
 ---
 
-### İ17 · S2 · F1 — PORTRE: İLK DOKUNUŞ
-**GÖRSEL:** P3 · 4:5 · Bindirme (krem):
+### C17 · S2 · F1 — PORTRE: İLK DOKUNUŞ
+**GÖRSEL:** V3 · 4:5 · Bindirme (krem):
 > Bir saat, iki saat — sonra ev.
 > Belki içeride bir şey yumuşadı.
 **CAPTION:**
@@ -424,8 +424,8 @@ Ses: ateş çıtırtısı loop.
 
 ---
 
-### İ18 · S6 · F1 — ÇEMBER KUTSALDIR
-**GÖRSEL:** P4 · 4:5 · Bindirme (krem):
+### C18 · S6 · F1 — ÇEMBER KUTSALDIR
+**GÖRSEL:** V4 · 4:5 · Bindirme (krem):
 > Bir kadın çembere geldiğinde
 > paylaştığı orada kalır.
 **CAPTION:**
@@ -437,8 +437,8 @@ Ses: ateş çıtırtısı loop.
 
 ---
 
-### İ19 · S3 · F1 — AÇIK KAPI DAVETİ
-**GÖRSEL:** P6 (pencerede mum) · 4:5 · Bindirme (krem):
+### C19 · S3 · F1 — AÇIK KAPI DAVETİ
+**GÖRSEL:** V6 (pencerede mum) · 4:5 · Bindirme (krem):
 > Bir saat, online, taahhüt yok.
 > Çember değil — pencere.
 **CAPTION:**
@@ -450,8 +450,8 @@ Ses: ateş çıtırtısı loop.
 
 ---
 
-### İ20 · S4 · F2 — YOLCULUK ONLINE: BİR DURAĞIN ANATOMİSİ (6 kart)
-**GÖRSEL:** P6 tek üretim → 6 crop · 4:5 · Kart metinleri (krem):
+### C20 · S4 · F2 — YOLCULUK ONLINE: BİR DURAĞIN ANATOMİSİ (6 kart)
+**GÖRSEL:** V6 tek üretim → 6 crop · 4:5 · Kart metinleri (krem):
 > K1: Kendi mekânında yaktığın ateş.
 > K2: Yolculuk, online — bir yıla yayılan yol: altı durak, bir Açılış ve beş eşik.
 > K3: Her durakta bir ana oturum — üç dört saat, birlikte, online.
@@ -467,8 +467,8 @@ Ses: ateş çıtırtısı loop.
 
 ---
 
-### İ21 · S5 · F1 — PRATİK: "AKLIMDAYDIN" (hediye — linksiz)
-**GÖRSEL:** P7 · 4:5 · Bindirme (krem):
+### C21 · S5 · F1 — PRATİK: "AKLIMDAYDIN" (hediye — linksiz)
+**GÖRSEL:** V7 · 4:5 · Bindirme (krem):
 > Bugün bir kadına bir cümle yaz.
 > Sadece: "Aklımdaydın."
 **CAPTION:**
@@ -478,8 +478,8 @@ Ses: ateş çıtırtısı loop.
 
 ---
 
-### İ22 · S1 · F1 — KÜL KARTI
-**GÖRSEL:** P2 · 4:5 · Bindirme (krem; yalnız "Kor" kelimesi köz rengi #C44B2F):
+### C22 · S1 · F1 — KÜL KARTI
+**GÖRSEL:** V2 · 4:5 · Bindirme (krem; yalnız "Kor" kelimesi köz rengi #C44B2F):
 > Kül öldürmez. Örter, korur.
 > Kor bekler — üflenmeyi.
 **CAPTION:**
@@ -490,8 +490,8 @@ Ses: ateş çıtırtısı loop.
 
 ---
 
-### İ23 · S4 · F1 — ANADOLU EVRE 3/6: UYANIŞ
-**GÖRSEL:** P5, MEKAN = `white travertine terraces of Pamukkale with warm steam` · 4:5 · Bindirme (krem; alt satır italik):
+### C23 · S4 · F1 — ANADOLU EVRE 3/6: UYANIŞ
+**GÖRSEL:** V5, MEKAN = `white travertine terraces of Pamukkale with warm steam` · 4:5 · Bindirme (krem; alt satır italik):
 > UYANIŞ — Aphrodisias · Pamukkale
 > *Neyi bastırdım? Ateşim nerede?*
 **CAPTION:**
@@ -502,8 +502,8 @@ Ses: ateş çıtırtısı loop.
 
 ---
 
-### İ24 · S2+S3 · F2 — KAPANIŞ: "SEN NEREDESİN?" (6 kart)
-**GÖRSEL:** P3 tek üretim → 6 crop · 4:5 · Kart metinleri (krem):
+### C24 · S2+S3 · F2 — KAPANIŞ: "SEN NEREDESİN?" (6 kart)
+**GÖRSEL:** V3 tek üretim → 6 crop · 4:5 · Kart metinleri (krem):
 > K1: Sen neredesin?
 > K2: Kimi kadın uykuda — hayatı işliyor, içinde adını koyamadığı bir kopukluk var.
 > K3: Kimi merakta — henüz girmedi ama tıkladı.
@@ -523,7 +523,7 @@ Ses: ateş çıtırtısı loop.
 Bu kartlar `[ETKİNLİK GÜNÜ — takvime göre kaydır]` kartlarıdır: tarih Kaan'dan gelir, kart o güne oturur. Köşeli parantezli alanlar takvim bilgisiyle doldurulur — başka hiçbir kelime değişmez. **Kural: her E-kartından önce ilgili Kanal mesajı Kanal'a düşmüş olmalı (Bölüm 10).**
 
 ### E1 · S3 · F4 — AÇIK KAPI GÜNÜ STORY'Sİ
-Etkinlik günü sabahı tek story. **GÖRSEL:** P8 story zemini · 9:16 · Metin (krem, bilgi dilinde):
+Etkinlik günü sabahı tek story. **GÖRSEL:** V8 story zemini · 9:16 · Metin (krem, bilgi dilinde):
 > Bu akşam Açık Kapı.
 > [SAAT], online, bir saat.
 > Bir tema, kısa bir pratik, sorular.
@@ -531,7 +531,7 @@ Etkinlik günü sabahı tek story. **GÖRSEL:** P8 story zemini · 9:16 · Metin
 Link sticker: https://www.ocak.biz/acik-kapi/kayit · Başka süsleme yok.
 
 ### E2 · S3 · F1 + F4 — SEREMONİ GÜNÜ
-**Feed (sabah):** P9 · 4:5 · Bindirme (krem):
+**Feed (sabah):** V9 · 4:5 · Bindirme (krem):
 > Niyet tek başına düşünce,
 > çemberde söz, seremonide mühür olur.
 **CAPTION:**
@@ -539,7 +539,7 @@ Link sticker: https://www.ocak.biz/acik-kapi/kayit · Başka süsleme yok.
 > [SEREMONİ ADI], [SAAT], [ONLINE/YÜZ YÜZE].
 > #seremoni #kadınçemberi
 **İLK YORUM:** https://www.ocak.biz/seremoni
-**STORY (akşamüstü):** P9 crop 9:16 · Metin: "Bu akşam [SAAT]'te seremoni. Detaylar ve kayıt: ocak.biz/seremoni" + link sticker.
+**STORY (akşamüstü):** V9 crop 9:16 · Metin: "Bu akşam [SAAT]'te seremoni. Detaylar ve kayıt: ocak.biz/seremoni" + link sticker.
 
 ### E3 · S6 · F3 — MEKÂN GÜNÜ REELS'İ (mini retreat / yüz yüze buluşma)
 Çekim günü (Bölüm 11) tamamlandıktan sonraki ilk uygun feed slotu. **GÖRSEL:** Gerçek çekim — mekân hazırlığı, boş çember, ateş çukuru (yüzsüz; kareler Bölüm 11 R-listesinden). 20-30 sn, ateş çıtırtısı veya ambient.
@@ -553,14 +553,14 @@ Ekran metni (iki kademe, krem):
 **STORY:** yok
 
 ### E4 · S4 · F4 — YOLCULUK ONLINE OTURUM GÜNÜ STORY'Sİ
-Etkinlik günü sabahı tek story. **GÖRSEL:** P8 story zemini · 9:16 · Metin (krem):
+Etkinlik günü sabahı tek story. **GÖRSEL:** V8 story zemini · 9:16 · Metin (krem):
 > Bu akşam Yolculuk oturumu.
 > [SAAT], online.
 > Detaylar: ocak.biz/yolculuk
 Link sticker: https://www.ocak.biz/yolculuk
 
 ### E5 · S3 · F4 — AYLIK TAKVİM STORY'Sİ
-Her ayın ilk haftası tek story. **GÖRSEL:** P8 story zemini · 9:16 · Metin (krem, liste hâlinde; satırlar takvimden doldurulur):
+Her ayın ilk haftası tek story. **GÖRSEL:** V8 story zemini · 9:16 · Metin (krem, liste hâlinde; satırlar takvimden doldurulur):
 > [AY] ateşi ne zaman yanıyor?
 > [GG AyKısa] · [Format] · [Online/Yüz yüze]
 > [GG AyKısa] · [Format] · [Online/Yüz yüze]
@@ -580,7 +580,7 @@ Ekran metni (tek kademe, krem):
 **STORY:** yok
 
 ### E7 · S5 · F1 + F4 — ATÖLYE GÜNÜ (v2.1 — ilk kullanım: Ritüel Tasarımı, 3 Ekim)
-**Feed (sabah):** P7 (natürmort) · 4:5 · Bindirme (krem):
+**Feed (sabah):** V7 (natürmort) · 4:5 · Bindirme (krem):
 > Bıraktığını söylemek başka.
 > Elinden bırakmak başka.
 **CAPTION:**
@@ -588,14 +588,14 @@ Ekran metni (tek kademe, krem):
 > [ATÖLYE ADI], [SAAT], [ONLINE/YÜZ YÜZE].
 > #atölye #ritüel
 **İLK YORUM:** https://www.ocak.biz/atolye
-**STORY (akşamüstü):** P7 crop 9:16 · Metin: "Bugün [SAAT]'te atölye. Detaylar ve kayıt: ocak.biz/atolye" + link sticker.
+**STORY (akşamüstü):** V7 crop 9:16 · Metin: "Bugün [SAAT]'te atölye. Detaylar ve kayıt: ocak.biz/atolye" + link sticker.
 (Bindirme ve caption cümleleri /etkinlik/rituel-tasarimi gövdesinden; başka atölyede kullanılacaksa bindirme o atölyenin vurgu cümlesiyle değişir — caption iskeleti kalır.)
 
 ---
 
 ## 9 · HAFTALIK STORY RİTÜELLERİ (feed'den bağımsız)
 
-Zemin: P8'in crop varyantları (tek üretim, altı hafta yeter) · 9:16 · krem metin, sticker'sız düz kart. Sırayla kullanılır: 1. hafta PS1+PP1, 2. hafta PS2+PP2... Story'de hashtag ve link yok (PP kartları hediyedir).
+Zemin: V8'in crop varyantları (tek üretim, altı hafta yeter) · 9:16 · krem metin, sticker'sız düz kart. Sırayla kullanılır: 1. hafta PS1+PP1, 2. hafta PS2+PP2... Story'de hashtag ve link yok (PP kartları hediyedir).
 
 **Pazartesi Soruları (PS):**
 > PS1: Bu hafta neyi bırakıyorsun?
@@ -625,7 +625,7 @@ Zemin: P8'in crop varyantları (tek üretim, altı hafta yeter) · 9:16 · krem 
 > Buradan yalnız şunlar gelir: yaklaşan buluşmaların ilk duyurusu, ara sıra bir cümle, ara sıra bir pratik. Haftada en fazla bir-iki mesaj. Satış yok, gürültü yok.
 > Sitede her şeyin haritası var: ocak.biz
 
-**K-EYLÜL — Eylül duyurusu (İ5'ten bir akşam önce; Ateş Mektupları'yla aynı akşam; feed'den önce Kanal):**
+**K-EYLÜL — Eylül duyurusu (C5'ten bir akşam önce; Ateş Mektupları'yla aynı akşam; feed'den önce Kanal):**
 > Bu haber feed'den önce buraya düşüyor.
 > Eylül 2026'da iki kohort yola çıkıyor. Anadolu Yolculuğu — on bir ay, bu toprakların kadim eşiklerinde; on iki on altı kadın, başvuruyla. Ve Yolculuk, online — aynı eşikler, bulunduğun yerden; yirmi yirmi dört kadın.
 > Aynı sorular. Orada bedenle, burada sesle. İki ayrı kapı; biri diğerinin küçüğü değil.
@@ -657,13 +657,13 @@ Doldurulmuş örnek — Seremoni (gerçek):
 
 ## 11 · ÇEKİM KILAVUZU (telefonla — profesyonel ekipman şart değil)
 
-İki blok: **EV çekimi** (bugün, herhangi bir akşam, İ4 için) ve **MEKÂN günü** (mini retreat mekânı veya ilk uygun yüz yüze buluşma günü — E3, E6 ve ay boyu fotoğraf bankası için). Genel kural her karede aynı: **tek sıcak ışık kaynağı** (ateş, mum, 2700K ampul), flaş yok, gün ışığında çekilecekse alacakaranlık; yüzün yarısı gölgede kalabilir — kalmalı. Telefon ayarı: 4K varsa 4K, yoksa 1080p; pozlamayı ışık kaynağına kilitle (ekranda aleve bas, kilitle), karanlık alanlar karanlık KALSIN — telefonun otomatik aydınlatmasına izin verme.
+İki blok: **EV çekimi** (bugün, herhangi bir akşam, C4 için) ve **MEKÂN günü** (mini retreat mekânı veya ilk uygun yüz yüze buluşma günü — E3, E6 ve ay boyu fotoğraf bankası için). Genel kural her karede aynı: **tek sıcak ışık kaynağı** (ateş, mum, 2700K ampul), flaş yok, gün ışığında çekilecekse alacakaranlık; yüzün yarısı gölgede kalabilir — kalmalı. Telefon ayarı: 4K varsa 4K, yoksa 1080p; pozlamayı ışık kaynağına kilitle (ekranda aleve bas, kilitle), karanlık alanlar karanlık KALSIN — telefonun otomatik aydınlatmasına izin verme.
 
 ### 11a · EV çekimi (30-40 dakika, karanlık bir oda, bir mum, bir kibrit)
 | Kare | Ne | Işık / Açı | Ne için |
 |---|---|---|---|
-| EV-1 | Kibrit çakılışı, makro (video, 15 sn) | Tek mum sonrası karanlık; telefon masada sabit, mum hizasından | İ4 reels açılışı |
-| EV-2 | Mum alevi sabit yanış (video, 60 sn) | Alev tek kaynak; hafif alt açı, arka plan tam karanlık | İ4 gövdesi + loop hammaddesi |
+| EV-1 | Kibrit çakılışı, makro (video, 15 sn) | Tek mum sonrası karanlık; telefon masada sabit, mum hizasından | C4 reels açılışı |
+| EV-2 | Mum alevi sabit yanış (video, 60 sn) | Alev tek kaynak; hafif alt açı, arka plan tam karanlık | C4 gövdesi + loop hammaddesi |
 | EV-3 | Mum söndürme + duman (video, 15 sn) | Sönüş anında pozlama sabit kalsın; dumanı karanlıkta yakala | Kapanış kareleri, ileriki reels'ler |
 | EV-4 | Fincandan yükselen buhar (video, 30 sn) | Mum ışığı yandan; buhar ışığa girsin | Seremoni/kakao içerikleri, E2 dönemi |
 | EV-5 | Mum + kâse + kuru bitki natürmortu (foto, 4:5) | Tek mum, üstten ve 45° iki çekim | S5 pratik kartlarına gerçek-fotoğraf alternatifi |
@@ -685,12 +685,12 @@ Doldurulmuş örnek — Seremoni (gerçek):
 | Kare | Ne | Işık / Açı | Ne için |
 |---|---|---|---|
 | F1 | Boş çember tepeden/geniş: minderler + merkez ateş-mum | Loş, tek kaynak merkezde | S6 kartları, karusel kapakları |
-| F2 | Söz değneği yakın plan (kilim üstünde) | Yan ışık, gölge uzun düşsün | İ14 destek, çember içerikleri |
+| F2 | Söz değneği yakın plan (kilim üstünde) | Yan ışık, gölge uzun düşsün | C14 destek, çember içerikleri |
 | F3 | Ateşe uzanan avuçlar (2-3 el, yüz yok, izinli) | Ateş alttan; üstten açı | S6, sıcaklık kareleri |
 | F4 | Sırtlardan çember geometrisi (etkinlik ÖNCESİ oturuş provası, yüz yok, izinli) | Loş; hafif yüksek açı | S6, topluluk hissi |
 | F5 | Mum + defter + kalem natürmortu | Tek mum; 45° | S5 pratik kartları |
 | F6 | Kapı/eşik: ahşap kapı aralık, içeriden sızan ışık | İçeriden sıcak kaynak; karşıdan | S2 portre serisi gerçek-foto alternatifi |
-| F7 | Kül ve kor yakın makro (sönmekte olan ateş) | Korun kendi ışığı | S1 kartları, İ22 ailesi |
+| F7 | Kül ve kor yakın makro (sönmekte olan ateş) | Korun kendi ışığı | S1 kartları, C22 ailesi |
 | F8 | Advaita portresi: yarı profil, yüzün yarısı gölgede, kameraya bakış YOK [ADVAİTA ONAYI] | Mum/ateş tek kaynak | /advaita dönemi içerikleri, E6 kapak |
 | F9 | Çay/kakao fincanları tepside | Yan sıcak ışık | Seremoni duyuruları |
 | F10 | Mekânın boş köşesi: pencere, keten perde, loş ışık | Doğal loş | S6 sessizlik kareleri |
@@ -717,7 +717,7 @@ Rapor dilinde funnel/conversion/lead kelimeleri kullanılmaz; "gelen kadın", "k
 ## 14 · ONAY ZİNCİRİ VE TESLİM
 
 - **Gün 0 kilidi:** Kurucu görsel Kaan onayından geçmeden hiçbir kart üretilmez.
-- Haftalık paket: o haftanın kartları (görsel + caption + story) **Perşembe** Kaan'a; onay/rötuş → Pazartesi yayına hazır. İlk hafta (İ1-İ4 + K-AÇILIŞ) tek pakette.
+- Haftalık paket: o haftanın kartları (görsel + caption + story) **Perşembe** Kaan'a; onay/rötuş → Pazartesi yayına hazır. İlk hafta (C1-C4 + K-AÇILIŞ) tek pakette.
 - **Advaita onayı ŞART:** onun göründüğü her kare (R6, R7, F8, E6), ondan alıntılanan her cümle, seremoni-çevresi her görüntü.
 - Kaynak metin disiplini: caption'lar bu dosyada birebir hazır; değişiklik gerekirse taze dump'a bakılır — şüphede site kazanır. Dosyadaki metinler `ocak-site-dump-fable-2026-08-19.md` (sha=3683ca4) ile hizalı; önceki dump'lar ve `ocak-site-icerik.md` KULLANILMAZ (bayat).
 - Handle her yerde **@ocak.biz** (eski materyaldeki @ocak.life kullanılmaz).
@@ -726,73 +726,73 @@ Rapor dilinde funnel/conversion/lead kelimeleri kullanılmaz; "gelen kadın", "k
 
 ## 15 · [KAAN] LİSTESİ (bunlar dolmadan ilgili adım atılmaz)
 
-1. **Kurucu görsel:** KAPANDI (23 Ağu) — üretim → seçim → onay tamam; görsel mühürlendi (KARAR 542: `--sref` çapası + `--v 8.1` motor kilidi). ⚠ `KURUCU-URL` **ara-değiştir hâlâ açık** (Bölüm 0c → Bölüm 16 P1–P9); URL var, dosyaya işlenmedi.
+1. **Kurucu görsel:** KAPANDI (23 Ağu) — üretim → seçim → onay tamam; görsel mühürlendi (KARAR 542: `--sref` çapası + `--v 8.1` motor kilidi). ⚠ `KURUCU-URL` **ara-değiştir hâlâ açık** (Bölüm 0c → Bölüm 16 V1–V9); URL var, dosyaya işlenmedi.
 2. **WhatsApp Kanalı:** Kanal adı + davet linki (bio Link 2 ve Bölüm 10 başlığı).
 3. **Etkinlik tarihleri:** KAPANDI (v2.1) — takvim canlı ve dolu; E1-E5 ve E7 tarihleri ocak.biz/takvim'den okunur. Ay başında tek teyit yeter.
-4. **Eylül dil kapısı:** FİİLEN AÇIK (v2.1) — kayıt/başvuru route'ları canlıda doğrulandı; İ5/İ11/İ20 caption'larına tek cümle eklendi. Kaan itiraz ederse silinecek üç cümle değişiklik günlüğünde. Sözlü teyit yine de istenir.
+4. **Eylül dil kapısı:** FİİLEN AÇIK (v2.1) — kayıt/başvuru route'ları canlıda doğrulandı; C5/C11/C20 caption'larına tek cümle eklendi. Kaan itiraz ederse silinecek üç cümle değişiklik günlüğünde. Sözlü teyit yine de istenir.
 5. **Çekim günü tarihi:** Bölüm 11b mekân çekimi hangi gün (mini retreat sabahı mı, ayrı bir gün mü). E3 ve E6 buna bağlı.
 6. **Advaita onayları:** R6/R7/F8 kareleri + E6 reels'i + PS/PP havuzuna onun cümlesi eklenecekse alıntı onayı.
 
 
-## 16 · MJ HAZIR PROMPTLAR (P1–P9) — kopyala-yapıştır
+## 16 · MJ HAZIR PROMPTLAR (V1–V9) — kopyala-yapıştır
 
 Her prompt kullanılmadan önce `KURUCU-URL` alanı Gün 0 çıktısıyla doldurulmuş olmalı (Bölüm 0c ara-değiştir). Ölçüler: feed söz kartı/karusel `--ar 4:5` (1080×1350) · reels/story `--ar 9:16`. Karusel iç kartları AYNI üretimin crop'larıdır — kart kart farklı prompt üretme, seri dağılır. Üretim işakışı: MJ üretim → seç (Bölüm 0b anti-listesiyle ele) → crop/format → renk grade'i palete çek (gölgeler #1A1210'e) → kenar karartma → tipografi bindirme (Bölüm 5 standardı) → Kaan görsel onayı. Grain şablonda tek katman.
 
-**P1 — Söz kartı ana zemini (S1/S2, en çok kullanılacak):**
+**V1 — Söz kartı ana zemini (S1/S2, en çok kullanılacak):**
 ```
 almost abstract darkness with a faint warm ember glow rising from the bottom edge, deep charcoal texture like night air near a fire, extremely minimal, vast dark negative space in upper two thirds, subtle film grain, burnt orange #C44B2F gradient dissolving into #1A1210 --ar 4:5 --style raw --stylize 90 --chaos 5 --sref KURUCU-URL --sw 60 --no people, faces, hands, text, watermark
 ```
 
-**P2 — Söz kartı varyant: kül dokusu:**
+**V2 — Söz kartı varyant: kül dokusu:**
 ```
 fine grey ash surface with hairline cracks revealing faint orange ember light beneath, top-down macro, most of the frame in shadow, tactile mineral texture, quiet, dark negative space upper half --ar 4:5 --style raw --stylize 110 --sref KURUCU-URL --sw 60 --no people, faces, hands, text, watermark
 ```
 
-**P3 — Eşik/kapı (S2 portre serisi):**
+**V3 — Eşik/kapı (S2 portre serisi):**
 ```
 old wooden door of an Anatolian village house slightly ajar at night, warm firelight spilling through the gap onto a stone threshold, worn timber, surrounding wall dissolving into charcoal darkness, invitation without a figure, chiaroscuro, film grain --ar 4:5 --style raw --stylize 130 --sref KURUCU-URL --sw 60 --no people, faces, hands, text, watermark
 ```
 
-**P4 — Çember soyutlaması (S3 davet postları):**
+**V4 — Çember soyutlaması (S3 davet postları):**
 ```
 circle of unlit candles and floor cushions around a central fire bowl in a dark room, warm ember light from the center only, hand-woven kilim texture at the light's edge, empty seats holding presence, no people, intimate protected space, chiaroscuro --ar 4:5 --style raw --stylize 110 --sref KURUCU-URL --sw 60 --no people, faces, hands, text, watermark
 ```
-(İ14 reels için aynı prompt `--ar 9:16` ile.)
+(C14 reels için aynı prompt `--ar 9:16` ile.)
 
-**P5 — Anadolu evre serisi (S4 — MEKAN alanını değiştir):**
+**V5 — Anadolu evre serisi (S4 — MEKAN alanını değiştir):**
 ```
 [MEKAN] at last light of dusk, ancient silent atmosphere, warm ember-colored glow low on the horizon, everything else deep charcoal shadow, no people, archaeological quietness, vast dark sky as negative space, film grain, cinematic --ar 4:5 --style raw --stylize 100 --sref KURUCU-URL --sw 50 --no people, faces, hands, text, watermark
 ```
 MEKAN değerleri: `olive grove hills of the Aegean, Urla` (Açılış) · `megalithic stone pillars of Göbeklitepe at night` (İniş) · `white travertine terraces of Pamukkale with warm steam` (Uyanış) · `endless white salt flat of Lake Tuz under dusk` (Duruş) · `eternal natural flames emerging from rock, Yanartaş Chimaera` (Geçiş) · `fairy chimney silhouettes of Cappadocia at dawn's first ember light` (Dönüş)
 
-**P6 — Yolculuk online / pencere (S4, İ19-İ20):**
+**V6 — Yolculuk online / pencere (S4, C19-C20):**
 ```
 single candle burning on a windowsill at night, distant city lights blurred beyond the glass, warm flame against cool darkness, intimate domestic ritual, no figure, shallow focus, charcoal and ember palette --ar 4:5 --style raw --stylize 120 --sref KURUCU-URL --sw 60 --no people, faces, hands, text, watermark
 ```
 
-**P7 — Pratik/araç kartı (S5):**
+**V7 — Pratik/araç kartı (S5):**
 ```
 still life on dark linen: a single white candle, a small clay bowl, a sprig of dried anatolian herbs, lit only by the candle flame, deep shadows, tactile textures, quiet composition with dark negative space above --ar 4:5 --style raw --stylize 110 --sref KURUCU-URL --sw 60 --no people, faces, hands, text, watermark
 ```
 
-**P8 — Reels/story dikey atmosfer (E1/E4/E5, PS/PP zeminleri):**
+**V8 — Reels/story dikey atmosfer (E1/E4/E5, PS/PP zeminleri):**
 ```
 distant campfire on a dark Anatolian steppe at night, single point of warm light low in frame, embers rising faintly, vast charcoal sky above, vertical composition with enormous dark negative space, cinematic, film grain --ar 9:16 --style raw --stylize 100 --sref KURUCU-URL --sw 60 --no people, faces, hands, text, watermark
 ```
 
-**P9 — Seremoni/kakao (E2 ve seremoni dönemleri):**
+**V9 — Seremoni/kakao (E2 ve seremoni dönemleri):**
 ```
 ritual still life at night: cacao in a dark clay cup, steam rising into darkness, a low flame beside it, warm tones against near-black, sacred but humble, tactile, dark negative space upper half --ar 4:5 --style raw --stylize 110 --sref KURUCU-URL --sw 60 --no people, faces, hands, text, watermark
 ```
 
 ---
-## 17 · 30-60 GÜN TOHUMLARI (v2.1 — plan İ20 civarı yazılır, malzeme şimdiden kayıtlı)
+## 17 · 30-60 GÜN TOHUMLARI (v2.1 — plan C20 civarı yazılır, malzeme şimdiden kayıtlı)
 
 - **Evre serisi 4/6–6/6** (Duruş · Geçiş · Dönüş) + **portre serisi** Aidiyet→Spiral — v2'den devir.
 - **Dünya Yolculuğu hattı (S4):** /yolculuk'ta yayında — on beş ay, Peru-Hindistan-İzlanda-Mısır-Anadolu, Mart 2027, "haber ver" köprüsü. İlk 30 güne girmez; 30-60'ın S4 damarı.
 - **Adımız 4 adayı (S1):** /adimiz "Takvim" katmanı — Kânun / Ocak ayı, "iki dil, aynı aya, aynı ateşi yazdı."
 - **Etkinlik-tema havuzu:** On beş yayında etkinliğin tema başlıkları ("Kökün Nerede Kaldı?", "Elin Neyle Dolu?", "Bu Ses Kimin?"…) — her biri kendi gövdesiyle kart doğurabilir; E-kart doldurumlarından bağımsız içerik damarı.
-- **Yolculuk online durak durak** devam eder (İ20 şablonu).
+- **Yolculuk online durak durak** devam eder (C20 şablonu).
 
 ---
 *Fable · v2.1 · 19 Ağustos 2026. Bu dosya kendi başına yeterlidir — v2'ye ve v1'e dönmek gerekmez. Ölçüm kaydı: otuz kart taze dump'a karşı geçildi, 27/3/0/5.*
