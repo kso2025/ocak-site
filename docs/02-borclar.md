@@ -2396,6 +2396,8 @@ yerinde. Robots açıldığında Taslak sayfa sitemap üzerinden sızmaz.
 ## B142 — `02-borclar.md`'de kapanış konvansiyonu tek biçim değil
 
 - [ ] **Sahip:** CC · **Tetikleyici:** bir sonraki arşivci turu · **tek tur işi**
+- ⚠ **Bir sonraki arşivci turunun İLK maddesi** — on beş kapanmış borç açık kutu taşıyor,
+  defter yanlış bilgi veriyor.
 - **Belirti:** kapanmış bir borcun `Sahip:` satırı üç farklı biçimde yaşıyor —
   `- [x] **Sahip:**` · `~~üstü çizili~~` · **ve kutusu hâlâ açık** `- [ ] **Sahip:**`.
   Üçüncüsü sadece tutarsız değil, **yanlış bilgi**: kapanmış borç açık kutu taşıyor.
