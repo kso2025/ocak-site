@@ -1697,7 +1697,7 @@ Bu gözlem KARAR 465'in doğrudan kaynağıdır.
 
 ## B85 — v2.1'deki üç kayıt cümlesi için sözlü teyit
 - [ ] **Sahip:** Kaan · ~1 dk
-- **Belirti:** C5 · C11 · C20 caption'larına "başvuru/kayıt sayfası açık" cümlesi
+- **Belirti:** C05 · C11 · C20 caption'larına "başvuru/kayıt sayfası açık" cümlesi
   eklendi. Dump dayanağı net (yedi format kayıt route'u + `/anadolu/basvuru` canlı),
   ama **Bölüm 15 madde 4 sözlü kapı istiyor.**
 - **Kapanış şartı:** Kaan onaylar ya da reddeder. İtiraz hâlinde silinecek üç cümle
@@ -2416,11 +2416,11 @@ yerinde. Robots açıldığında Taslak sayfa sitemap üzerinden sızmaz.
 - **Bağ:** KARAR 469 — sır dokümanda yaşamaz. Bu defterde yalnız **hangi değerin sızdığı**
   yazılıdır, değerin kendisi değil.
 
-## B139 — V3–V9'un `--no` listeleri Gün 0 derslerini içermiyor
+## B139 — V03–V09'un `--no` listeleri Gün 0 derslerini içermiyor
 
 - [ ] **Sahip:** Claude.ai · **Tetikleyici:** o promptların ilk kullanımı
-- **Belirti:** V1 ve V2 23 Ağustos seansında üç tur harcanarak düzeltildi; **V3–V9 aynı
-  tuzakları taşıyor** — özellikle V4 *"fire bowl"*, V8 *"campfire"*, V9 *"low flame"*:
+- **Belirti:** V01 ve V02 23 Ağustos seansında üç tur harcanarak düzeltildi; **V03–V09 aynı
+  tuzakları taşıyor** — özellikle V04 *"fire bowl"*, V08 *"campfire"*, V09 *"low flame"*:
   üçü de modelden alev talep ediyor.
 - **Malzeme:** altı elenen turun teşhisi `_arsiv/2026-08-23-devir.md` §4'te — "ember glow"
   + "charcoal" birlikte alev/lav/volkan üretir · "room" pencere çizdirir · "hairline cracks"
@@ -2429,23 +2429,23 @@ yerinde. Robots açıldığında Taslak sayfa sitemap üzerinden sızmaz.
   engellemez** ("heat seeping out" yazıldığı sürece `--no fire` alevi durdurmaz).
 - **Boyut:** tek tur işi — ama **kart basılmadan** yapılmalı, yoksa aynı üç tur her prompt
   için tekrarlanır.
-- **Bağ:** KARAR 542 · `30-sosyal.md` Bölüm 16. ⚠ Bölüm 16'nın V1–V9 tam set değişimi
+- **Bağ:** KARAR 542 · `30-sosyal.md` Bölüm 16. ⚠ Bölüm 16'nın V01–V09 tam set değişimi
   (ADIM 3d) bu borçtan **ayrıdır** — o `KURUCU-URL` + `--v 8.1` + hex işidir, bu `--no` işidir.
 
-## B140 — C1 kartının ikinci satırı dosyada italik, derleyicide değil
+## B140 — C01 kartının ikinci satırı dosyada italik, derleyicide değil
 
 - [ ] **Sahip:** Claude.ai · **Küçük.**
-- **Belirti:** `30-sosyal.md` C1 bindirmesi — *"İçindeki ateş sönmedi. / **Üstü küllendi
+- **Belirti:** `30-sosyal.md` C01 bindirmesi — *"İçindeki ateş sönmedi. / **Üstü küllendi
   sadece.**"* — ikinci satır italik işaretli, birincisi düz. Derleyici tek stil uyguluyor,
   ikisini de italik basıyor.
 - **Neden acil değil:** iki kademe farkı **puntoyla** kuruluyor (KARAR 545, alt blok 0.62);
   kart bozulmuyor.
 - **Kapanış şartı:** ayrım gerçekten gerekirse derleyiciye satır bazlı stil eklenir.
 
-## B141 — Kurucu ve C1 zemini yalnız MJ CDN'inde + yerel diskte
+## B141 — Kurucu ve C01 zemini yalnız MJ CDN'inde + yerel diskte
 
 - [ ] **Sahip:** Kaan · **Küçük ama kritik.**
-- **Belirti:** iki çapa görsel — `--sref` kurucusu ve C1 kart zemini — kalıcı bir yerde
+- **Belirti:** iki çapa görsel — `--sref` kurucusu ve C01 kart zemini — kalıcı bir yerde
   yedekli değil. URL'ler `_arsiv/2026-08-23-devir.md` §2'de.
 - ⚠ **Otuz günlük görsel sistemin tamamı kurucu URL'ine bağlıdır** (KARAR 542). CDN
   erişilemez olursa yeniden yükleyip yeni URL üretmek gerekir — ve `--sref` çapası değişince

@@ -595,9 +595,9 @@ Orijinal tohumlama takvimi (Mart-Eylül 2026) planlandığı gibi hayata geçmed
 
 ### 12–19 Temmuz 2026 eklemesi — Eylül kohortları ilk kamu duyurusu protokolü (KARAR 451; PARTİ 3/3)
 
-**Sıra kesindir: Kanal + mektup önce, feed sonra.** Eylül kohortlarının ilk kamu duyurusu (sosyal medya v2'de C5 kartı) protokollüdür: **Akşam 1'de K-EYLÜL WhatsApp Kanalı mesajı + aynı içerikli Ateş Mektubu; ertesi gün feed karuseli.** Gerekçe: *"ilk duyuruyu sen al"* vaadinin gerçek olması gerekir — mektup/kanal aboneliğinin karşılığı budur.
+**Sıra kesindir: Kanal + mektup önce, feed sonra.** Eylül kohortlarının ilk kamu duyurusu (sosyal medya v2'de C05 kartı) protokollüdür: **Akşam 1'de K-EYLÜL WhatsApp Kanalı mesajı + aynı içerikli Ateş Mektubu; ertesi gün feed karuseli.** Gerekçe: *"ilk duyuruyu sen al"* vaadinin gerçek olması gerekir — mektup/kanal aboneliğinin karşılığı budur.
 
-**"Eylül dil kapısı" sert kuralı.** Kayıt/başvuru **"açık" dili yalnız Kaan "sayfaları açtım" dediğinde** kullanılır. O güne kadar tüm kamu metinleri **"Eylül'de yola çıkıyor; detaylar sitede"** düzeyinde kalır. Bu düzey sosyal v2'de C5/C11/C20 kartlarına önceden uygulandı; onay gelirse tek cümle eklenir. *İki kohort birlikte duyurulur (Anadolu Yolculuğu + Yolculuk online) — "Eylül'de iki yol".*
+**"Eylül dil kapısı" sert kuralı.** Kayıt/başvuru **"açık" dili yalnız Kaan "sayfaları açtım" dediğinde** kullanılır. O güne kadar tüm kamu metinleri **"Eylül'de yola çıkıyor; detaylar sitede"** düzeyinde kalır. Bu düzey sosyal v2'de C05/C11/C20 kartlarına önceden uygulandı; onay gelirse tek cümle eklenir. *İki kohort birlikte duyurulur (Anadolu Yolculuğu + Yolculuk online) — "Eylül'de iki yol".*
 
 ---
 

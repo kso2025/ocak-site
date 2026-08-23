@@ -349,8 +349,8 @@ KARAR 492) bu hattın tamamını süreye bağlıyor.
    `--v 8.1` motor kilidi. Yedi tur sürdü, altısı elendi; kazanan formül **tepeden bakan
    kül + noktasal kor + düşük stylize.** **B114 kapandı.**
    ⚠ **`KURUCU-URL` ara-değiştir hâlâ açık** — URL mühürlendi ama `30-sosyal.md` Bölüm 16'nın
-   V1–V9 seti dosyada eski hâliyle duruyor. Darboğaz kalktı, **ara-değiştir kaldı.**
-2. **Fiyat bandı** *(Kaan + Advaita)* — mekân (**B84**), dar hat ve C5 metni buna bakıyor.
+   V01–V09 seti dosyada eski hâliyle duruyor. Darboğaz kalktı, **ara-değiştir kaldı.**
+2. **Fiyat bandı** *(Kaan + Advaita)* — mekân (**B84**), dar hat ve C05 metni buna bakıyor.
 3. **`/etkinlik/yolculuk-acilis` gövdesi** *(Kaan · Notion)* — **B81.** Bugün karara
    bağlanan AÇILIŞ sayfası sitede içeriksiz duruyor.
 4. **K2 — sosyal ana sahne kararı** *(Kaan)* — **B83.** Eylül duyurusu hangi hesaptan
@@ -362,7 +362,7 @@ KARAR 492) bu hattın tamamını süreye bağlıyor.
    robots kararıdır (KARAR 149).
 7. ✅ **Kart derleyici sınaması** *(Kaan + Claude, gözle)* — **B86.** İlk gerçek görselle;
    fotoğrafsız zemin kararı.
-   ✅ **KAPANDI (23 Ağu, KARAR 546).** C1 kartı gerçek zeminle basıldı. Fotoğrafsız zemin
+   ✅ **KAPANDI (23 Ağu, KARAR 546).** C01 kartı gerçek zeminle basıldı. Fotoğrafsız zemin
    **yedek değil tasarım** oldu; iki zemin tipi ayrı ön ayar taşıyor, karışmıyorlar.
    Araç repoya alındı — `tools/ocak-kart-derleyici.html`, altı gömülü ön ayar.
    ⚠ **Aracın `kartAdi()`'si KARAR 552 şemasıyla hizalı değil — B169.** Koda dokunur,
@@ -374,9 +374,9 @@ KARAR 492) bu hattın tamamını süreye bağlıyor.
 **Sıra madde 2'ye düştü — fiyat bandı** *(Kaan + Advaita)*. Madde 1 ve 7 kapandı (23 Ağu).
 ⚠ Gün 1'in önündeki engeller **değişmedi**: robots kararı (KARAR 149 — ilk sosyal post aynı
 zamanda robots kararıdır) · iade cümlesi ön koşulu · **B83** (sosyal ana sahne) · **B85**
-(üç kayıt cümlesi sözlü teyidi). C1 kartı **basıma hazır ama yayınlanabilir değil.**
+(üç kayıt cümlesi sözlü teyidi). C01 kartı **basıma hazır ama yayınlanabilir değil.**
 
-*Sözlü kapı bekleyen tek kalem: **B85** (C5 · C11 · C20 kayıt cümleleri, ~1 dk).
+*Sözlü kapı bekleyen tek kalem: **B85** (C05 · C11 · C20 kayıt cümleleri, ~1 dk).
 Sıraya girmez, önüne gelen konuşmaya biner.*
 
 ✅ **`Social_Media_v2.1.md` repoya alındı** — `docs/30-sosyal.md`. Desktop kopyası
