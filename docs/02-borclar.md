@@ -2854,3 +2854,53 @@ yerinde. Robots açıldığında Taslak sayfa sitemap üzerinden sızmaz.
   iki alan aynı soruyu iki farklı çözünürlükte soruyor.
 - **Bağ:** KARAR 547 · **B167** · **B122** (Zoom kaydı süreci yok — *"Vimeo yok"*,
   **alan var ama arkasında süreç yok**)
+
+## B169 — Kart derleyicisi dosya adı şemasıyla hizalı değil
+
+- [ ] **Sahip:** Kaan + Claude.ai · **Küçük.** Koda dokunur, ayrı tur.
+- **Belirti:** `tools/ocak-kart-derleyici.html` içindeki `kartAdi()` kendi şemasını
+  üretiyor (`ad + "-k" + n`). KARAR 552'nin şeması `ocak-cNN-kM-YYYY-AA-GG.png` diyor.
+- **Neden bu turda yapılmadı:** kısaltma turu yalnız `docs/` kapsamındaydı; kod dokunuşu
+  ayrı commit ve ayrı doğrulama ister (CLAUDE.md §6).
+- **Kapanış şartı:** `kartAdi()` KARAR 552 şemasını üretir; zemin adı karta bağlanmaz.
+- **Bağ:** KARAR 552 · `docs/31-zemin.md`
+
+## B170 — Zemin yedeği yok (B141'in genişlemesi)
+
+- [ ] **Sahip:** Kaan · **Küçük ama kritik.**
+- **Belirti:** yedi zemin (z01–z07) yalnız MJ CDN'inde + Kaan'ın yerel diskinde.
+  Envanter ve URL şeması `docs/31-zemin.md`'de; görsellerin kendisi hiçbir kalıcı yerde
+  değil.
+- ⚠ **B141'in notu aynen duruyor:** yedek, **çapanın ölmesini çözmez** — `--sref` canlı
+  URL ister. z01 düşerse yeniden yükleyip yeni URL üretmek gerekir ve seri tutarlılığı
+  riske girer. **MJ CDN kalıcılık politikası hâlâ araştırılmadı.**
+- **Kapanış şartı:** yedi zemin repo dışı kalıcı bir yere (Drive) kopyalanır + CDN
+  kalıcılık politikası yazılı bir cevaba bağlanır.
+- **Bağ:** **B141** (selefi, iki görsel) · KARAR 542 · KARAR 552
+
+## B171 — `C` ve `V` kısaltmaları korpusta üç homografla çakışıyor
+
+- [ ] **Sahip:** Kaan (anlam kararı) · **Küçük ama okuma kusuru.**
+- **Belirti:** KARAR 553'ün açtığı `Cn` / `Vn` uzayı, önceden var olan üç jetona çarpıyor.
+  Hiçbiri kart/prompt değildir ve **hiçbiri dönüştürülmedi:**
+
+  | yer | jeton | gerçek anlamı |
+  |---|---|---|
+  | `20-ref-marka.md:391` | `C1` | VSCO fotoğraf preseti (`A6/C1, sıcak shift`) |
+  | `03-sira.md:66` | `V6` `V7` `V8` | Midjourney **motor sürümü** (`Midjourney V8.x`) |
+  | `01-kararlar.tsv:405` | `V2` | sayfa sürümü (`Gündönümü V2 sadeleştirme`) |
+
+- ⚠ **İlk ikisi kart/prompt jetonlarıyla aynı dosyada yaşıyor** — `20-ref-marka.md`
+  hem `C1` presetini (391) hem `C1–C24` kartlarını (538) taşıyor; `03-sira.md` hem
+  `V6/V7/V8` motorunu (66) hem `V1–V9` promptlarını (350). **Grep ile ayrıştırılamazlar.**
+- **Nasıl bulundu:** ADIM 0'ın çakışma taraması bunları **kaçırdı** — komut
+  `git grep -P -nE '\bC[0-9]{1,2}\b'` yazılmıştı; `-E`, `-P`'yi eziyor ve `\b` ERE'de
+  ölü olduğu için tarama sessizce **0** döndü. Yeniden adlandırmadan sonraki
+  eski↔yeni jeton mutabakatı (`İ1`=14 ama `C1`=14, olması gereken 13) farkı yakaladı.
+- **Bu turda ne yapıldı:** `30-sosyal.md` eşleme notuna üçünü de adıyla sayan bir
+  disambiguasyon bloğu eklendi. **Metinlerin kendisine dokunulmadı** — anlam değiştirmek
+  brief'in mandası değildi.
+- **Kapanış şartı:** üç homografın metni bağlamı açacak şekilde nitelenir
+  (örn. *"Midjourney **motor** V8.x"*), ya da çakışma kalıcı kabul edilip not yeterli
+  sayılır. **Karar Kaan'ın.**
+- **Bağ:** KARAR 553 · KARAR 219 (`C-n` tireli, dördüncü homograf — o zaten notta)

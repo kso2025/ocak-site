@@ -1,7 +1,9 @@
 # OCAK — SIRA
 
-**Son güncelleme:** 23 Ağustos 2026 (**EK tur**) · **KARAR 551** Çember Lideri → **Çember
-Rehberi**, B160 ✅ kapandı, B165–B168 açıldı · `00-durum.md` **bilerek bekletiliyor**
+**Son güncelleme:** 23 Ağustos 2026 (**adlandırma turu**) · **KARAR 552–554** — zemin dosya
+adı zemine bağlanır · `İn`→`Cn`, `Pn`→`Vn` · atama öncesi sıra+borç okunur; **B169–B171**
+açıldı, `docs/31-zemin.md` doğdu · önceki: **EK tur** · **KARAR 551** Çember Lideri →
+**Çember Rehberi**, B160 ✅ kapandı, B165–B168 açıldı · `00-durum.md` **bilerek bekletiliyor**
 (aşağıda) · önceki: **Advaita yorum turu** — 14 etkinlik gövdesi yeniden
 yazıldı, KARAR 547–550 mühürlendi, KARAR 506 SUPERSEDE, B144–B164 açıldı · **DEPLOY YAPILMADI**
 (bilinçli, `02-borclar.md` B163) · aynı gün: Gün 0 görsel turu (KARAR 542–546 · B139–B141) ve
@@ -363,6 +365,11 @@ KARAR 492) bu hattın tamamını süreye bağlıyor.
    ✅ **KAPANDI (23 Ağu, KARAR 546).** C1 kartı gerçek zeminle basıldı. Fotoğrafsız zemin
    **yedek değil tasarım** oldu; iki zemin tipi ayrı ön ayar taşıyor, karışmıyorlar.
    Araç repoya alındı — `tools/ocak-kart-derleyici.html`, altı gömülü ön ayar.
+   ⚠ **Aracın `kartAdi()`'si KARAR 552 şemasıyla hizalı değil — B169.** Koda dokunur,
+   ayrı tur; bu turda bilerek bırakıldı.
+8. **Zemin envanteri açıldı** *(23 Ağu, KARAR 552)* — `docs/31-zemin.md`, yedi zemin
+   (z01–z07) MJ iş kimliği + ölçümleriyle. **z01 ve z02 mühürlü.** ⚠ Yedisi de yalnız
+   MJ CDN'inde + yerel diskte — **B170** (B141'in genişlemesi).
 
 **Sıra madde 2'ye düştü — fiyat bandı** *(Kaan + Advaita)*. Madde 1 ve 7 kapandı (23 Ağu).
 ⚠ Gün 1'in önündeki engeller **değişmedi**: robots kararı (KARAR 149 — ilk sosyal post aynı

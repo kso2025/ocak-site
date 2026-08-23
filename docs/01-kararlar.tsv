@@ -550,3 +550,6 @@ no	tarih	baslik	durum	iliski	kaynak
 549	2026-08-23	Etkinlik sayfası akışı, hazırlığı ve mahrem soruları kamuya açmaz — hazırlık gerektiren formatlarda `Yanına Al` işaretçiye iner, beslenme/ilaç/hamilelik kayıt sonrası kanala taşınır	KALICI		2026-08.md#k549
 550	2026-08-23	Notion text property'sine yazım cerrahi değildir — gövde önce kabukta kurulur, `python3 len()` ile ölçülür, yazılır, geri okunan uzunluk beklenenle karşılaştırılır	KALICI	B150 (skill'e yazımı)	2026-08.md#k550
 551	2026-08-23	Çember Lideri → Çember Rehberi — hiyerarşi kaldırıldığı için ad değişti; rolün içeriği ve K4 yapısı aynı	KALICI	Pilot borç 25 T3 kapandı · B160 kapandı	2026-08.md#k551
+552	2026-08-23	Zemin dosya adı karta değil zemine bağlanır — `ocak-zNN-slug-YYYY-AA-GG.png`; kart numarası ve MJ iş kimliği dosya adına girmez, eşleme `31-zemin.md`de yaşar	AKTIF	B169 · B170	2026-08.md#k552
+553	2026-08-23	Kısaltma yeniden adlandırması `İn` → `Cn` (içerik), `Pn` → `Vn` (görsel) — canlı ileriye bakan dosyalarda; kronoloji, arşiv ve kapanmış borç kalemleri dokunulmaz	AKTIF	↔219 · B171	2026-08.md#k553
+554	2026-08-23	Bir karta varlık atamadan önce `03-sira.md` ve `02-borclar.md` salt-okunur — kalem kapanmışsa yeni atama yapılmaz	AKTIF	←102	2026-08.md#k554

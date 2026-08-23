@@ -3,6 +3,20 @@
 **Hazırlayan:** Fable · 19 Ağustos 2026 · v2.1 (v2: 19 Temmuz · v1: 12 Temmuz)
 **Metin kaynağı:** `ocak-site-dump-fable-2026-08-19.md` (canlı prod, sha=3683ca4, 49 route). Site metniyle çelişki görürsen site kazanır.
 
+**KISALTMA DEĞİŞİKLİĞİ (23 Ağustos 2026):** `İn` → `Cn` (içerik/content),
+`Pn` → `Vn` (görsel/visual). Numaralar korundu. Kronoloji, arşiv ve kapanmış
+borç kalemlerindeki eski kısaltmalar olduğu gibi kalır — tarihsel kayıt geçmişe
+dönük düzeltilmez.
+
+`Cn` (tiresiz) içerik kartıdır. `C-n` (tireli) KARAR 219'un kayıt hattı
+disiplinidir — ikisi ayrı kavramdır, birbirine dönüştürülmez.
+
+⚠ **Korpusta üç homograf daha var; hiçbiri kart/prompt değildir, dönüştürülmedi:**
+`20-ref-marka.md`'de **C1** = VSCO fotoğraf preseti (`A6/C1`) · `03-sira.md`'de
+**V6/V7/V8** = Midjourney motor sürümü · `01-kararlar.tsv`'de **V2** = sayfa sürümü
+("Gündönümü V2"). İlk ikisi kart/prompt jetonlarıyla **aynı dosyada** yaşıyor —
+grep ile ayrıştırılamazlar, bağlamdan okunur.
+
 **v2.1 DEĞİŞİKLİK GÜNLÜĞÜ (19 Ağustos ölçümü: 27 aynen · 3 cümle düzeltmesi · 0 yeniden yazım · 5 yeni malzeme kalemi):**
 1. C5: "İLK KAMU DUYURUSU" çerçevesi düştü — katman kararı gereği C5 motor değil, eko. Protokol bloğu revize; kart metni ve karusel aynen.
 2. C5 · C11 · C20 caption'larına Bölüm 15/4'ün beklettiği tek cümle eklendi — kayıt/başvuru route'ları canlıda doğrulandı (7 format kayıt sayfası + /anadolu/basvuru yayında). İtiraz hâlinde silinecek üç cümle: "Başvuru ve kayıt sayfaları açık." / "Başvuru sayfası açık." / "Kayıt sayfası açık."
@@ -737,6 +751,11 @@ Rapor dilinde funnel/conversion/lead kelimeleri kullanılmaz; "gelen kadın", "k
 ## 16 · MJ HAZIR PROMPTLAR (V1–V9) — kopyala-yapıştır
 
 Her prompt kullanılmadan önce `KURUCU-URL` alanı Gün 0 çıktısıyla doldurulmuş olmalı (Bölüm 0c ara-değiştir). Ölçüler: feed söz kartı/karusel `--ar 4:5` (1080×1350) · reels/story `--ar 9:16`. Karusel iç kartları AYNI üretimin crop'larıdır — kart kart farklı prompt üretme, seri dağılır. Üretim işakışı: MJ üretim → seç (Bölüm 0b anti-listesiyle ele) → crop/format → renk grade'i palete çek (gölgeler #1A1210'e) → kenar karartma → tipografi bindirme (Bölüm 5 standardı) → Kaan görsel onayı. Grain şablonda tek katman.
+
+**Dosya adı şeması.** Zemin (kaynak görsel) `ocak-zNN-slug-YYYY-AA-GG.png`, basılan kart
+`ocak-cNN-kM-YYYY-AA-GG.png` (karusel değilse `-kM` yok). Zemin adı karta bağlanmaz —
+zemin kalıcıdır, kart ataması karardır ve değişir. Zemin ↔ kart ↔ MJ iş kimliği eşlemesi
+`docs/31-zemin.md`'de yaşar.
 
 **V1 — Söz kartı ana zemini (S1/S2, en çok kullanılacak):**
 ```
