@@ -2878,9 +2878,13 @@ yerinde. Robots açıldığında Taslak sayfa sitemap üzerinden sızmaz.
   kalıcılık politikası yazılı bir cevaba bağlanır.
 - **Bağ:** **B141** (selefi, iki görsel) · KARAR 542 · KARAR 552
 
-## B171 — `C` ve `V` kısaltmaları korpusta üç homografla çakışıyor
+## B171 — `C` ve `V` kısaltmaları korpusta üç homografla çakışıyor ✅ KAPANDI (24 Ağu, KARAR 555)
 
-- [ ] **Sahip:** Kaan (anlam kararı) · **Küçük ama okuma kusuru.**
+- [x] **Kapanış:** **KARAR 555 — sıfır dolgu.** Kart `C01`–`C24`, prompt `V01`–`V09`,
+  zemin `z01`–. Homograflar dolgusuz kaldığı için **biçim ayrıştırıyor:** `V08` prompt,
+  `V8` motor sürümü · `C01` kart, `C1` VSCO preseti. Üç homograf metninin hiçbirine
+  dokunulmadı ve niteleme (*"Midjourney **motor** V8.x"*) gereksizleşti.
+  ⚠ Bu satırın gövdesi **dolgusuz eski biçimi taşır** — kapanmış kalem tarihsel kayıttır.
 - **Belirti:** KARAR 553'ün açtığı `Cn` / `Vn` uzayı, önceden var olan üç jetona çarpıyor.
   Hiçbiri kart/prompt değildir ve **hiçbiri dönüştürülmedi:**
 

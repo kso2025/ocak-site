@@ -3,19 +3,17 @@
 **Hazırlayan:** Fable · 19 Ağustos 2026 · v2.1 (v2: 19 Temmuz · v1: 12 Temmuz)
 **Metin kaynağı:** `ocak-site-dump-fable-2026-08-19.md` (canlı prod, sha=3683ca4, 49 route). Site metniyle çelişki görürsen site kazanır.
 
-**KISALTMA DEĞİŞİKLİĞİ (23 Ağustos 2026):** `İn` → `Cn` (içerik/content),
-`Pn` → `Vn` (görsel/visual). Numaralar korundu. Kronoloji, arşiv ve kapanmış
-borç kalemlerindeki eski kısaltmalar olduğu gibi kalır — tarihsel kayıt geçmişe
-dönük düzeltilmez.
+**KISALTMA (24 Ağustos 2026 · sıfır dolgulu):** kart `C01`–`C24` · görsel prompt
+`V01`–`V09` · zemin `z01`–. Sıfır dolgu iki sebeple: (1) `V8` Midjourney motor sürümü,
+`C1` VSCO preseti — homograflar; `V08`/`C01` ayrışır. (2) `C1` deseni `C10`–`C19`
+içinde eşleşir; dolgu bu hatayı kapatır.
 
-`Cn` (tiresiz) içerik kartıdır. `C-n` (tireli) KARAR 219'un kayıt hattı
-disiplinidir — ikisi ayrı kavramdır, birbirine dönüştürülmez.
+Kronoloji, arşiv ve kapanmış borç kalemlerindeki eski biçimler (`İ1`, `P1`, `C1`)
+olduğu gibi kalır — tarihsel kayıt geçmişe dönük düzeltilmez.
 
-⚠ **Korpusta üç homograf daha var; hiçbiri kart/prompt değildir, dönüştürülmedi:**
-`20-ref-marka.md`'de **C1** = VSCO fotoğraf preseti (`A6/C1`) · `03-sira.md`'de
-**V6/V7/V8** = Midjourney motor sürümü · `01-kararlar.tsv`'de **V2** = sayfa sürümü
-("Gündönümü V2"). İlk ikisi kart/prompt jetonlarıyla **aynı dosyada** yaşıyor —
-grep ile ayrıştırılamazlar, bağlamdan okunur.
+`C0n` (dolgulu) içerik kartıdır. `C-n` (tireli) KARAR 219'un kayıt hattı disiplinidir.
+`A6/C1` bir VSCO fotoğraf presetidir. `V6`/`V7`/`V8` (dolgusuz) Midjourney motor
+sürümüdür. Dördü ayrı kavramdır, birbirine dönüştürülmez.
 
 **v2.1 DEĞİŞİKLİK GÜNLÜĞÜ (19 Ağustos ölçümü: 27 aynen · 3 cümle düzeltmesi · 0 yeniden yazım · 5 yeni malzeme kalemi):**
 1. C5: "İLK KAMU DUYURUSU" çerçevesi düştü — katman kararı gereği C5 motor değil, eko. Protokol bloğu revize; kart metni ve karusel aynen.
