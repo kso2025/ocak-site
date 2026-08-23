@@ -103,6 +103,23 @@ Notion şema işi (**B152** · **B153**); ikisi karar borcudur (**B158** · **B1
 dönüşümle kapanmaz. **B142'nin uyarısı bu tur için de geçerli:** yirmi bir kayıt `- [ ]`
 konvansiyonuyla açıldı.*
 
+*23 Ağustos, on ikinci ölçüm (aynı günün EK patch'i): toplam 164 → **168**, açık 126 → **129**.
+Damgalı 36 → **37** — tek kapanış **B160** (KARAR 551, karar borcuydu, karar verildi).
+İş değil **2**'de sabit. Dört yeni kayıt **B165–B168**. Sayaç devralınmadı, üç grep yeniden koşuldu.*
+
+*⚠ **Ek altı yeni borç önerdi, dördü açıldı.** İkisi (**E3** — Seremoni ve Atölye bekçi
+dosyaları) **zaten defterdeydi**: **B88** ve **B89**, ikisi de açık, 19 Ağustos'ta doğmuş,
+selefleri **B66**. Yeni numara açılmadı; üç maddenin **ölçümleri tazelendi** ve tazeleme bir
+bayatlık daha buldu — B88'in bandı `4.870–5.197`, gerçeği **`3.605–3.686`** (bir buçuk kat
+şişik); B89'un tek noktası `4.895`, gerçeği **`4.541`**. **Çift kontrol yapılmasaydı sayaç iki
+kayıt şişecek ve dört madde aynı işi gösterecekti.***
+
+*Üretilen komutlar (KARAR 470-b, on ikinci ölçüm, `02-borclar.md` 2855 satır):
+`grep -cE '^## B'` → **168** · `grep -E '^## B' | grep -cE '[✅❌]'` → **37**
+(`✅ KAPANDI` ×32 · `✅ ÇÖZÜLDÜ` ×2 · `✅ TEŞHİSLE KAPANDI` ×1 · `❌ GERİ ÇEKİLDİ` ×1 ·
+`✅ —` ×1) · `grep -E '^## B' | grep -cE '[⏸🔵]'` → **2**. Açık = 168 − 37 − 2 = **129**.
+Mükerrer başlık denetimi: `grep -oE '^## B[0-9]+' | sort | uniq -d` → **0**.*
+
 *Üretilen komutlar (KARAR 470-b): `grep -cE '^## B'` → 100 · `grep -E '^## B' | grep -cE '[✅❌]'`
 → 29 (`✅ KAPANDI` ×25 · `✅ ÇÖZÜLDÜ` ×2 · `✅ TEŞHİSLE KAPANDI` ×1 · `❌ GERİ ÇEKİLDİ` ×1) ·
 `grep -E '^## B' | grep -cE '[⏸🔵]'` → 2. Açık = 100 − 29 − 2 = **69**.
@@ -1451,6 +1468,10 @@ Bu gözlem KARAR 465'in doğrudan kaynağıdır.
 - **Belirti:** `ne-olur` her seremonide baştan yazılıyor — sabit blok çıkmıyor.
   İki nokta bir eğri tanımlamaz; bekçi damıtmak için üçüncü sayfa gerekiyor.
 - **Kapanış şartı:** üçüncü seremoni sayfası yazılınca `ornekler-seremoni.md` damıtılır.
+- ✅ **Koşul doldu (23 Ağu) — borç kapanmadı, beklediği şey geldi.** Üçüncü Seremoni
+  gövdesi var: `kakao-seremonisi-online` · `kakao-seremonisi-yuzyuze` · `hasat-ve-sukran`.
+  ⚠ Bu maddedeki üç bant da bayat — Seremoni `3.605–3.686`, Açık Kapı `3.036–3.264`,
+  Çember `3.480–3.771` (**B144** · **B145** · **B88**). Damıtma **B88**'de yürür.
 
 ## B67 — `ornekler-cember.md:41` ölçü birimi tutarsızlığı + KAYIT SORULARI mührü
 - [ ] **Sahip:** Claude.ai
@@ -1710,6 +1731,16 @@ Bu gözlem KARAR 465'in doğrudan kaynağıdır.
 - **Malzeme:** iki gövde, iki mekân varyantı (online · yüz yüze). Bant **4.870–5.197 kr**
   (künye ölçümü, code point). İki nokta eğri vermiyor ama bant beyanı için yeterli —
   Çember bekçisi de dört sayfayla kuruldu.
+- ⚠ **BANT GEÇERSİZ — 23 Ağustos tazelemesi.** Üç Seremoni gövdesi de yeniden yazıldı;
+  gerçek bant **`3.605–3.686`** (`kakao-seremonisi-online` 3605 · `hasat-ve-sukran` 3672 ·
+  `kakao-seremonisi-yuzyuze` 3686 — `python3 len()`, code point, canlı Notion `Detay`).
+  Yukarıdaki `4.870–5.197` **bir buçuk kat şişik**; bu bantla bekçi yazılsaydı sonraki
+  Seremoni gövdesi ~1.400 karakter fazla yazılacaktı. **B144'ün Çember'de yakaladığı
+  kusurun aynısı.**
+- ✅ **Üçüncü gövde geldi** — tetikleyici doldu, malzeme artık iki değil **üç** nokta.
+  Bekçi yazılırken **KARAR 547 · 549 kesimleri** taşınır (kayıt cümlesi · "pas" satırı ·
+  Pratik Bilgi'nin beslenme/ilaç/hamilelik satırları). Kesim tablosu
+  `90-kronoloji/2026-08.md`, 23 Ağustos Advaita turu kaydında.
 - **Taşınacak sapmalar:** `yaninda-getir` mekân başına ayrı liste (Çember'in "beş sabit +
   bir temaya özel" kalıbı buraya **taşınmaz**) · `kimin-icin` kapanışı mekâna göre bölük ·
   "Geç kalırsan…" maddesi iki sayfadan da **çıkarıldı** · sağlık/kontrendikasyon katmanı yeni.
@@ -1720,6 +1751,11 @@ Bu gözlem KARAR 465'in doğrudan kaynağıdır.
 - [ ] **Sahip:** Claude.ai · **Tetikleyici:** **ikinci** Atölye sayfası
 - **Belirti:** tek sayfadan bant çıkmaz. Elde **4.895 kr** tek nokta var (Ritüel Tasarımı,
   künye ölçümü). Kalıp ikinci Atölye sayfasına kadar **aday**, kanon değil.
+- ⚠ **Tek nokta güncellendi (23 Ağu):** Ritüel Tasarımı yeniden yazıldı, **4.541 kr**
+  (−354). Defterdeki `4.895` bayat. Hâlâ **tek noktadır — bant değildir**; bekçi
+  yazılırken bu açıkça belirtilir, yoksa sonraki Atölye 4.541'e zorlanır.
+- ⚠ **Gölge satır tuzağı (B154):** `Ritüel Tasarımı | Gölge 0210 o#2` Detay'ı **4.904**
+  ve bayat. Ölçüm o satıra çarparsa yanlış nokta mühürlenir.
 - **Sabitlenen:** on bölüm iskeleti (KARAR 510) · `elinde-ne-kalir` kanonik bölüm ·
   sabit `ne-olur` bloğu **yok** (KARAR 511) · vurgu ekseni söz→eylem.
 
@@ -2665,9 +2701,21 @@ yerinde. Robots açıldığında Taslak sayfa sitemap üzerinden sızmaz.
   dışı kalır** ve site bozulmuş görünmez.
 - **Bağ:** KARAR 299 · KARAR 409 · **B156** · **B157**
 
-## B160 — Çember Lideri → **Çember Rehberi** rename
+## B160 — Çember Lideri → **Çember Rehberi** rename ✅ KAPANDI (23 Ağu, KARAR 551)
 
-- [ ] **Sahip:** Claude.ai (korpus) + Kaan (Notion) · **Advaita kararı, 21 Tem notu**
+- [x] **Kapanış:** **KARAR 551** mühürlendi — rename yapılıyor, gerekçe **hiyerarşinin
+  kaldırılması**; rolün içeriği ve K4 yapısı aynı. Karar Kaan'ın (23 Ağu). Bu bir **karar
+  borcuydu**, karar verildi. Kalan mekanik/Notion işi `03-sira.md`'de yaşar.
+- **Yapılan (23 Ağu, ayrı commit — mekanik dönüşüm):** canlı `docs/` altındaki **altı geçiş**
+  dönüştürüldü. **`_uretilen/site-icerik.md`'ye dokunulmadı** — script çıktısıdır, Notion
+  hâlâ *"Lider"* diyor; dönüştürülseydi üretilen dosya **kaynağından ileri giderdi.**
+  `_arsiv/` dokunulmadı.
+- **Kalan (Sayfalar DB turu, Notion):** `/sen-neredesin` 8. Taşıyıcı · `/ekip`.
+- ✅ **Durdurucu çözüldü.** Aşağıdaki `30-sosyal.md:101` uyarısı **doğruydu ama eksikti**:
+  o satırın dayandığı **ledger kararı hiç yoktu** (`grep` → 0), ve kronoloji iddiayı
+  Temmuz'da **iki kez zaten çürütmüştü** (`2026-07.md:1227` · `:54(b)` — *"karar açık kalır"*).
+  Yani kapalı olmayan bir tartışma kapalı ilan edilmişti. Satır KARAR 551'e atıfla düzeltildi.
+- [ ] ~~**Sahip:** Claude.ai (korpus) + Kaan (Notion) · **Advaita kararı, 21 Tem notu**~~
 - **Belirti:** Advaita: *"Lider değil de… Rehber belki"* (`/sen-neredesin` 8. Taşıyıcı) ve
   21 Temmuz notu: *"Çember liderlik eğitimi → Çember rehberlik eğitimi"*.
 - **Ölçüm** (23 Ağu, arşivci turu, `grep -rn "Çember Lideri" src/ docs/`): **29 eşleşme.**
@@ -2738,3 +2786,70 @@ yerinde. Robots açıldığında Taslak sayfa sitemap üzerinden sızmaz.
   kayıt gelmezse — ya da tersi — bu bir **vaat kusurudur**, tasarım kusuru değil.
   Doğrulama **deploy'dan önce** yapılır.
 - **Bağ:** KARAR 547 · **B163**
+
+## B165 — MailerLite ve Resend şablonları kayıt doktrinini taşımıyor
+
+- [ ] **Sahip:** Kaan + Claude.ai · **Tetikleyici:** deploy'dan **önce** (**B163**) · 🔴 **DURDURUCU**
+- **Belirti:** **KARAR 547** kayıt sınırını değiştirdi ama **transactional ve bülten
+  şablonlarına bakılmadı.** Sayfada bir şey, e-postada başka bir şey okuyan kadında
+  **güven kaybı sitedekinden büyük olur** — e-posta kişiye gelir, sayfa herkese.
+- **Denetlenecek üç vaat:**
+  1. *"kayıt alınır, gelemezsen sonradan izlersin"* → **Çember'de artık yanlış** (hiç kayıt yok)
+  2. *"geç kalırsan da gel, kapı kapanmıyor"* → **Çember'de artık yanlış** (KARAR 549 —
+     *"çember açıldıktan sonra kapı kapanır"*)
+  3. Seremoni **hazırlık akışı** sayfadan kalktı ve **kayıt sonrası kanala taşındı** —
+     ⚠ **o kanalın şablonu var mı?** Yoksa kadın hazırlığı **hiç öğrenmez.**
+- **Kaynaklar:** MailerLite (abone e-postası) · Resend `davet@mail.ocak.biz` (transactional).
+- ⚠ **Üçüncüsü bir kusur değil, bir boşluktur.** İlk ikisi yanlış bilgi verir; üçüncüsü
+  **hiç bilgi vermez** ve sessizdir — kimse şikâyet etmez, kadın hazırlıksız gelir.
+- **Bağ:** KARAR 547 · 549 · **B163** (deploy) · **B164** (`Kayıt Var` doğrulaması) ·
+  B69 (şablon değişkenleri) aynı yüzey, farklı kusur.
+
+## B166 — `ocak-lint`'e iki kural sınıfı eklenmeli: sertlik/erillik ve taahhüt
+
+- [ ] **Sahip:** Claude.ai · **Tetikleyici:** `ocak-lint`'in bir sonraki bakımı
+- **Belirti:** Advaita'nın süreç uyarısı bir üslup notu değil:
+  > *"ben erkeğim ve bu kadın çemberi eril enerji ile ürün çıkarabiliyoruz uyanık olalım :)))"*
+- **Ölçüm (23 Ağu, Advaita yorum turu):** *"çok eril" · "çok sert" · "davetkâr değil, itici" ·
+  "şefkat, davet, anlayış yok"* itirazı **beş ayrı yerde** çıktı. **Göz kararıyla
+  yakalanmıyor** — beşi de aynı turda, aynı okuyucu tarafından bulundu.
+- **Eklenecek iki sınıf:**
+  - **Sertlik / erillik tespiti** — buyurgan kip · kadını **eksik konumlayan** tanım
+    (*"doymayan"* · *"açamayan"* · *"başlamayan"*) · yargı bildiren sıfat
+  - **Taahhüt tespiti** — karşılanamayacak vaat: *"kapı kapanmıyor"* · *"tek yolu"* ·
+    *"tamamlanmaz"* · *"istediğin kadar"* · *"hep / asla / her zaman"*
+- ⚠ **Bu iki sınıf `yasak-dizeler.tsv` ile aynı şey değil.** O dosya **dize** yasaklar;
+  bunlar **kalıp** arar. Dize listesine sıkıştırılırsa ya yakalamaz ya gürültü üretir —
+  B94'ün *"lint her turda aynı bulguyu üretir ve gürültüye döner"* kusuru.
+- **Bağ:** KARAR 549 (taahhüt sınıfının doktrin ayağı) · B94 · B98 · `30-sosyal.md` Bölüm 3
+  madde 11 (taahhüt yasağı) ve 13 (nesneleştirme yasağı) — **kural zaten yazılı, denetimi yok.**
+
+## B167 — `Kayıt Var` kabuğa taşınsın; bugünkü uygulama köprü
+
+- [ ] **Sahip:** CC · **KOD İŞİ — brief gerekir** · **Tetikleyici:** Sayfalar DB turu sonrası
+- **Belirti:** **KARAR 547** `Kayıt Var` alanını **otorite** yaptı. Ama bugünkü uygulama
+  bir **köprüdür**: kayıt cümlesi `Detay` gövdesine **elle** yazılıyor, alan yalnız
+  **denetlenebilirlik** sağlıyor. Alan değişse gövde değişmez.
+- **Hedef:** `/etkinlik/[slug]` kabuğu property'den **okuyup bassın** — **süre · kapasite ·
+  ücret** ile aynı sınıf (`ocak-etkinlik` skill'i, "KABUK NE BASIYOR" tablosu).
+- ⚠ **Gövde bilgiye sahip olduğu sürece kayamaz.** Otorite alanın gövdede kopyası varsa
+  otorite değil, ikinci kaynaktır — ve iki kaynak er geç ayrışır.
+- ⚠ **Borç açılmazsa köprü kalıcı olur.** Çalışan bir köprü kimseyi rahatsız etmez;
+  bu yüzden yazılmazsa hiç kapanmaz.
+- **Bağ:** KARAR 547 · **B164** (alanın doğruluğu) · **B168** (aynı DB, kardeş alan)
+
+## B168 — `Kayıt Yüklendi (Vimeo)` alanının anlamı belirsizleşti
+
+- [ ] **Sahip:** Kaan (Notion şeması) · **Küçük ama anlam kusuru**
+- **Belirti:** Kayıt artık **kısmi**: Çember'de hiç yok · Seremoni'de tema+seremoni var,
+  paylaşım yok · Açık Kapı'da tema+pratik var, soru bölümü yok (KARAR 547).
+  Alan *(`20-ref-notion.md:151`, Etkinlikler DB #27, Checkbox)* **"tamamı yüklendi"** mi diyor,
+  **"kaydedilen bölüm yüklendi"** mi? **Belirsiz.**
+- ⚠ **Bu, 23 Ağustos'ta dört kez yakalanan sınıfın beşincisidir: etiket içeriği takip
+  etmiyor.** Diğer dördü: `/araclar` yedi→altı raf sayacı · `/hikaye` `bes-kadim-kaynak`
+  marker'ı · `10-marka.md` "Beşli sentez" · aynı dosyanın giriş notu.
+- **Çözüm adayları:** (a) alanın adı/tanımı daraltılır (*"kaydedilen bölüm yüklendi"*) ·
+  (b) Checkbox → Select (`yok · kısmi · tam`). **Karar `Kayıt Var` ile birlikte verilir** —
+  iki alan aynı soruyu iki farklı çözünürlükte soruyor.
+- **Bağ:** KARAR 547 · **B167** · **B122** (Zoom kaydı süreci yok — *"Vimeo yok"*,
+  **alan var ama arkasında süreç yok**)

@@ -549,3 +549,4 @@ no	tarih	baslik	durum	iliski	kaynak
 548	2026-08-23	Unvan yasağı betimlemeyi kapsamaz — `cacaoista` Türkçe betimlemenin açıklayıcı eki olarak geçebilir; tek başına unvan olarak kullanılmaz	KALICI	←506	2026-08.md#k548
 549	2026-08-23	Etkinlik sayfası akışı, hazırlığı ve mahrem soruları kamuya açmaz — hazırlık gerektiren formatlarda `Yanına Al` işaretçiye iner, beslenme/ilaç/hamilelik kayıt sonrası kanala taşınır	KALICI		2026-08.md#k549
 550	2026-08-23	Notion text property'sine yazım cerrahi değildir — gövde önce kabukta kurulur, `python3 len()` ile ölçülür, yazılır, geri okunan uzunluk beklenenle karşılaştırılır	KALICI	B150 (skill'e yazımı)	2026-08.md#k550
+551	2026-08-23	Çember Lideri → Çember Rehberi — hiyerarşi kaldırıldığı için ad değişti; rolün içeriği ve K4 yapısı aynı	KALICI	Pilot borç 25 T3 kapandı · B160 kapandı	2026-08.md#k551

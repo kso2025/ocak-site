@@ -1,6 +1,8 @@
 # OCAK — SIRA
 
-**Son güncelleme:** 23 Ağustos 2026 · **Advaita yorum turu** — 14 etkinlik gövdesi yeniden
+**Son güncelleme:** 23 Ağustos 2026 (**EK tur**) · **KARAR 551** Çember Lideri → **Çember
+Rehberi**, B160 ✅ kapandı, B165–B168 açıldı · `00-durum.md` **bilerek bekletiliyor**
+(aşağıda) · önceki: **Advaita yorum turu** — 14 etkinlik gövdesi yeniden
 yazıldı, KARAR 547–550 mühürlendi, KARAR 506 SUPERSEDE, B144–B164 açıldı · **DEPLOY YAPILMADI**
 (bilinçli, `02-borclar.md` B163) · aynı gün: Gün 0 görsel turu (KARAR 542–546 · B139–B141) ve
 arşivci turu (B142–B143) · önceki: 20 Ağustos 2026 · **fikir kuyruğu korpusa alındı** — B108–B120 açıldı ·
@@ -28,6 +30,14 @@ Kuyruk aşağıda, `📄 İÇERİK HATTI` bölümünde.
 ---
 
 ## SIRADAKİ İŞ
+
+> ⏸ **`00-durum.md` NEDEN BAYAT — bilerek (Kaan kararı, 23 Ağustos).**
+> Dosya **195/200** (KARAR 457 hard cap, **B131**). Yazmak bir **tahliye turu** gerektiriyor,
+> ve **Sayfalar DB turundan sonra dosya zaten yeniden yazılacak** — iki kez tahliye etmek
+> gereksiz risk. **Karar: Sayfalar DB turu bitene kadar bekliyor**; o turda tahliye + yazım
+> **birlikte** koşulur. Tahliye adayı dosyanın kendi işaret ettiği **11 Ağustos** bloğu
+> (B47 · B58). ⚠ Bu **B131'i kapatmaz** — borç açık, kapanışı tahliye turudur.
+> *Bu not, bir sonraki tur "durum neden bayat" diye zaman kaybetmesin diye buradadır.*
 
 ### ⛔ LANSMAN ÖN KOŞULU — ertelenemez
 
@@ -66,26 +76,38 @@ C listesi + deploy. Tam devir `_arsiv/2026-08-23-advaita-devir.md`, Advaita'ya d
 ⚠ **DEPLOY SONDA — bu bir kural, gecikme değil** (**B163**). 23 Ağustos'ta üç hata yakalandı,
 hiçbiri siteye ulaşmadı çünkü deploy sondaydı. Sayfalar DB de bitince **tek seferde.**
 
+📅 **TARİH BASKISI — `bir-esikte-duruyorsun`, 31 Ağustos 2026.** Yayındaki ilk etkinlik.
+Gövdesi 23 Ağustos'ta yeniden yazıldı (**3.226 kr**); **Notion'daki hâli sitede görünmüyor.**
+Bugünden **sekiz gün** var.
+⚠ **Deploy bu tarihe sıkıştırılmamalı** — son güne kalırsa yakalanan hatayı düzeltecek
+zaman kalmaz ve "deploy sonda" kuralı koruma olmaktan çıkıp riske döner.
+Aynı tarihe bakan diğer işler: **B122** (Zoom kaydı süreci yok — Advaita) ·
+**B165** (e-posta şablonları) · **B164** (`Kayıt Var` doğrulaması) · bot hattının üç işi.
+
 **Sayfa sayfa kalan yorumlar** (Sayfalar DB, `update_content` cerrahiye izin verir —
 property riski burada yok, KARAR 550):
 
 | Sayfa | Kalan |
 |---|---|
-| `/sen-neredesin` | "yargı" → *yorum · tad · tanım* (2. İlk dokunuş) · Çember lideri → **rehber** (8. Taşıyıcı, **B160**) · aşağı-kaydırma işareti (**B161**) |
+| `/sen-neredesin` | "yargı" → *yorum · tad · tanım* (2. İlk dokunuş) · Çember Lideri → **Çember Rehberi** (8. Taşıyıcı, **KARAR 551** — karar verildi, Notion uygulaması burada) · aşağı-kaydırma işareti (**B161**) |
 | `/acik-kapi` | "kadın gelmeyi gerçekten istesin diye" nesneleştiriyor → *sen* ya da *gelmek isteyen kişi* · **dakikalar silinsin** — bir saatlik buluşma bu kadar detaylı anlatılmasın (KARAR 549) |
 | `/seremoni` | "Kakao ayda en az bir kez" → **bu taahhüt verilmesin** · "Kayıt yapılıyor mu" → **kayıt yapılmaz** (KARAR 547) · *"Niyet tek başına düşünce…"* → C listesi #7 |
 | `/mini-retreat` | yaban kadın / wild woman → C listesi #6 (**B158** aynı karara bakar) |
 | `/anadolu` | "Tanışma görüşmesi — *sınav değil* demek bile sınava işaret ediyor" |
 | `/biz` | "Advaita tek dile getiren kadın" — tek o dile getiriyor gibi olmuş |
 | `/advaita` | SSS son soru: *"ulaşılabilir değil"* **ibaresi artık yok** (ölçüldü), ama kalan *"Bu bir mesafe değil, alanın korunması"* hâlâ savunmacı |
-| `/ekip` | çıraklık → C listesi #8 |
+| `/ekip` | çıraklık → C listesi #8 · Çember Lideri → **Çember Rehberi** (**KARAR 551**) |
 | `/hikaye` | mum→ateş ✅ · Amerikalar ✅ · marker `bes-kadim-kaynak` → `dort-yon-bir-ocak` → **B159, kod işi** |
 | `/bulusmalar` | "en hafifi… **en ağırı**" → *en derini* ya da *en uzunu* |
 | `/araclar` | ✅ bitti (yedi → altı raf) |
 
 **Yorum almamış ama taranmalı:** `/adimiz` · `/atolye` · `/cember` · `/felsefe` · `/iletisim` ·
-`/sehir-aksami` · `/takvim` · `/yolculuk`. İki tarama ekseni: **Çember Lideri → Rehber**
-(**B160**) ve **batı sıfatı** (*yaban kadın* · *womb yoga* · *şamanik yoga*, **B158**).
+`/sehir-aksami` · `/takvim` · `/yolculuk`. İki tarama ekseni: **Çember Lideri → Çember
+Rehberi** (**KARAR 551** — karar mühürlü, tarama mekanik) ve **batı sıfatı** (*yaban kadın* ·
+*womb yoga* · *şamanik yoga*, **B158** — **karar yok**, tarama sonuç üretmez, önce duruş gerekir).
+
+⚠ **İki eksen aynı sınıf değil.** Birinde karar var, uygulama kaldı; diğerinde karar yok.
+Batı-sıfatı taraması karar öncesi koşulursa yalnız liste üretir, düzeltme üretmez.
 
 **Çözülmemiş tek satır:** `bu-ses-kimin` — Advaita *"Kendine hala"* diye işaretlemiş, yorum
 metni boş. Metindeki karşılığı *"Kendine 'neden hâlâ yapmadım' diye soran…"*; ne demek
