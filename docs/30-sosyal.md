@@ -515,7 +515,7 @@ Ses: ateş çıtırtısı loop.
 ---
 
 ### C24 · S2+S3 · F2 — KAPANIŞ: "SEN NEREDESİN?" (6 kart)
-**GÖRSEL:** V03 tek üretim → 6 crop · 4:5 · Kart metinleri (krem):
+**GÖRSEL:** V01 tek üretim → 6 crop · 4:5 · Kart metinleri (krem):
 > K1: Sen neredesin?
 > K2: Kimi kadın uykuda — hayatı işliyor, içinde adını koyamadığı bir kopukluk var.
 > K3: Kimi merakta — henüz girmedi ama tıkladı.
@@ -754,6 +754,15 @@ Her prompt kullanılmadan önce `KURUCU-URL` alanı Gün 0 çıktısıyla doldur
 `ocak-cNN-kM-YYYY-AA-GG.png` (karusel değilse `-kM` yok). Zemin adı karta bağlanmaz —
 zemin kalıcıdır, kart ataması karardır ve değişir. Zemin ↔ kart ↔ MJ iş kimliği eşlemesi
 `docs/31-zemin.md`'de yaşar.
+
+**Karusel zemini yüzey olur, nesne olmaz.** Karusel iç kartları tek üretimin
+crop'larıdır; crop'un çalışması için zeminin karenin her yerinde sürmesi gerekir.
+Yüzey (kül, kor, kıvılcım, duvar dokusu) sürer — hangi pencere alınırsa alınsın
+malzeme vardır. Nesne (kapı, mum çemberi, pencere, fincan) sürmez; kareye bir kez
+girer, crop'ların bir kısmı onu gösterir, kalanı boş kalır.
+
+Ampirik dayanak: C02'nin altı kartı z03 (gözenekli kül) üstünde basıldı, altısında da
+metin temiz okundu — 23 Ağustos.
 
 **V01 — Söz kartı ana zemini (S1/S2, en çok kullanılacak):**
 ```

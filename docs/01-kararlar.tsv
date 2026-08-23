@@ -553,3 +553,6 @@ no	tarih	baslik	durum	iliski	kaynak
 552	2026-08-23	Zemin dosya adı karta değil zemine bağlanır — `ocak-zNN-slug-YYYY-AA-GG.png`; kart numarası ve MJ iş kimliği dosya adına girmez, eşleme `31-zemin.md`de yaşar	AKTIF	B169 · B170	2026-08.md#k552
 553	2026-08-23	Kısaltma yeniden adlandırması `İn` → `Cn` (içerik), `Pn` → `Vn` (görsel) — canlı ileriye bakan dosyalarda; kronoloji, arşiv ve kapanmış borç kalemleri dokunulmaz	AKTIF	↔219 · B171	2026-08.md#k553
 554	2026-08-23	Bir karta varlık atamadan önce `03-sira.md` ve `02-borclar.md` salt-okunur — kalem kapanmışsa yeni atama yapılmaz	AKTIF	←102	2026-08.md#k554
+555	2026-08-24	Kart, prompt ve zemin jetonları sıfır dolguludur — `C01`–`C24`, `V01`–`V09`, `z01`–; homograflar dolgusuz kaldığı için biçim ayrıştırır	AKTIF	←553 · B171 kapandı	2026-08.md#k555
+556	2026-08-24	Karusel zemini yüzey olur, nesne olmaz — crop çalışsın diye zemin karenin her yerinde sürmeli; kapı/mum çemberi/pencere gibi nesne zeminler karusele verilmez	AKTIF	B172 · B173	2026-08.md#k556
+557	2026-08-24	Sert kapı ölçütü yöntemiyle birlikte yazılır — bloke edici bir ölçüt koyan brief ölçümün komutunu ve bir sanity testini de yazar	KALICI	←470	2026-08.md#k557

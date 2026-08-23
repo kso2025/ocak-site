@@ -1,6 +1,9 @@
 # OCAK — SIRA
 
-**Son güncelleme:** 23 Ağustos 2026 (**adlandırma turu**) · **KARAR 552–554** — zemin dosya
+**Son güncelleme:** 24 Ağustos 2026 (**sıfır dolgu turu**) · **KARAR 555–557** — jetonlar
+sıfır dolgulu (`C01`–`C24` · `V01`–`V09` · `z01`–) · karusel zemini yüzey olur, nesne olmaz ·
+sert kapı ölçütü yöntemiyle yazılır; **B171 ✅ kapandı**, **B172–B173** açıldı (C09 ve C20
+karusel zemini) · önceki: 23 Ağustos (**adlandırma turu**) · **KARAR 552–554** — zemin dosya
 adı zemine bağlanır · `İn`→`Cn`, `Pn`→`Vn` · atama öncesi sıra+borç okunur; **B169–B171**
 açıldı, `docs/31-zemin.md` doğdu · önceki: **EK tur** · **KARAR 551** Çember Lideri →
 **Çember Rehberi**, B160 ✅ kapandı, B165–B168 açıldı · `00-durum.md` **bilerek bekletiliyor**
@@ -370,6 +373,9 @@ KARAR 492) bu hattın tamamını süreye bağlıyor.
 8. **Zemin envanteri açıldı** *(23 Ağu, KARAR 552)* — `docs/31-zemin.md`, yedi zemin
    (z01–z07) MJ iş kimliği + ölçümleriyle. **z01 ve z02 mühürlü.** ⚠ Yedisi de yalnız
    MJ CDN'inde + yerel diskte — **B170** (B141'in genişlemesi).
+9. **Karusel zemin kuralı** *(24 Ağu, KARAR 556)* — zemin **yüzey** olur, nesne olmaz.
+   C24 düzeltildi (V03 kapı → **V01** kül). ⏱ **C09 karar bekliyor — B172, dokuzuncu gün,
+   V04 üretilmeden bağlanmalı.** C20 aynı ihlal, dördüncü hafta — **B173**.
 
 **Sıra madde 2'ye düştü — fiyat bandı** *(Kaan + Advaita)*. Madde 1 ve 7 kapandı (23 Ağu).
 ⚠ Gün 1'in önündeki engeller **değişmedi**: robots kararı (KARAR 149 — ilk sosyal post aynı

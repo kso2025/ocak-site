@@ -2908,3 +2908,24 @@ yerinde. Robots açıldığında Taslak sayfa sitemap üzerinden sızmaz.
   (örn. *"Midjourney **motor** V8.x"*), ya da çakışma kalıcı kabul edilip not yeterli
   sayılır. **Karar Kaan'ın.**
 - **Bağ:** KARAR 553 · KARAR 219 (`C-n` tireli, dördüncü homograf — o zaten notta)
+
+## B172 — C09: sekiz crop, tek odaklı zemin
+
+- [ ] **Sahip:** Kaan + Claude.ai · **Orta** · ⏱ **9. gün** — V04 üretilmeden karara bağlanmalı.
+- **Belirti:** `30-sosyal.md` C09 (*Yedi kapı, bir ateş*) **V04 mum çemberi** zeminiyle
+  **8 crop** istiyor. V04 nesne zeminidir: mum çemberi kareye bir kez girer, sekiz
+  pencerenin bir kısmı onu gösterir, kalanı boş kalır. **KARAR 556'yı ihlal ediyor.**
+- **İki yol, karar Kaan'da:** (a) zemin yüzeye çevrilir (kül/kor/kıvılcım ailesinden bir
+  V prompt) · (b) kart sekizden üçe iner. Metne **bu turda dokunulmadı.**
+- ⚠ **Sekiz crop, ihlalin en pahalı hâli** — C24 altı crop'la aynı kusuru taşıyordu ve
+  düzeltildi; C09 karar beklediği için bırakıldı.
+- **Bağ:** KARAR 556 · **B173** (aynı ihlal, dördüncü hafta) · B139 (V04'ün `--no` listesi)
+
+## B173 — C20: altı crop, tek odaklı zemin
+
+- [ ] **Sahip:** Kaan + Claude.ai · **Küçük** · 4. hafta.
+- **Belirti:** `30-sosyal.md` C20 (*Yolculuk online — bir durağın anatomisi*) **V06
+  pencere/mum** zeminiyle 6 crop istiyor. Aynı ihlal, aynı iki yol (**B172**).
+- **Neden ayrı borç:** C09'dan **üç hafta sonra** yayına giriyor ve V06 ayrıca C19'da
+  tek kart olarak kullanılıyor — zemin değişirse iki kart birden etkilenir.
+- **Bağ:** KARAR 556 · **B172**
