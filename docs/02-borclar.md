@@ -2393,6 +2393,10 @@ yerinde. Robots açıldığında Taslak sayfa sitemap üzerinden sızmaz.
   seri tutarlılığı kaybolur.
 - **Kapanış şartı:** kalıcı bir yere kopya (Drive / repo `public/`).
 - **Yedeklenecek URL'ler ve soy ağacı:** `docs/_arsiv/2026-08-23-mj-kayit.md`
+- ⚠ **Yedek çapanın ölmesini çözmüyor.** Yerel yedek görseli kurtarır ama `--sref` **canlı
+  URL** istiyor. Kurucu URL düşerse yeniden yükleyip yeni URL üretmek gerekir; o an seri
+  tutarlılığı riske girer. **MJ'in CDN kalıcılık politikası araştırılmadı** — sonraki
+  görsel turunun ilk sorusu.
 
 ## B142 — `02-borclar.md`'de kapanış konvansiyonu tek biçim değil
 
