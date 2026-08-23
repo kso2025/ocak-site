@@ -21,13 +21,28 @@
 **Kurucu görsel üretilmeden Gün 1 yayını BAŞLAMAZ.** Tüm görsel sistem tek bir kurucu görsele `--sref` ile bağlanıyor; kurucu yokken üretilen her kart seriden kopar ve çöpe gider. Sıra kesin: Gün 0 → Kaan onayı → Gün 1.
 
 ### 0a · Kurucu prompt (Midjourney'e birebir yapıştır)
+
+⚠ **BU PROMPT GEÇERSİZ (23 Ağustos 2026).** Üretilen kurucu görsel yandan-makro değil,
+tepeden bakan küldür. Kazanan formül aşağıdadır; buradaki blok tarihsel kayıt olarak durur.
+
+**Kazanan prompt — kurucu görsel bununla üretildi (KARAR 542):**
 ```
-glowing embers under a thin layer of grey ash, extreme close-up, single warm light source from within the coals, deep charcoal black background dissolving into darkness, colors: burnt orange #C44B2F and muted gold #D4A855 against near-black #1A1614, subtle film grain, quiet sparse composition, large area of pure dark negative space in upper half, photographic, moody chiaroscuro --ar 4:5 --style raw --stylize 120 --chaos 8 --no people, faces, hands, text, watermark
+top-down photograph of dark ash at night, the upper two thirds of the frame is almost
+entirely unlit warm brownish-black ash with no detail, and only in the lower portion do a
+few small ember points glow faintly orange through the ash, deep warm black, nothing bright
+anywhere, quiet, coarse grain --ar 4:5 --style raw --v 8.1 --stylize 40 --chaos 6
+--no flames, fire, lava, volcano, horizon, horizontal band, bright white, blown highlights,
+sand, daylight, grey light, blue tones, teal, people, faces, hands, text, watermark
+```
+
+**Geçersiz kalan yandan-makro promptu (tarihsel kayıt, 19 Ağustos):**
+```
+glowing embers under a thin layer of grey ash, extreme close-up, single warm light source from within the coals, deep charcoal black background dissolving into darkness, colors: burnt orange #C44B2F and muted gold #D4A855 against near-black #1A1210, subtle film grain, quiet sparse composition, large area of pure dark negative space in upper half, photographic, moody chiaroscuro --ar 4:5 --style raw --stylize 120 --chaos 8 --no people, faces, hands, text, watermark
 ```
 4-6 tur üret (her tur 4 varyant). Toplam 16-24 aday.
 
 ### 0b · Seçim kriterleri
-**Style DNA (aranan):** Gece çekilmiş gibi durur. Zemin kömür değil, içinde sıcaklık barındıran is rengi (#1A1614 civarı). Işık tek kaynaklı, ateşten gelir: köz turuncusu (#C44B2F) gölgeleri yalar, altın (#D4A855) yalnız en parlak kenarlarda. Karenin en az yarısı — tercihen üst yarısı — karanlıkta erir (metin oraya oturacak). Doku elle tutulur: kül, kor, is. Duygu: sıcak ama sessiz.
+**Style DNA (aranan):** Gece çekilmiş gibi durur. Zemin kömür değil, içinde sıcaklık barındıran is rengi (#1A1210 civarı). Işık tek kaynaklı, ateşten gelir: köz turuncusu (#C44B2F) gölgeleri yalar, altın (#D4A855) yalnız en parlak kenarlarda. Karenin en az yarısı — tercihen üst yarısı — karanlıkta erir (metin oraya oturacak). Doku elle tutulur: kül, kor, is. Duygu: sıcak ama sessiz.
 **Anti-liste (biri varsa ELE):** stok parlaklığı / genel aydınlık kare · wellness-pastel tonlar · neon-mistik mor/mavi · lotus, mandala, kristal çağrışımı · herhangi bir insan izi (el, silüet dahil) · yazı/watermark artefaktı · aşırı HDR keskinlik · üst yarıda karanlık negatif alan YOKSA.
 
 ### 0c · Seçilen görselin `--sref` URL'i nasıl alınır ve dosyaya işlenir
@@ -100,7 +115,7 @@ Kısa cümle. Nokta cesareti. Soru sorar, cevabı dayatmaz. Sayılar yazıyla ("
 **Sütunlar:** S1 Mit & Ad · S2 Ayna (portre) · S3 Kapılar (davet) · S4 Yol (Eylül kohortları) · S5 Araç (hediye pratik — linksiz post haftada en az bir tane OLMALI) · S6 Atmosfer & Biz.
 
 **Formatlar:**
-- **F1 Söz kartı** (tek görsel 4:5): MJ zemin + Cormorant Garamond Italic metin. Kart üstünde logo/handle YOK; köşede küçük nokta (·) tek imza. Kart başına en fazla on dört-on altı kelime.
+- **F1 Söz kartı** (tek görsel 4:5): MJ zemin + Cormorant Garamond Italic metin. Kart üstünde handle ve tam logo YOK; köşede OCAK işareti tek imza — kart genişliğinin %7'si, opaklık 0.85, yatayda ortalı. Dikey konum zemin tipinden çıkar: fotoğraflı zeminde metnin üstünde, glow zeminde kart dibinde (KARAR 543 · 544). Kart başına en fazla on dört-on altı kelime.
 - **F2 Karusel** (4:5, 5-8 kart): Kapak söz kartı estetiği; iç kartlar AYNI zeminin crop varyantları (tek üretim → crop; kart kart farklı prompt üretme). Kart başına en fazla iki cümle. Son kart yumuşak köprü.
 - **F3 Reels** (9:16, 20-45 sn): Gerçek çekim veya MJ atmosfer üzerine yavaş zoom + kademeli metin. Ses: ateş çıtırtısı loop, ambient veya Advaita'nın kendi kaydettiği ses. Dans/şaka trendi asla.
 - **F4 Story:** günde en fazla 2-3; boş gün olabilir — sessizlik markanın parçası. Sticker'sız düz kart.
@@ -680,7 +695,7 @@ Doldurulmuş örnek — Seremoni (gerçek):
 | F9 | Çay/kakao fincanları tepside | Yan sıcak ışık | Seremoni duyuruları |
 | F10 | Mekânın boş köşesi: pencere, keten perde, loş ışık | Doğal loş | S6 sessizlik kareleri |
 
-**Grade (hepsi için):** Gölgeler is rengine (#1A1614 ailesine), highlight altına çekilir; beyaz patlaması yok. MJ görselleriyle aynı ailede durmalı. Grain şablonda tek katman — telefon görüntüsüne ayrıca grain ekleme, şablon ekler.
+**Grade (hepsi için):** Gölgeler is rengine (#1A1210 ailesine), highlight altına çekilir; beyaz patlaması yok. MJ görselleriyle aynı ailede durmalı. Grain şablonda tek katman — telefon görüntüsüne ayrıca grain ekleme, şablon ekler.
 **Çıktı hedefi:** 3-4 reels hammaddesi + 15-20 kare fotoğraf bankası. Kameraya bakış toplamda en fazla 1-2 karede.
 
 ---
@@ -711,7 +726,7 @@ Rapor dilinde funnel/conversion/lead kelimeleri kullanılmaz; "gelen kadın", "k
 
 ## 15 · [KAAN] LİSTESİ (bunlar dolmadan ilgili adım atılmaz)
 
-1. **Kurucu görsel:** Gün 0 üretimi → seçim → onay → `KURUCU-URL` ara-değiştir (Bölüm 0c).
+1. **Kurucu görsel:** KAPANDI (23 Ağu) — üretim → seçim → onay tamam; görsel mühürlendi (KARAR 542: `--sref` çapası + `--v 8.1` motor kilidi). ⚠ `KURUCU-URL` **ara-değiştir hâlâ açık** (Bölüm 0c → Bölüm 16 P1–P9); URL var, dosyaya işlenmedi.
 2. **WhatsApp Kanalı:** Kanal adı + davet linki (bio Link 2 ve Bölüm 10 başlığı).
 3. **Etkinlik tarihleri:** KAPANDI (v2.1) — takvim canlı ve dolu; E1-E5 ve E7 tarihleri ocak.biz/takvim'den okunur. Ay başında tek teyit yeter.
 4. **Eylül dil kapısı:** FİİLEN AÇIK (v2.1) — kayıt/başvuru route'ları canlıda doğrulandı; İ5/İ11/İ20 caption'larına tek cümle eklendi. Kaan itiraz ederse silinecek üç cümle değişiklik günlüğünde. Sözlü teyit yine de istenir.
@@ -721,11 +736,11 @@ Rapor dilinde funnel/conversion/lead kelimeleri kullanılmaz; "gelen kadın", "k
 
 ## 16 · MJ HAZIR PROMPTLAR (P1–P9) — kopyala-yapıştır
 
-Her prompt kullanılmadan önce `KURUCU-URL` alanı Gün 0 çıktısıyla doldurulmuş olmalı (Bölüm 0c ara-değiştir). Ölçüler: feed söz kartı/karusel `--ar 4:5` (1080×1350) · reels/story `--ar 9:16`. Karusel iç kartları AYNI üretimin crop'larıdır — kart kart farklı prompt üretme, seri dağılır. Üretim işakışı: MJ üretim → seç (Bölüm 0b anti-listesiyle ele) → crop/format → renk grade'i palete çek (gölgeler #1A1614'e) → kenar karartma → tipografi bindirme (Bölüm 5 standardı) → Kaan görsel onayı. Grain şablonda tek katman.
+Her prompt kullanılmadan önce `KURUCU-URL` alanı Gün 0 çıktısıyla doldurulmuş olmalı (Bölüm 0c ara-değiştir). Ölçüler: feed söz kartı/karusel `--ar 4:5` (1080×1350) · reels/story `--ar 9:16`. Karusel iç kartları AYNI üretimin crop'larıdır — kart kart farklı prompt üretme, seri dağılır. Üretim işakışı: MJ üretim → seç (Bölüm 0b anti-listesiyle ele) → crop/format → renk grade'i palete çek (gölgeler #1A1210'e) → kenar karartma → tipografi bindirme (Bölüm 5 standardı) → Kaan görsel onayı. Grain şablonda tek katman.
 
 **P1 — Söz kartı ana zemini (S1/S2, en çok kullanılacak):**
 ```
-almost abstract darkness with a faint warm ember glow rising from the bottom edge, deep charcoal texture like night air near a fire, extremely minimal, vast dark negative space in upper two thirds, subtle film grain, burnt orange #C44B2F gradient dissolving into #1A1614 --ar 4:5 --style raw --stylize 90 --chaos 5 --sref KURUCU-URL --sw 60 --no people, faces, hands, text, watermark
+almost abstract darkness with a faint warm ember glow rising from the bottom edge, deep charcoal texture like night air near a fire, extremely minimal, vast dark negative space in upper two thirds, subtle film grain, burnt orange #C44B2F gradient dissolving into #1A1210 --ar 4:5 --style raw --stylize 90 --chaos 5 --sref KURUCU-URL --sw 60 --no people, faces, hands, text, watermark
 ```
 
 **P2 — Söz kartı varyant: kül dokusu:**
