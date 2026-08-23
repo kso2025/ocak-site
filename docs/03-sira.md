@@ -1,6 +1,9 @@
 # OCAK — SIRA
 
-**Son güncelleme:** 20 Ağustos 2026 · **fikir kuyruğu korpusa alındı** — B108–B120 açıldı ·
+**Son güncelleme:** 23 Ağustos 2026 · **Advaita yorum turu** — 14 etkinlik gövdesi yeniden
+yazıldı, KARAR 547–550 mühürlendi, KARAR 506 SUPERSEDE, B144–B164 açıldı · **DEPLOY YAPILMADI**
+(bilinçli, `02-borclar.md` B163) · aynı gün: Gün 0 görsel turu (KARAR 542–546 · B139–B141) ve
+arşivci turu (B142–B143) · önceki: 20 Ağustos 2026 · **fikir kuyruğu korpusa alındı** — B108–B120 açıldı ·
 **FİKİR HAVUZU** ve **KARAR ADAYLARI** başlıkları doğdu (F-1…F-5 · A-1…A-5),
 karar mühürlenmedi (ledger 523'te sabit) · önceki: **Marka işareti ✅ · başlık kanonu ✅** —
 KARAR 522 · 523; borçlar B105 · B107 (B106 aynı gün kapandı) ·
@@ -9,7 +12,11 @@ WABA display name turu (KARAR 519–521 · B103–B104 · KARAR 410 SUPERSEDE) �
 B102 turu · gölge satır turu (KARAR 514–516 · B101) · üç-format turu
 (KARAR 496–513 · B88–B100 · KARAR 79 SUPERSEDE)
 
-**Sıradaki iş:** **B64 → B69 → B68 → n8n ödeme onayı** — bu patch'ten sonra.
+**Sıradaki iş (içerik hattı, 23 Ağu):** **Sayfalar DB dokuz sayfa → sonra tek seferde deploy.**
+Kuyruk aşağıda, `📄 İÇERİK HATTI` bölümünde.
+
+**Sıradaki iş (kod/altyapı hattı, 20 Ağu — değişmedi):** **B64 → B69 → B68 → n8n ödeme onayı.**
+⚠ İki hat **aynı repoda yaşıyor** (KARAR 463, tek klon) — eşzamanlı koşmazlar.
 
 > Bu dosya **ne yapıldığını** değil **sırada ne olduğunu** tutar. Durum `00-durum.md`'de,
 > borçlar `02-borclar.md`'de, gerekçe kronolojide yaşar. Burada yalnız: **sıradaki iş,
@@ -49,6 +56,83 @@ Sırada iki hat (B106 aynı gün kapandı — `c45332e`):
    düşürülecek. Midjourney V8.x — plan V6/V7 varsayımıyla yazılmış, `--sw` 60 düşük
    (90–110), otuz günlük seri için moodboard (`--p`) tek `--sref`'ten daha uygun.
 
+
+### 📄 İÇERİK HATTI — SAYFALAR DB, SONRA DEPLOY (23 Ağustos Advaita turu)
+
+*Etkinlikler DB bitti (14 gövde). Kalan: Sayfalar DB dokuz sayfa (~15 kalem) + sekiz soruluk
+C listesi + deploy. Tam devir `_arsiv/2026-08-23-advaita-devir.md`, Advaita'ya dönen rapor
+`_arsiv/2026-08-23-advaita-rapor.md`, tur anlatısı `90-kronoloji/2026-08.md`.*
+
+⚠ **DEPLOY SONDA — bu bir kural, gecikme değil** (**B163**). 23 Ağustos'ta üç hata yakalandı,
+hiçbiri siteye ulaşmadı çünkü deploy sondaydı. Sayfalar DB de bitince **tek seferde.**
+
+**Sayfa sayfa kalan yorumlar** (Sayfalar DB, `update_content` cerrahiye izin verir —
+property riski burada yok, KARAR 550):
+
+| Sayfa | Kalan |
+|---|---|
+| `/sen-neredesin` | "yargı" → *yorum · tad · tanım* (2. İlk dokunuş) · Çember lideri → **rehber** (8. Taşıyıcı, **B160**) · aşağı-kaydırma işareti (**B161**) |
+| `/acik-kapi` | "kadın gelmeyi gerçekten istesin diye" nesneleştiriyor → *sen* ya da *gelmek isteyen kişi* · **dakikalar silinsin** — bir saatlik buluşma bu kadar detaylı anlatılmasın (KARAR 549) |
+| `/seremoni` | "Kakao ayda en az bir kez" → **bu taahhüt verilmesin** · "Kayıt yapılıyor mu" → **kayıt yapılmaz** (KARAR 547) · *"Niyet tek başına düşünce…"* → C listesi #7 |
+| `/mini-retreat` | yaban kadın / wild woman → C listesi #6 (**B158** aynı karara bakar) |
+| `/anadolu` | "Tanışma görüşmesi — *sınav değil* demek bile sınava işaret ediyor" |
+| `/biz` | "Advaita tek dile getiren kadın" — tek o dile getiriyor gibi olmuş |
+| `/advaita` | SSS son soru: *"ulaşılabilir değil"* **ibaresi artık yok** (ölçüldü), ama kalan *"Bu bir mesafe değil, alanın korunması"* hâlâ savunmacı |
+| `/ekip` | çıraklık → C listesi #8 |
+| `/hikaye` | mum→ateş ✅ · Amerikalar ✅ · marker `bes-kadim-kaynak` → `dort-yon-bir-ocak` → **B159, kod işi** |
+| `/bulusmalar` | "en hafifi… **en ağırı**" → *en derini* ya da *en uzunu* |
+| `/araclar` | ✅ bitti (yedi → altı raf) |
+
+**Yorum almamış ama taranmalı:** `/adimiz` · `/atolye` · `/cember` · `/felsefe` · `/iletisim` ·
+`/sehir-aksami` · `/takvim` · `/yolculuk`. İki tarama ekseni: **Çember Lideri → Rehber**
+(**B160**) ve **batı sıfatı** (*yaban kadın* · *womb yoga* · *şamanik yoga*, **B158**).
+
+**Çözülmemiş tek satır:** `bu-ses-kimin` — Advaita *"Kendine hala"* diye işaretlemiş, yorum
+metni boş. Metindeki karşılığı *"Kendine 'neden hâlâ yapmadım' diye soran…"*; ne demek
+istediği anlaşılmıyor, **Advaita'ya sorulacak.**
+
+### 🔶 C LİSTESİ — SEKİZ YENİDEN YAZIM, ADVAITA KARARI OLMADAN YAPILMAZ
+
+*Bunlar borç değildir — karar Advaita'nındır, ledger'a girmezler. Kaan bunları **önce Claude
+ile tartışarak** hazırlamak istiyor, sonra Advaita'ya gidecek. Advaita'nın kelimeleri birebir
+`_arsiv/2026-08-23-advaita-devir.md` §C'de; **parafraz edilmez.***
+
+1. `elin-neyle-dolu` **adı** — *"sepetin olabilir mi"*. Sayfa artık **sofra** metaforuyla
+   kapanıyor (*"Gel, sofraya koy"*); isim kararı buna bakarak verilir.
+2. `ekmeden-once` **adı** — *"ekme kelimesi oturmamış"*. Adaylar: *ekimden önce · ekme
+   mevsiminden / döneminden / vaktinden önce.*
+3. `kokun-nerede-kaldi` — **ad + çerçeve, yeniden yazım.** Advaita yeni bir bakış veriyor:
+   gurbet kelimesinin ağırlığı · *"kökler fiziksel yere bağlı değildir, sağlamsa seninle
+   gelir"* · köprü / örmek / bağ. ⚠ **Mevcut metnin bilmediği bir arka plan var:** Advaita
+   pandemide haftada iki gün İngiltere'deki Türklerle çalışmış — **Açık Kapı fikri oradan
+   doğmuş.** Yeniden yazım bunu bilerek kurulur.
+4. `hangi-tohumu-ekeceksin` — **"Kimin İçin" bölümünün tamamı** (*"çok eril"*, *"davetkâr
+   değil, itici"*, *"buna karışamayız"*) **+ büyük başlık** (*"tamamen değişmeli"*).
+   Advaita'nın yönü: *"Ruhun çağrısı ne? Hangi tohumu ekmeye bedenin, kalbin davet ediyor?"*
+5. `dusundugum-hissettigim-yaptigim` — **ana başlık.** *"Bu üçü en son ne zaman aynı yöne
+   baktı?"* → *"En son ne zaman baktığına bakmıyoruz."* Yön: hizalı mı / nasıl hizalanır /
+   hizalı olmak neye yarar.
+6. `/mini-retreat` **yaban kadın** → *hatırlayan kadın*? Advaita'nın uzun notu batı
+   sıfatlarına **duruş** istiyor. → **B158**
+7. `/seremoni` *"Niyet tek başına düşünce…"* — anlamadı.
+8. `/ekip` **çıraklık** — *"konuşalım"*.
+
+⚠ **Slug değişirse dört yüzey etkilenir:** URL · Notion · MailerLite `etkinlik_url` · sosyal
+plan E-kartları. **Başlığı slug'a dokunmadan değiştirmek mümkündür** — hangisinin
+değiştiği **ayrı karara bağlanır**, birlikte varsayılmaz.
+
+### 🔶 PDF'İN SİTE DIŞI BÖLÜMÜ — AYRI SOHBET, KARIŞTIRILMAZ
+
+*Advaita'nın listesinin son üçte biri site metni değil **program tasarımı.** Site turuyla
+karıştırılırsa ikisi de yarım kalır (KARAR 52 — her konu ayrı sohbet).*
+
+Açık Kapı içerik matrisi (üç sütun: kadın kapıdan ne ile ayrılsın / Açık Kapı konusu /
+Çember konusu) · **Merhaba–Ayni çerçevesi** (*"Merhaba: Sana yer açıyorum"* · *"Ayni:
+Aramızdaki dengeyi onurlandırıyorum"*) · Eşik kadını vurgusu · niyeti alt seslerden ayırt
+etmek · **Çember takvimi** (*"Ağustos ortası başlar???"* · Ekim ekme dönemi, 21 Eylül) ·
+hasat çemberi çerçevesi · **Advaita'nın yazdığı ritüel tanım metni** (İnanna · Kibele ·
+Brigid · Baba Yaga) · Kaan'a soru: *"12 ay değil 13 ay ay döngüsü???"* · Açık Kapı
+malzemeleri (mum · çakmak · defter · kalem · su).
 
 ### 🤖 BOT HATTI — 21–22 Ağustos turundan
 

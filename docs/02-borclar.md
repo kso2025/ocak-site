@@ -80,6 +80,29 @@ Sayaç devralınmadı, üç grep yeniden koşuldu.*
 `grep -E '^## B' | grep -cE '[⏸🔵]'` → **2**. Açık = 120 − 31 − 2 = **87**.
 Mükerrer başlık denetimi: `grep -oE '^## B[0-9]+' | sort | uniq -d` → **0**.*
 
+*23 Ağustos, on birinci ölçüm (Advaita yorum turu patch'i): toplam 120 → **164**, açık
+87 → **126**. Damgalı 31 → **36**, iş değil **2**'de sabit. ⚠ **Sayaç üç tur bayat kalmıştı** —
+başlık hâlâ "120 madde · 87 açık iş" diyor. Bu ölçüm dört turun toplamını alıyor:
+bot turu + panel/davet/IG turu (**B121–B138**) · Gün 0 görsel turu (**B139–B141**) ·
+arşivci turu (**B142–B143**) · ve bu tur (**B144–B164**, yirmi bir kayıt). Yani 44 maddelik
+artışın **21'i** bu turun, **23'ü** devralınan sayım borcudur. **Bu tur kapanan yok**;
+damgalı artışı 22 Ağustos'un üç kapanışı (B121 · panel maliyet sekmesi · `panel.ocak.biz`)
+ve 23 Ağustos Gün 0'ın iki kapanışıdır (B86 · B114). Sayaç devralınmadı, üç grep yeniden
+koşuldu.*
+
+*Üretilen komutlar (KARAR 470-b, on birinci ölçüm, `02-borclar.md` 2740 satır):
+`grep -cE '^## B'` → **164** · `grep -E '^## B' | grep -cE '[✅❌]'` → **36**
+(`✅ KAPANDI` ×31 · `✅ ÇÖZÜLDÜ` ×2 · `✅ TEŞHİSLE KAPANDI` ×1 · `❌ GERİ ÇEKİLDİ` ×1 ·
+`✅ —` ×1 (B106, kelimesiz damga)) · `grep -E '^## B' | grep -cE '[⏸🔵]'` → **2**.
+Açık = 164 − 36 − 2 = **126**. Mükerrer başlık denetimi:
+`grep -oE '^## B[0-9]+' | sort | uniq -d` → **0**.*
+
+⚠ *Bu turun 21 kaydının **hiçbiri kod turundan doğmadı** — hepsi bir içerik turunun
+ölçümünden çıktı. Beşi doğrudan kod işi (**B159** · **B161** · **B162**, brief gerekir) ya da
+Notion şema işi (**B152** · **B153**); ikisi karar borcudur (**B158** · **B160**), mekanik
+dönüşümle kapanmaz. **B142'nin uyarısı bu tur için de geçerli:** yirmi bir kayıt `- [ ]`
+konvansiyonuyla açıldı.*
+
 *Üretilen komutlar (KARAR 470-b): `grep -cE '^## B'` → 100 · `grep -E '^## B' | grep -cE '[✅❌]'`
 → 29 (`✅ KAPANDI` ×25 · `✅ ÇÖZÜLDÜ` ×2 · `✅ TEŞHİSLE KAPANDI` ×1 · `❌ GERİ ÇEKİLDİ` ×1) ·
 `grep -E '^## B' | grep -cE '[⏸🔵]'` → 2. Açık = 100 − 29 − 2 = **69**.
@@ -2433,3 +2456,285 @@ yerinde. Robots açıldığında Taslak sayfa sitemap üzerinden sızmaz.
   gösteriyordu (ön ayarlar da bu yüzden gömülü).
 - **Bağ:** B86 ✅ / B114 ✅ kapanışlarının taşıyıcısı bu araç; KARAR 543 · 544 · 545
   kart standardını buraya yazıyor.
+
+## B144 — Çember karakter bandı geçersiz; bekçi yanlış hedef gösteriyor
+
+- [ ] **Sahip:** Claude.ai · **Tetikleyici:** bir sonraki Çember gövdesi yazımı · **acil**
+- **Belirti:** bekçi bandı **`3.824–4.113`** diyor; 23 Ağustos yeniden yazımından sonra dört
+  Çember gövdesinin gerçeği **`3.480–3.771`**. Bant **344 karakter yukarıda** — yeni gövde
+  bu banda uydurulursa **yanlışlıkla şişirilir.**
+- **Ölçüm (23 Ağu, kaynak seans, `python3 len()` code point, canlı Notion `Detay`):**
+  `ekmeden-once` 3505 · `elin-neyle-dolu` 3771 · `hangi-tohumu-ekeceksin` 3480 ·
+  `neyi-bekliyorsun` 3720. *`awk length` kullanılmadı — bu makinede bayt sayıyor.*
+- **Eski bandın geçtiği üç yer** (arşivci turu ölçümü, `grep -rn "3\.824"`):
+  `SKILL.md:188` · `ornekler-cember.md:186` · `ornekler.md:201`. **Üçü birden** değişir.
+- **Bağ:** KARAR 547 · 549 (kesimler bandı düşürdü) · **B147** · **B148**
+
+## B145 — Açık Kapı karakter bandı bayat
+
+- [ ] **Sahip:** Claude.ai · **Tetikleyici:** bir sonraki Açık Kapı gövdesi yazımı
+- **Belirti:** bekçi bandı **`3.019–3.247`**; 23 Ağustos sonrası gerçek **`3.036–3.264`**.
+  Sapma küçük (alt uç +17, üst uç +17) ama **ölçülmüş bir bandın yanına ölçülmemiş bir bant
+  koymak** bandın otoritesini bitirir.
+- **Ölçüm (23 Ağu, kaynak seans):** `bir-esikte-duruyorsun` 3226 · `bu-ses-kimin` 3212 ·
+  `dusundugum-hissettigim-yaptigim` 3049 · `istek-mi-ihtiyac-mi` 3118 · `kokun-nerede-kaldi` 3036 ·
+  `nereye-kadar-senin` 3264.
+- **Yer:** `SKILL.md:187` · `ornekler.md:195`
+- **Bağ:** **B144** ile aynı yazımda kapanır.
+
+## B146 — Seremoni ve Atölye için karakter bandı yok
+
+- [ ] **Sahip:** Claude.ai · **Tetikleyici:** Seremoni ya da Atölye bekçisi yazımı
+- **Belirti:** `SKILL.md:214` *"Seremoni · Atölye · Mini Retreat · Şehir Akşamı bekçileri
+  henüz yok"* diyor. Artık **ölçülmüş gövde var**, bant üretilebilir.
+- **Ölçüm (23 Ağu):** Seremoni **`3.605–3.686`** (`kakao-seremonisi-online` 3605 ·
+  `hasat-ve-sukran` 3672 · `kakao-seremonisi-yuzyuze` 3686) · Atölye **`4541`**
+  (`rituel-tasarimi`, **tek gövde — bu bir bant değil, tek noktadır**).
+- ⚠ **Atölye "bandı" yazılırken tek gövdeden türediği yazılmalı.** Tek nokta bant gibi
+  sunulursa sonraki Atölye gövdesi 4541'e zorlanır.
+- **Bağ:** **B144** · **B145** · gölge satır uyarısı **B154**
+
+## B147 — `ocak-etkinlik` SABİT BLOKLAR bölümü bayat — dört blokta değişiklik var
+
+- [ ] **Sahip:** Claude.ai · **Tetikleyici:** bir sonraki etkinlik gövdesi yazımı · **acil**
+- **Belirti:** `SKILL.md:74` *"DÖRT SABİT BLOK — dört sayfada birebir aynı"* bölümü
+  23 Ağustos kesimlerinden **önceki** hâli tarif ediyor. Skill bu hâliyle çağrılırsa
+  **kaldırılan cümleleri geri yazar.**
+- **Değişiklik listesi** (birebir kesim tablosu): `90-kronoloji/2026-08.md`, 23 Ağustos
+  Advaita yorum turu kaydı, *"Sabit blok değişiklikleri"* bloğu. Dört blokta değişiklik:
+  tüm Açık Kapı + Çember ortak cümlesi · Açık Kapı tavsiye cümlesi ve kayıt maddesi ·
+  Çember pas turu ve kapı cümlesi · Seremoni kayıt ve Pratik Bilgi satırları.
+- **Bağ:** KARAR 547 · 549 · **B148**
+
+## B148 — `ornekler.md` ve `ornekler-cember.md` yeni gövdelerden yeniden üretilsin
+
+- [ ] **Sahip:** Claude.ai · **Tetikleyici:** **B147** ile aynı tur
+- **Belirti:** iki bekçi dosyası (`ornekler.md` 207 satır, Açık Kapı · `ornekler-cember.md`
+  198 satır, Çember) 18 Ağustos gövdelerinden türetildi. O gövdelerin **on tanesi**
+  23 Ağustos'ta yeniden yazıldı.
+- ⚠ **Bekçi bayatlarsa sessizce zarar verir:** hata vermez, sadece yeni gövdeyi eski hâle
+  çeker. Bant (**B144/B145**) yalnız uzunluğu koruyor; **cümleleri koruyan bu iki dosya.**
+- **Kapanış şartı:** iki dosya canlı Notion gövdelerinden yeniden türetilir, künyeye
+  ölçüm tarihi + yöntem yazılır.
+
+## B149 — "Notion tek parçada 2.000 karakter taşır" notu yanlış ya da eksik
+
+- [ ] **Sahip:** Claude.ai
+- **Belirti:** `SKILL.md:190` *"Notion rich text tek parçada 2.000 taşır; yapıştırdıktan
+  sonra son satırın yerinde olduğu kontrol edilir, yoksa sessizce kırpılmıştır"* ·
+  `ornekler-cember.md:193` *"Gövde Notion'un tek parça 2.000 karakter sınırının iki katı"*.
+- **Karşı ölçüm (23 Ağu, kaynak seans):** **API yazımıyla 5.203 karakter tek parçada gitti,
+  kırpılmadı.** Sınır API yolunda geçerli değil.
+- **İş:** not ya **kaldırılır** ya *"elle yapıştırma yolu"* diye **daraltılır**. İkinci
+  seçenek tercih edilirse yol adı açıkça yazılır — hangi yolda geçerli olduğu söylenmeyen
+  bir sınır, geçerli olmadığı yolda korkuya dönüşür.
+- ⚠ **Daraltmadan önce elle yapıştırma yolunda gerçekten kırpıldığı ölçülmeli.** İki yolun
+  ikisi de ölçülmeden not yeniden yazılırsa aynı sınıf hata tekrar eder.
+- **Bağ:** KARAR 550
+
+## B150 — KARAR 550 (property yazım protokolü) skill'e yazılsın
+
+- [ ] **Sahip:** Claude.ai · **Tetikleyici:** **B147** ile aynı tur
+- **Belirti:** protokol — **kabukta kur → `python3 len()` ile ölç → yaz → geri okunan
+  uzunluğu karşılaştır** — 23 Ağustos'ta doğdu ve o gün bir hatayı yakaladı (`yerleşemmiş`,
+  −2 sapma). `ocak-etkinlik` skill'inde **yok**.
+- **Yazılırken korunacak iki gerekçe:** (a) `Detay` bir **text property**'dir,
+  `update_properties` alanın **tamamını** değiştirir — `old_str` güvenliği yoktur ·
+  (b) sayfa gövdesi (`update_content`) **cerrahiye izin verir**, orada bu risk yok.
+  İki yüzeyin farkı yazılmazsa protokol gereksiz yere sayfa gövdesine de uygulanır.
+- **Bağ:** KARAR 550 · KARAR 459
+
+## B151 — Kaçış artığı taraması skill'e yazılsın
+
+- [ ] **Sahip:** Claude.ai · **Tetikleyici:** **B147** ile aynı tur
+- **Belirti:** 23 Ağustos'ta `uykudan mu0131` gövdeye girdi — `ı` yerine `u0131`
+  yazılmıştı. Tarama yakaladı ama tarama **skill'de kayıtlı değil**, o gün elle kuruldu.
+- **Desen:** `LIKE '%u0131%' OR '%u015%' OR '%u011%'`
+- ⚠ **Desen gevşek yazılırsa yanlış alarm verir.** Aynı gün `%Pas%` deseni *"ku**pas**ını"*
+  içine düştü — SQL `LIKE` büyük/küçük harf duyarsızdır. Desen skill'e yazılırken **bu vaka
+  da yazılır**, yoksa bir sonraki yazan deseni gevşetir.
+- **Bağ:** KARAR 550 · **B150** (aynı ağın iki farklı gözü)
+
+## B152 — Sayfalar DB `Son Güncelleme` property'si elle bakılıyor ve yalan söylüyor
+
+- [ ] **Sahip:** Kaan · **Notion şema işi**
+- **Belirti:** Sayfalar DB'sinin `Son Güncelleme` alanı **elle** güncelleniyor ve
+  güncellenmiyor: `/araclar` **üç ay geride**, `/advaita` **boş**. Alan bir tazelik sinyali
+  olarak okunuyor — **yanlış sinyal veriyor.**
+- **Çözüm:** Notion'un yerleşik **`Last edited time`** tipine çevrilsin. Elle bakım biter,
+  alan yapısal olarak doğru olur.
+- **Ölçüm** (23 Ağu, arşivci turu, `grep -rn "Son Güncelleme\|Son_Guncelleme" src/`): **`0` eşleşme.**
+  Property **koda hiç girmiyor** — tip değişimi kod tarafını kırmaz. *(Not: `gizlilik.astro:343`
+  küçük harfle "Son güncelleme: 19 Haziran 2026" taşıyor; bu sayfa metnidir, DB alanı değil.)*
+- **Bağ:** **B153** aynı sınıf.
+
+## B153 — Sayfalar DB `Versiyon` property'si aynı sınıf sorun
+
+- [ ] **Sahip:** Kaan · **Notion şema işi**
+- **Belirti:** `Versiyon` alanı da **elle bakım** istiyor; bakılmadığında sessizce bayatlıyor.
+  `Son Güncelleme` ile aynı kusur — insan disiplinine bağlı meta veri.
+- **Ölçüm** (23 Ağu, `grep -rn "Versiyon" src/`): **`0` eşleşme.** Kod tüketmiyor.
+- **Karar gerekiyor:** alan **gerçekten kullanılıyor mu?** Kod okumuyor, elle de bakılmıyorsa
+  seçenek ikidir — otomatikleştir ya da **kaldır**. Üçüncü seçenek (bakımsız bırakmak) şu
+  anki hâldir ve **yanlış bilgi üretiyor.**
+- **Bağ:** **B152** ile aynı turda karara bağlanır.
+
+## B154 — Gölge satır `Ritüel Tasarımı | Gölge 0210 o#2` Detay'ı bayat
+
+- [ ] **Sahip:** Claude.ai · **Küçük · bilerek dokunulmadı**
+- **Belirti:** Etkinlikler DB'de takvim amaçlı bir gölge satır var; `Detay` gövdesi
+  **4.904 karakter**, asıl satır 23 Ağustos'ta **4.541**'e indi. Gölge **363 karakter bayat**
+  — tam olarak Atölye formatının o günkü net değişimi.
+- **Neden acil değil:** satır **yayında değil**, takvim amaçlı. Bilerek dokunulmadı.
+- ⚠ **Neden yine de borç:** bayat gövde bir gün asıl sanılabilir; ayrıca **B146**'nın Atölye
+  ölçümü bu satıra çarparsa yanlış bant üretir (4.904 vs 4.541).
+- **Kapanış şartı:** ya senkronlanır ya `Detay` boşaltılıp *"gölge — gövde asıl satırdadır"*
+  işaretçisi konur.
+
+## B155 — `10-marka.md` "Yoga ve nefes (Rishikesh YTT)" — eğitim Sivananda kökenli
+
+- [ ] **Sahip:** Claude.ai · **Tetikleyici:** `10-marka.md` bir sonraki dokunuşu
+- **Belirti:** `10-marka.md:24` Modaliteler satırı *"Yoga ve nefes (Rishikesh YTT)"* diyor.
+  **Advaita:** eğitim **Sivananda kökenli**, ve *"belirtmeye gerek yok"*.
+- **Durum:** **sitede kaldırıldı** (`/araclar` zaten yapılmıştı, `/advaita` künyesinde
+  "Rishikesh'te aldığı" 23 Ağu'da çıktı) — **korpusta duruyor.**
+- ⚠ **`/hikaye`'deki "Rishikesh'in yoga bedeni" bu borca dahil değildir.** Orada
+  Advaita'nın eğitiminden değil **coğrafi bir gelenekten** söz ediliyor; itiraz künyeye aitti,
+  bilerek dokunulmadı (23 Ağu raporu).
+- **Ölçüm (23 Ağu, arşivci turu):** `grep -n "Rishikesh" docs/10-marka.md` → **1 satır (24).**
+- ⚠ **`10-marka.md` KARAR 471 kapsamındadır** — repo otorite, project files kopyası ayna.
+  Dokunuş sonrası ayna elle tazelenir.
+
+## B156 — `10-marka.md` "Beşli kültürel sentez" satırı KARAR 299 ile süperselendi ama duruyor
+
+- [ ] **Sahip:** Claude.ai · **Tetikleyici:** **B155** ile aynı tur
+- **Belirti:** `10-marka.md:52` — *"**Beşli kültürel sentez:** Güney Amerika + Doğu/Hint +
+  Nordik + Mısır/Akdeniz + Türk/Anadolu kadim kökler."* **KARAR 299** (5 Tem, KALICI) kaynak
+  kanonunu *"Dört Yön, Bir Ocak"*a çevirdi: **Anadolu kaynak değil, kaptır.** Satır beşinci
+  kaynak olarak Anadolu'yu sayıyor — **süperselenmiş fikir marka çekirdeğinde yaşıyor.**
+- **Ölçüm (23 Ağu):** `grep -n "Beşli"` → **1 satır (52).** Doğrulandı.
+- **Bağ:** KARAR 299 · **B157** (aynı dosya, aynı fikir) · **B159** (aynı fikir, kod tarafı)
+- ⚠ *Bu üçü tek bir kusurun üç yüzüdür: kanon değişti, taşıyıcıları değişmedi.*
+
+## B157 — `10-marka.md` giriş notu kendi dosyasını yanlış tarif ediyor
+
+- [ ] **Sahip:** Claude.ai · **Tetikleyici:** **B156** ile aynı tur
+- **Belirti:** `10-marka.md:5` — *"Kaynak kanonu 'Dört Yön, Bir Ocak' (KARAR ADAYI 299) marka
+  çekirdeğine dokunmadı — 'beş kadim kaynak'/'hepsini yaşadı' ifadeleri **bu dosyada YOK**,
+  site içeriği katmanında yaşar."*
+- **Ölçüm (23 Ağu, arşivci turu):** iddia **birebir doğru, kavramsal olarak yanlış.**
+  `grep -n "beş kadim"` → yalnız satır 5'in kendisi; dize gerçekten yok. **Ama aynı fikir
+  satır 52'de duruyor** (**B156**). Not "ifade yok" derken okuyucuya "fikir yok" dedirtiyor.
+- ⚠ **İkinci bayatlık:** not 299'u *"KARAR ADAYI"* diye anıyor; ledger'da **KALICI**
+  (satır 46). Aday değil, mühürlü.
+- **İş:** not düzeltilsin — *birebir ifade yok, fikir satır 52'de duruyordu ve KARAR 299 ile
+  düştü* denilsin. Ve "ADAYI" kaldırılsın.
+
+## B158 — `10-marka.md` K4 "Wild Woman Project modelinin OCAK versiyonu" — batı sıfatı itirazıyla çelişiyor
+
+- [ ] **Sahip:** Kaan + Advaita · **karar borcu, mekanik iş değil**
+- **Belirti:** `10-marka.md:67` K4 — *"Çember Lideri + İleri Fasilitatör eğitimi.
+  **Wild Woman Project modelinin OCAK versiyonu.**"* Advaita'nın 23 Ağustos notu batı
+  sıfatlarına duruş istiyor: *"yaban kadın"* · *"womb yoga"* · *"şamanik yoga"* —
+  *"Yoganın başına batı sıfatlar getiriyor… Burada bir duruşumuz olmalı."*
+- **Ölçüm (23 Ağu, arşivci turu, `grep -rn "Wild Woman"`):** patch bir yer saydı,
+  **canlı korpusta iki yer var** — `10-marka.md:67` (*"modelinin"*) ve
+  **`20-ref-program.md:25`** (*"Wild Woman Project **büyüme motorunun** OCAK versiyonu"*).
+  Ayrıca `_arsiv/ocak-referans-v1.md:289` (arşiv, dokunulmaz).
+- ⚠ **Bu bir karar borcudur.** Referans **iç doküman** dilidir, site metni değil — silinmesi
+  gerekip gerekmediği Advaita'nın duruş kararına bağlı. **Karar verilmeden mekanik silme
+  yapılmaz.**
+- **Bağ:** `/mini-retreat` yaban kadın sorusu (Advaita kuyruğu, `03-sira.md`) aynı karara bakar.
+
+## B159 — `/hikaye` section marker `bes-kadim-kaynak` → `dort-yon-bir-ocak`
+
+- [ ] **Sahip:** CC · **KOD İŞİ — brief gerekir**
+- **Belirti:** `/hikaye` sayfasının section marker'ı hâlâ `bes-kadim-kaynak`. Kanon
+  **KARAR 299** ile *"Dört Yön, Bir Ocak"*a döndü; marker eski kanonu taşıyor.
+- **Ölçüm** (23 Ağu, arşivci turu, `grep -rn 'bes-kadim-kaynak' src/`): **19 eşleşme, 6 dosya.**
+  `src/lib/remark-ocak-sections.ts` **7** (yön kanonu yorumu · transform fonksiyonu ·
+  iki uyarı mesajı · `data-section` emit'i · `case` dalı) · `remark-ocak-sections.test.ts` **6** ·
+  `__snapshots__/remark-ocak-sections.test.ts.snap` **2** ·
+  `__fixtures__/fixture-25-bes-kadim-kaynak.md` **1 (+ dosya adı)** ·
+  `src/styles/atmosfer.css` **1** (`ocak-bes-kadim-kaynak` genişlik yorumu).
+- ⚠ **Patch bunu "marker rename" diye listeledi — değil.** Parser dalı, CSS class'ı, üç test,
+  bir snapshot ve **bir fixture dosya adı** aynı işin parçası. Tek satırlık bulup-değiştirme
+  **testleri kırar.**
+- ⚠ **Notion tarafı ile kod tarafı AYNI commit'te gitmeli** (KARAR 409, `00-durum.md` sessiz
+  kırılma listesi): marker adı Notion'da değişip kod eşleşmezse **section haftalarca render
+  dışı kalır** ve site bozulmuş görünmez.
+- **Bağ:** KARAR 299 · KARAR 409 · **B156** · **B157**
+
+## B160 — Çember Lideri → **Çember Rehberi** rename
+
+- [ ] **Sahip:** Claude.ai (korpus) + Kaan (Notion) · **Advaita kararı, 21 Tem notu**
+- **Belirti:** Advaita: *"Lider değil de… Rehber belki"* (`/sen-neredesin` 8. Taşıyıcı) ve
+  21 Temmuz notu: *"Çember liderlik eğitimi → Çember rehberlik eğitimi"*.
+- **Ölçüm** (23 Ağu, arşivci turu, `grep -rn "Çember Lideri" src/ docs/`): **29 eşleşme.**
+  `src/` → **0** (site metni Notion'da yaşıyor, **kod ayağı yok**) ·
+  **canlı `docs/` → 8**: `10-marka.md:67` · `20-ref-program.md:25,48` · `20-ref-marka.md:565` ·
+  `20-ref-icerik-dili.md:37` · `30-sosyal.md:101` · `Ocak-Mufredat.md:38,249` ·
+  `_uretilen/site-icerik.md` → **5** (script çıktısı, Notion değişince yeniden üretilir) ·
+  `_arsiv/` → **5** (dokunulmaz) · `_arsiv/ocak-kronoloji-v1.md` → 1.
+- ⚠ **`30-sosyal.md:101` bir kararı taşıyor:** *"'Çember Lideri Eğitimi' adı **kesinleşti** —
+  alternatif ad tartışması kapalı."* Rename bu satırı **doğrudan çeliyor**. Ad tartışması
+  kapalı sayılıyordu; Advaita yeniden açtı. **Önce bu çelişki karara bağlanır, sonra rename
+  koşulur.** Mekanik bul-değiştir bu satırı sessizce yalancı çıkarır.
+- ⚠ Aynı sınıf: `Ocak-Mufredat.md:249` *"Vasilisa, Çember Lideri'nin masalıdır"* — anlatı
+  cümlesi, mekanik dönüşüm cümlenin ritmini bozabilir.
+- **Bağ:** **B158** (aynı Advaita duruş turu) · KARAR 403 (tek ev + köprü — rename ev
+  sahibinden başlar)
+
+## B161 — Ana sayfa ve `/sen-neredesin` aşağı-kaydırma işareti yok
+
+- [ ] **Sahip:** CC · **KOD İŞİ — brief gerekir**
+- **Belirti:** Advaita iki sayfada aynı şeyi söyledi — ana sayfa *"Ateşin yanına gel"*:
+  *"Aşağı kaydırma hissi gelmiyor"* · `/sen-neredesin` *"Bir kadının yolu"*:
+  *"Burada da aşağı indirme hissi eksik"*.
+- **Advaita'nın önerisi:** *"Aşağı işaret eden bir 'şey', ok gibi"* — ve **ortak bir
+  komponent**: *"belki böyle sayfalara ortak bir işaret"*.
+- **Boyut:** tek komponent + iki sayfaya bağlama. ⚠ `atmosfer.css` genişlik kolonu
+  (`1538-1552`) yeni section eklenirse **dört selektöre** de bakılır (`00-durum.md` sessiz
+  kırılma listesi).
+- **Bağ:** **B162** aynı brief'e girer — ikisi de gezinme kusuru.
+
+## B162 — "Hikâyeyi oku"ya tıklayan kullanıcı sayfalar arasında kayboluyor
+
+- [ ] **Sahip:** CC · **KOD İŞİ — brief gerekir** · Advaita'nın 29 Temmuz notu
+- **Belirti:** *"Hikayeyi oku'ya tıklayıp sonra kayboluyorlar sayfalar arasında."*
+  Dönüş yolu yok.
+- **Advaita'nın önerisi:** *"Hikayeyi oku linki, sen neredesin linkinin üzerine gelebilir"* —
+  yani çözüm **navigasyon sırası** olabilir, geri butonu değil.
+- ⚠ **Öneri bir teşhis değil.** Kaybolmanın nedeni ölçülmeden link sırası değiştirilirse
+  semptom taşınır. Brief **ADIM 0 ile açılır**: gerçek gezinme yolu Chrome'dan izlenir
+  (KARAR 419).
+- **Bağ:** **B161** ile aynı brief.
+
+## B163 — 14 etkinlik gövdesi Notion'da yeni, sitede eski — deploy yapılmadı
+
+- [ ] **Sahip:** Kaan · **Tetikleyici:** Sayfalar DB dokuz sayfası bitince
+- **Belirti:** 23 Ağustos'ta 14 etkinlik gövdesinin tamamı yeniden yazıldı. **Deploy
+  yapılmadı.** Notion ile site arasında **14 gövdelik fark** var.
+- ✅ **Bu bilinçli bir karardır, kusur değil.** Aynı gün üç transkripsiyon/sınıflandırma
+  hatası yakalandı ve **hiçbiri siteye ulaşmadı, çünkü deploy sonda.** Deploy'un geç olması
+  dördüncü ağdı.
+- **Kapanış şartı:** Sayfalar DB'nin dokuz sayfası da bitince **tek seferde** deploy.
+  Deploy hook uyarısı geçerli: **B64** — Notion webhook + gece cron hâlâ `astro-iskelet`
+  (ölü dal) hook'unu paylaşıyor.
+- ⚠ **Kayıt buraya, iş `03-sira.md`'ye.** `02-borclar.md` bir yapılacaklar listesi değil,
+  **fark edilmiş tutarsızlıkların defteri** (`00-durum.md`). Notion ≠ site bir tutarsızlıktır
+  ve kaydı burada durur; **sıradaki iş olarak `03-sira.md`'de yaşar.**
+
+## B164 — `Kayıt Var` işaretleme durumu doğrulanmadı
+
+- [ ] **Sahip:** Kaan · **Tetikleyici:** deploy öncesi (**B163**) · **küçük ama kapıda**
+- **Belirti:** KARAR 547 kayıt varlığının otoritesini Etkinlikler DB'sindeki **`Kayıt Var`
+  checkbox'ına** verdi (Kaan açtı). Gövdelerdeki kayıt cümleleri bu alanın **anlatımıdır**.
+  Alanın gerçekten doğru işaretlendiği **doğrulanmadı.**
+- **Beklenen durum:**
+  **işaretli (9)** = 6 Açık Kapı + `hasat-ve-sukran` + `kakao-seremonisi-online` + `rituel-tasarimi` ·
+  **işaretsiz (5)** = 4 Çember + `kakao-seremonisi-yuzyuze`
+- ⚠ **Alan ile gövde çelişirse gövde yalan söyler.** Kadın sayfada *"kaydedilir"* okuyup
+  kayıt gelmezse — ya da tersi — bu bir **vaat kusurudur**, tasarım kusuru değil.
+  Doğrulama **deploy'dan önce** yapılır.
+- **Bağ:** KARAR 547 · **B163**
