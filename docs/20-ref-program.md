@@ -22,7 +22,7 @@ OCAK bir program değil, bir ekosistem. Kadın istediği katmanda kalabilir — 
 
 **Katman 3 — YOLCULUKLAR (Zirve / Tam Taahhüt):** Anadolu Yolculuğu (11 ay) ve Uluslararası Yolculuk (15 ay). Kapalı kohort, screening'li giriş. En derin dönüşüm, en yüksek taahhüt.
 
-**Katman 4 — LİDERLİK (Çoğaltma):** Çember Lideri Eğitimi, İleri Fasilitatör Eğitimi, mentorluk ağı. Yolculuğu tamamlamış kadınların taşıyıcı olması. Wild Woman Project büyüme motorunun OCAK versiyonu.
+**Katman 4 — LİDERLİK (Çoğaltma):** Çember Rehberi Eğitimi, İleri Fasilitatör Eğitimi, mentorluk ağı. Yolculuğu tamamlamış kadınların taşıyıcı olması. Wild Woman Project büyüme motorunun OCAK versiyonu.
 
 **Her katman kendi başına değerli.** Kadın "sadece çembere geliyorum" dediğinde eksik hissetmemeli.
 
@@ -45,7 +45,7 @@ YOLCULUK → Anadolu (11 ay) veya Uluslararası (15 ay)
    ↓
 TAMAMLAMA → "AL, OL, VER" kapasitesiyle eve dönüş
    ↓
-(isteğe bağlı) LİDERLİK → Çember Lideri Eğitimi → kendi çemberini açma
+(isteğe bağlı) LİDERLİK → Çember Rehberi Eğitimi → kendi çemberini açma
 ```
 
 ### Araç Kutusu — AL · OL · VER (KARAR 17)

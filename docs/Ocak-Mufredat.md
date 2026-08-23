@@ -35,7 +35,7 @@ Hitit metinlerinde en sık geçen ritüel uzmanı unvanlarından biri **"Yaşlı
 - **Demir Kazık:** kutup yıldızı — Türk kozmolojisinde göğün direği; dünya onun etrafında döner (çemberin gök hali).
 
 ### Yaşayan kadın ritüelleri (halk katmanı — en sahici hat)
-- **Ocaklı kadın:** Anadolu halk şifacılığında belirli hastalıkları "el verme" ile sağaltma yetkisi taşıyan soylara "ocak" denir; kadın ocaklılar yaygındır. **"El verme" = aktarım:** yetki kitaptan değil, elden ele geçer. OCAK'ın Ver katmanının ve Çember Lideri Eğitimi'nin bin yıllık atası.
+- **Ocaklı kadın:** Anadolu halk şifacılığında belirli hastalıkları "el verme" ile sağaltma yetkisi taşıyan soylara "ocak" denir; kadın ocaklılar yaygındır. **"El verme" = aktarım:** yetki kitaptan değil, elden ele geçer. OCAK'ın Ver katmanının ve Çember Rehberi Eğitimi'nin bin yıllık atası.
 - **Kırk geleneği:** loğusa ve bebeğin kırk günü; kırklama (kırk kaşık su ile yıkama), kırk uçurma. Eşik-koruma ritüelinin yaşayan hali.
 - **Kına:** ateş renginin bedene sürülmesi; kız evinden kadın evine geçiş eşiği — ağlanan, şarkı söylenen kolektif kadın ritüeli.
 - **Ağıt:** yasın kadın sesiyle, toplulukla taşınması; ağıtçı kadınlar. "Duygunun çemberde tanıklıkla taşınması"nın halk geleneğindeki karşılığı.
@@ -246,7 +246,7 @@ Güneşin haftalarca doğmadığı dönem. Kuzey kültürlerinde kaamos "bunalı
 
 ### Slav hattı: Mokoş ve Baba Yaga
 - **Mokoş:** Kiev knezi Vladimir'in 980'de diktiği resmî panteonda **tek dişil tanrı** — nemli toprağın anası (Mat Zemlya bağı), eğirmenin ve kadın emeğinin koruyucusu; Hristiyanlıkta Azize Paraskeva-Pyatnitsa'ya (Cuma Azizesi) dönüşür — eğirme yasağı günleriyle yaşamaya devam eder. Yine iplik: Nornlar-Mokoş-kader örgüsü tek damar.
-- **Baba Yaga — karanlık ormanın eşik bekçisi:** Tavuk bacaklı evinde yaşayan, havanla uçan yaban nine. Masallarda ne iyi ne kötü: **sınayan.** En işlek anlatı **Vasilisa:** ölen annesinin bıraktığı küçük bebek (=sezgi mirası) cebinde, üvey annenin "ateş almaya" gönderdiği kız Yaga'nın evine varır; imkânsız işleri bebek/sezgi sayesinde tamamlar; Yaga "fazla soru sorma"nın ve "işini bitirme"nin sınavından geçirir; kıza **içinde kor yanan bir kafatası-fener** verir; kız ateşi eve taşır, ateş sahte aileyi yakıp kızı özgürleştirir. — **OCAK'ın çoğalma cümlesinin masal hali: "ateşten bir kıvılcım alıp kendi ocağını yakar."** Vasilisa, Çember Lideri'nin masalıdır.
+- **Baba Yaga — karanlık ormanın eşik bekçisi:** Tavuk bacaklı evinde yaşayan, havanla uçan yaban nine. Masallarda ne iyi ne kötü: **sınayan.** En işlek anlatı **Vasilisa:** ölen annesinin bıraktığı küçük bebek (=sezgi mirası) cebinde, üvey annenin "ateş almaya" gönderdiği kız Yaga'nın evine varır; imkânsız işleri bebek/sezgi sayesinde tamamlar; Yaga "fazla soru sorma"nın ve "işini bitirme"nin sınavından geçirir; kıza **içinde kor yanan bir kafatası-fener** verir; kız ateşi eve taşır, ateş sahte aileyi yakıp kızı özgürleştirir. — **OCAK'ın çoğalma cümlesinin masal hali: "ateşten bir kıvılcım alıp kendi ocağını yakar."** Vasilisa, Çember Rehberi'nin masalıdır.
 
 ## 2. OCAK KÖPRÜLERİ
 - **Kildare ↔ Yanartaş ↔ sönmeyen kor:** üç coğrafyada aynı imge; GEÇİŞ evresi (Yanartaş) metnine ve hikaye Kuzey kartına tek cümle köprü. 1993 yeniden-yakma hikâyesi = kül metafiziğinin gerçek dünyada çalışması.

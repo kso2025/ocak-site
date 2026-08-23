@@ -64,7 +64,7 @@ OCAK bir program değil, bir ekosistem. Bir huni değil, spiral. Kadın istediğ
 - **K1 — ÇEMBER (zemin/kalp atışı):** Aylık çemberler, online çemberler, mevsim seremonileri. Düşük eşik, düzenli temas, aidiyet.
 - **K2 — DENEYİMLER (orta/derinleşme):** Mini retreat'ler, İstanbul akşamları, online seri + workshop, bağımsız teklifler. Taahhütsüz ama derin.
 - **K3 — YOLCULUKLAR (tam taahhüt):** Yolculuk tek kavram, üç ürün — **Yolculuk (online)** (bir yıl, altı durak, yirmi yirmi dört kadın, doğrudan kayıt/screening yok — erişilebilir kapı) + **Anadolu Yolculuğu** (11 ay, yüz yüze, kapalı kohort, screening) + **Dünya Yolculuğu** (15 ay, yüz yüze, kapalı kohort, screening). Üçünün de iskeleti aynı: bir Açılış, beş eşik, kapalı kohort. Online ürün diğerlerinin küçüğü değildir — *"aynı eşikler, orada bedenle, burada sesle."*
-- **K4 — LİDERLİK (çoğaltma):** Çember Lideri + İleri Fasilitatör eğitimi. Wild Woman Project modelinin OCAK versiyonu.
+- **K4 — LİDERLİK (çoğaltma):** Çember Rehberi + İleri Fasilitatör eğitimi. Wild Woman Project modelinin OCAK versiyonu.
 
 **Kadının doğal akışı:** Merak → Açık Kapı → Çember → Deneyim → Karar → Başvuru/Screening → Yolculuk → Eve Dönüş → (isteğe bağlı) Liderlik.
 

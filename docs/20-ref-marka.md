@@ -562,7 +562,7 @@ aynı ateşten çıkmış olur.
 
 ### The Wild Woman Project (2011'den beri)
 - 27 ülkede 875+ sertifikalı fasilitatör
-- 7 haftalık online Çember Lideri Eğitimi
+- 7 haftalık online Çember Rehberi Eğitimi
 - Başarı sırrı: Fasilitatör modeli → merkezsiz ölçeklenme + yerel samimiyet
 
 ### Red Tent Hareketi (2006-2007'den beri)
