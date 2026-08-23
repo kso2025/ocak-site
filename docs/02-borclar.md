@@ -2392,6 +2392,7 @@ yerinde. Robots açıldığında Taslak sayfa sitemap üzerinden sızmaz.
   erişilemez olursa yeniden yükleyip yeni URL üretmek gerekir — ve `--sref` çapası değişince
   seri tutarlılığı kaybolur.
 - **Kapanış şartı:** kalıcı bir yere kopya (Drive / repo `public/`).
+- **Yedeklenecek URL'ler ve soy ağacı:** `docs/_arsiv/2026-08-23-mj-kayit.md`
 
 ## B142 — `02-borclar.md`'de kapanış konvansiyonu tek biçim değil
 
