@@ -1,6 +1,9 @@
 # OCAK — SIRA
 
-**Son güncelleme:** 24 Ağustos 2026 (**sıfır dolgu turu**) · **KARAR 555–557** — jetonlar
+**Son güncelleme:** 24 Ağustos 2026 (**Sayfalar metin turu + C listesi + DEPLOY**) ·
+**KARAR 558–567** mühürlendi · **DEPLOY ALINDI** — `1b4b998` → **`9acbabb`**, sekiz canlı
+kontrolün sekizi tuttu · **B80 ✅ · B164 ✅**, **B174–B181** açıldı ·
+önceki: 24 Ağustos (**sıfır dolgu turu**) · **KARAR 555–557** — jetonlar
 sıfır dolgulu (`C01`–`C24` · `V01`–`V09` · `z01`–) · karusel zemini yüzey olur, nesne olmaz ·
 sert kapı ölçütü yöntemiyle yazılır; **B171 ✅ kapandı**, **B172–B173** açıldı (C09 ve C20
 karusel zemini) · önceki: 23 Ağustos (**adlandırma turu**) · **KARAR 552–554** — zemin dosya
@@ -36,13 +39,12 @@ Kuyruk aşağıda, `📄 İÇERİK HATTI` bölümünde.
 
 ## SIRADAKİ İŞ
 
-> ⏸ **`00-durum.md` NEDEN BAYAT — bilerek (Kaan kararı, 23 Ağustos).**
-> Dosya **195/200** (KARAR 457 hard cap, **B131**). Yazmak bir **tahliye turu** gerektiriyor,
-> ve **Sayfalar DB turundan sonra dosya zaten yeniden yazılacak** — iki kez tahliye etmek
-> gereksiz risk. **Karar: Sayfalar DB turu bitene kadar bekliyor**; o turda tahliye + yazım
-> **birlikte** koşulur. Tahliye adayı dosyanın kendi işaret ettiği **11 Ağustos** bloğu
-> (B47 · B58). ⚠ Bu **B131'i kapatmaz** — borç açık, kapanışı tahliye turudur.
-> *Bu not, bir sonraki tur "durum neden bayat" diye zaman kaybetmesin diye buradadır.*
+> ✅ **`00-durum.md` YAZILDI (24 Ağustos) — bekleme koşulu doldu.**
+> 23 Ağustos kararı *"Sayfalar DB turu bitene kadar bekliyor; o turda tahliye + yazım
+> birlikte koşulur"* diyordu. Tur bitti, deploy alındı, ikisi birlikte koşuldu:
+> **11 Ağustos bloğu** (B47 · B40/B55/B56) kronolojiye **indi**, yerine tek satırlık
+> işaretçi kaldı (KARAR 61 — silinmedi, taşındı); 24 Ağustos gerçekleri yazıldı.
+> ⚠ **B131 hâlâ açık** — tahliye tavanı bir kez daha açtı, kapağı kaldırmadı.
 
 ### ⛔ LANSMAN ÖN KOŞULU — ertelenemez
 
@@ -72,7 +74,59 @@ Sırada iki hat (B106 aynı gün kapandı — `c45332e`):
    (90–110), otuz günlük seri için moodboard (`--p`) tek `--sref`'ten daha uygun.
 
 
-### 📄 İÇERİK HATTI — SAYFALAR DB, SONRA DEPLOY (23 Ağustos Advaita turu)
+### ✅ İÇERİK HATTI — BİTTİ (24 Ağustos: Sayfalar turu + tarama turu + C-1…C-5 + DEPLOY)
+
+**Biten satırlar silinmez, `✅` alır** (KARAR 61). Aşağıdaki 23 Ağustos kuyruğu **kapandı**:
+
+- ✅ **Advaita sayfa turu** — on sayfa · ✅ **tarama turu** — yorum almamış sekiz sayfa
+- ✅ **C-1…C-5** kapandı; **beşi Advaita'ya kaldı** (aşağıdaki C LİSTESİ bölümünde ✅/⏳ ayrımı)
+- ✅ **Advaita birleşik raporu** — `advaita-rapor-2026-08-24-birlesik.md` (23 Ağustos raporuyla
+  tek dosyada birleşti). ⚠ Ara taslak `advaita-geri-donus-2026-08-24.md` **geçersizdir,
+  gönderilmeyecek.** Birleştirmede **bir cevap geri alındı**: kayıt satırı *"farklı yapıldı"* →
+  **"yapıldı"** (KARAR 558). *Advaita'ya söylenmiş bir cevabın değiştiği raporda açıkça yazıldı —
+  sessizce düzeltilmedi.*
+- ✅ **DEPLOY** — `9acbabb`, sekiz canlı kontrolün sekizi tuttu (**B163** kapanmadı, aşağıda)
+
+⚠ **B163 (deploy borcu) bu turla kapanmadı ama şekil değiştirdi:** o borç *"Notion'da yeni,
+sitede eski"* tutarsızlığıydı; şu an **fark yok.** Bir sonraki metin turu farkı yeniden
+açacak — **KARAR 566 gereği her metin değişikliği deploy ister.**
+
+---
+
+### 🎯 SIRADAKİ — 24 Ağustos turundan, öncelik sırasıyla
+
+1. **Advaita görüşmesi.** Rapor hazır ve **tek dosya**. Gündem: beş açık C kalemi +
+   **Ritüel Tasarımı ön görev onayı** (**B178**) + **marka K4'ün Wild Woman ibaresi**
+   (**B158**, iki turdur açık). ⚠ **Site canlı** — artık gösterilebilir.
+2. **Slug turu** (**B175**) — 26 kayıt, konvansiyon **KARAR 559**. Yayındaki ~10'a tarih eki
+   (`neyi-bekliyorsun` dahil). İki yalan söyleyen slug + Yolculuk placeholder tarihleri.
+   Taslak slug'ları **Kaan** yazacak. ⏳ **Pencere ilk gerçek kayıtla kapanır.**
+3. **Şablon taraması** (**B165**) — MailerLite + Resend, KARAR 558 kapsamıyla.
+   **İlk gerçek kayıt açılmadan önce.** Aynı turda **B174** (kakao grubu var mı).
+4. **Deploy hook — B64.** `tZR9LcwJq9` hâlâ `astro-iskelet` **ölü dalına** bağlı.
+   ⚠ Bu turda push yoluyla deploy alındığı için **sorun görünmedi**, ama Notion webhook ve
+   gece cron'u hâlâ ölü dala basıyor — yani **otomatik içerik deploy'u çalışmıyor** ve
+   çalışmadığı **fark edilmiyor.** Yanında **B179** (`.vercel/repo.json` bayat): elle
+   deploy'un iki yolu da güvenilmez, bu tur üçüncü yolu (git push) kullandı.
+5. **B159** — `bes-kadim-kaynak` → `dort-yon-bir-ocak`. `src/`'de **19 eşleşme / 6 dosya**;
+   Notion + kod **atomik** (KARAR 409).
+6. **Kod kuyruğu** — aşağı-kaydırma işareti (**B161**, ana sayfa + `/sen-neredesin`, ortak
+   komponent) · dönüş yolu (**B162**) · `Kayıt Var` kabuğa (**B167**).
+7. **`ocak-lint`** (**B166**) — KARAR **561** (başlık soru sormaz) · **562** (kadına ne
+   yapacağını söylemez) · **563** (mühürle birlikte denetim satırı) kural satırları.
+8. **Brief şablonu** — KARAR **566** ve **567**'nin ölçüm kuralları:
+   *SSR sayfası canlıda doğrulanır* · *doğrulamanın başarısız olabildiği önce kanıtlanır.*
+9. **B176** — `/yolculuk` `yolculuk-eksen` çıktıda yok; teşhis Notion'dan başlar.
+10. **B180** — `tools/ocak-kart-derleyici.html` sahipsiz değişiklik + adsız kopya.
+    Kimin yazdığı belirlenmeden commit'lenmez.
+11. **B181** — aynı gün çok oturum kuralı: `docs/`'a kim yazar, kim patch üretir.
+    ⚠ **Yazan oturum push eder** — push edilmemiş commit claude.ai için yok hükmündedir
+    (KARAR 479; bu tur boyunca MCP bayat snapshot servis etti).
+12. **B177** — söz envanteri. Tek turda kapanmaz; ilk adım envanterin kendisi.
+
+---
+
+### 📄 İÇERİK HATTI — 23 Ağustos Advaita turunun kuyruğu (tarihsel, ✅ kapandı)
 
 *Etkinlikler DB bitti (14 gövde). Kalan: Sayfalar DB dokuz sayfa (~15 kalem) + sekiz soruluk
 C listesi + deploy. Tam devir `_arsiv/2026-08-23-advaita-devir.md`, Advaita'ya dönen rapor
@@ -118,7 +172,19 @@ Batı-sıfatı taraması karar öncesi koşulursa yalnız liste üretir, düzelt
 metni boş. Metindeki karşılığı *"Kendine 'neden hâlâ yapmadım' diye soran…"*; ne demek
 istediği anlaşılmıyor, **Advaita'ya sorulacak.**
 
-### 🔶 C LİSTESİ — SEKİZ YENİDEN YAZIM, ADVAITA KARARI OLMADAN YAPILMAZ
+### 🔶 C LİSTESİ — BEŞİ KAPANDI (24 Ağu), BEŞİ ADVAITA'DA
+
+**✅ Kapananlar (C-1…C-5, 24 Ağustos):** dördü **KARAR 560** ile ada/slug'a dönüştü,
+biri gövde yeniden yazımıyla çözüldü. Yeni adlar: **Ellerin Dolu** · **Yer Açmak** ·
+**Ateş Seninle Geldi** (bu bir **Açık Kapı**, Çember değil) · `hangi-tohumu-ekeceksin`
+(başlık aynı, kıtlık mantığı **KARAR 562** ile çıktı) · `dusundugum-hissettigim-yaptigim`.
+Ad kararlarının dayandığı ilke **KARAR 561** olarak mühürlendi.
+
+**⏳ Advaita'da kalan beş kalem:** C-6 yaban kadın · C-7 `/seremoni` niyet cümlesi ·
+C-8 `/ekip` çıraklık · `bu-ses-kimin`in çözülmemiş satırı · **19 Ağustos'un boş yorumu**
+(Buluşmalar/Açık Kapı satırı var, yorum metni yok).
+
+*Aşağıdaki sekizli liste **tarihsel kayıttır** — 1–5 kapandı, 6–8 açık.*
 
 *Bunlar borç değildir — karar Advaita'nındır, ledger'a girmezler. Kaan bunları **önce Claude
 ile tartışarak** hazırlamak istiyor, sonra Advaita'ya gidecek. Advaita'nın kelimeleri birebir
@@ -283,6 +349,10 @@ sayfalar tamamlanamaz.
   Kaan teyidi var, **Advaita teyidi yok**.
 - **Kartın anlamı** doğru anlatıldı mı (*"kişiye özel değil, hepimize birden"*).
 - ⚠ **Ritüel Tasarımı gövdesinin hiçbir bölümü Advaita'ya gösterilmedi.**
+- ⏳ **Ritüel Tasarımı ön görevi — cevap gelmedi (B178).** 23 Ağustos'ta *"bizim evde ne
+  yapılırdı"* cümlesi silindi, **ön görev programda bırakıldı**, gerekçe Advaita'ya yazıldı.
+  Onaylarsa kalır, onaylamazsa **görev de kalkar.** ⚠ Cevapsız kalırsa görev sessizce kalıyor —
+  yani varsayılan hâl "onaylandı" gibi davranıyor, oysa açık bir karar yok.
 
 ### Notion veri hijyeni — küçük, ertelenmez (KARAR 104)
 

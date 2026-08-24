@@ -120,6 +120,37 @@ kayıt şişecek ve dört madde aynı işi gösterecekti.***
 `✅ —` ×1) · `grep -E '^## B' | grep -cE '[⏸🔵]'` → **2**. Açık = 168 − 37 − 2 = **129**.
 Mükerrer başlık denetimi: `grep -oE '^## B[0-9]+' | sort | uniq -d` → **0**.*
 
+*24 Ağustos, on üçüncü ölçüm (Sayfalar metin turu + C listesi patch'i): toplam 168 → **181**,
+açık 129 → **139**. Damgalı 37 → **40**, iş değil **2**'de sabit. Bu tur **iki kapanış**
+(**B80** köz · **B164** `Kayıt Var`) ve **sekiz yeni kayıt** (**B174–B181**); aradaki üçüncü
+damga karusel turunun **B171**'idir (KARAR 555). Sayaç devralınmadı, üç grep yeniden koşuldu.*
+
+*⚠ **Patch on beş "açılan" saydı, sekizi yeni.** Yedisi zaten defterdeydi ve **tazelendi,
+ikinci kez açılmadı**: MailerLite/Resend şablonları → **B165** · `yolculuk-acilis` NULL →
+**B81** · Vimeo alanı → **B168** · `Son Güncelleme`/`Versiyon` → **B152**/**B153** ·
+Wild Woman K4 → **B158** · `.env.preview` → **B28**. Sekizincisi (ham Notion linki taraması)
+**borç olarak açılmadı** — arşivci turu sınıfı ölçüp kapattı (aşağıda).*
+
+*⚠ **Patch iki borcu yanlış numarayla kapatıyordu ve ikisi de gerçek bir madde vuracaktı.**
+*"borç 40"* dediği köz borcu **B80**'dir; **B40** 11 Ağustos'ta kapanmıştı (`b72c539`) —
+yazılsaydı **kapalı bir borç ikinci kez kapatılırdı.** *"borç 26'nın ekip ayağı"* dediği
+kalemin **B numarası yok**; o Pilot borç 26'dır (`90-kronoloji/2026-07.md:38`, "Zincir
+kontrolleri") — **B26** ise `.ocak-kayit-cta__buton`, **⏸ ERTELENDİ**. **Eski Pilot
+numaralandırması (borç 18–27) B numaralarıyla aynı sayı uzayını paylaşıyor ve ayırt edici
+önek taşımıyor; bu turda iki kez çarptı.***
+
+*✅ **Bir sınıf borç açılmadan kapandı — ham Notion linki taraması.** Patch *"etkinlik
+gövdeleri taranmadı"* diyordu. Arşivci turu **sitemap'in 48 rotasının 48'ini** canlıdan
+taradı (`href` içinde `pvs=` · `notion.so` · `notion.site` · `/p/`): **0 eşleşme** —
+on beş etkinlik sayfası ve yedi SSR sayfası dahil. `/ekip` ×1 + `/sehir-aksami` ×2
+düzeltmesiyle sınıf tamamlandı; **bilinmeyen bir kalan yok.***
+
+*Üretilen komutlar (KARAR 470-b, on üçüncü ölçüm, `02-borclar.md` 3140 satır):
+`grep -cE '^## B'` → **181** · `grep -E '^## B' | grep -cE '[✅❌]'` → **40**
+(`✅ KAPANDI` ×35 · `✅ ÇÖZÜLDÜ` ×2 · `✅ TEŞHİSLE KAPANDI` ×1 · `❌ GERİ ÇEKİLDİ` ×1 ·
+`✅ —` ×1) · `grep -E '^## B' | grep -cE '[⏸🔵]'` → **2**. Açık = 181 − 40 − 2 = **139**.
+Mükerrer başlık denetimi: `grep -oE '^## B[0-9]+' | sort | uniq -d` → **0**.*
+
 *Üretilen komutlar (KARAR 470-b): `grep -cE '^## B'` → 100 · `grep -E '^## B' | grep -cE '[✅❌]'`
 → 29 (`✅ KAPANDI` ×25 · `✅ ÇÖZÜLDÜ` ×2 · `✅ TEŞHİSLE KAPANDI` ×1 · `❌ GERİ ÇEKİLDİ` ×1) ·
 `grep -E '^## B' | grep -cE '[⏸🔵]'` → 2. Açık = 100 − 29 − 2 = **69**.
@@ -1647,8 +1678,13 @@ Bu gözlem KARAR 465'in doğrudan kaynağıdır.
 - **Kapanış şartı:** Faz 2 eşleştirme regex'i üç formatı da yakalıyor, testte
   üçü de örneklenmiş.
 
-## B80 — `/adimiz` "közüyle taşınır" — kamu metnindeki tek "köz"
-- [ ] **Sahip:** Kaan (Notion) · ~2 dk
+## B80 — `/adimiz` "közüyle taşınır" — kamu metnindeki tek "köz" ✅ KAPANDI (24 Ağu, KARAR 86 uygulandı)
+- [x] **Kapanış:** cümle *"kor alınır, taşınır"* oldu. Canlı ölçüm (24 Ağu, `www.ocak.biz/adimiz`):
+  `közüyle` **0** · `kor alınır` **1**. Kapanış şartı birebir tuttu.
+- ⚠ **Üç ay geride kalmıştı.** KARAR 86 Mayıs'ta mühürlenmişti; sosyal kart tarafı zaten
+  temizdi (C10 "kor"), **site cümlesi denetim satırı almadığı için hayatta kaldı.**
+  **KARAR 563 tam bu vakadan doğdu** — mühür ile denetim satırı aynı anda yazılır.
+- [ ] ~~**Sahip:** Kaan (Notion) · ~2 dk~~
 - **Tetikleyici:** 19 Ağustos dumpı (49 route, `3683ca4`). Site geneli tarandı;
   **"köz" yalnız `/adimiz`'da geçiyor.** `/hikaye` temiz çıktı (aşağıda).
 - **İhlal:** KARAR 86 (köz site dilinde yok) + KARAR 453 (yasağın sosyal yüzeye
@@ -1659,6 +1695,11 @@ Bu gözlem KARAR 465'in doğrudan kaynağıdır.
   "köz" 0 geçiş.
 
 ## B81 — `/etkinlik/yolculuk-acilis` gövdesi boş
+
+- ⚠ **KÖK SEBEP BULUNDU (24 Ağu):** `Detay` property'si **NULL**, `Yayınla` **✓**.
+  Yani sayfa bilerek yayında ve **gövdesiz render ediliyor.** Ölçüm eksikliği değil,
+  veri eksikliği. ⚠ `00-durum.md`'nin *"15 yayında etkinlik — tarihli/saatli/**gövdeli**"*
+  iddiası bu yüzden **yanlış**; on dördü gövdeli, biri değil.
 - [ ] **Sahip:** Kaan (Notion)
 - **Ölçüm:** dumpta **3 section · 47 kelime**; canlı `<main>` düz metni 156 karakter.
   Oran `C_dump/C_html = 1.85` — yani **araç kaybı değil**, sayfada içerik yok.
@@ -1731,8 +1772,12 @@ Bu gözlem KARAR 465'in doğrudan kaynağıdır.
 - **Malzeme:** iki gövde, iki mekân varyantı (online · yüz yüze). Bant **4.870–5.197 kr**
   (künye ölçümü, code point). İki nokta eğri vermiyor ama bant beyanı için yeterli —
   Çember bekçisi de dört sayfayla kuruldu.
+- ⚠ **BANT BİR GÜN SONRA YİNE KAYDI (24 Ağu):** `kakao-seremonisi-online` 3605 → **3571**
+  (KARAR 558 kayıt satırı), `hasat-ve-sukran` 3672 → **3638**. **Geçerli bant `3.571–3.686`.**
+  *İki gün üst üste kayan bir bant, bekçinin gövdeden değil gövdenin bekçiden türediği
+  anlamına gelir — damıtma doktrin durulmadan yapılmaz.*
 - ⚠ **BANT GEÇERSİZ — 23 Ağustos tazelemesi.** Üç Seremoni gövdesi de yeniden yazıldı;
-  gerçek bant **`3.605–3.686`** (`kakao-seremonisi-online` 3605 · `hasat-ve-sukran` 3672 ·
+  o günkü bant **`3.605–3.686`** (`kakao-seremonisi-online` 3605 · `hasat-ve-sukran` 3672 ·
   `kakao-seremonisi-yuzyuze` 3686 — `python3 len()`, code point, canlı Notion `Detay`).
   Yukarıdaki `4.870–5.197` **bir buçuk kat şişik**; bu bantla bekçi yazılsaydı sonraki
   Seremoni gövdesi ~1.400 karakter fazla yazılacaktı. **B144'ün Çember'de yakaladığı
@@ -2501,7 +2546,11 @@ yerinde. Robots açıldığında Taslak sayfa sitemap üzerinden sızmaz.
   bu banda uydurulursa **yanlışlıkla şişirilir.**
 - **Ölçüm (23 Ağu, kaynak seans, `python3 len()` code point, canlı Notion `Detay`):**
   `ekmeden-once` 3505 · `elin-neyle-dolu` 3771 · `hangi-tohumu-ekeceksin` 3480 ·
-  `neyi-bekliyorsun` 3720. *`awk length` kullanılmadı — bu makinede bayt sayıyor.*
+  `neyi-bekliyorsun` 3720.
+- ⚠ **24 Ağu tazelemesi:** `hangi-tohumu-ekeceksin` 3480 → **3472** (−8, KARAR 562 kıtlık
+  mantığı çıktı). **Geçerli Çember bandı `3.472–3.771`.** Slug'lar da değişti (KARAR 560):
+  `ellerin-dolu-2026-09-09` 3771 · `yer-acmak-2026-09-23` 3505 ·
+  `hangi-tohumu-ekeceksin-2026-09-30` 3472 · `neyi-bekliyorsun` 3720 (**tarih eki yok**, B175). *`awk length` kullanılmadı — bu makinede bayt sayıyor.*
 - **Eski bandın geçtiği üç yer** (arşivci turu ölçümü, `grep -rn "3\.824"`):
   `SKILL.md:188` · `ornekler-cember.md:186` · `ornekler.md:201`. **Üçü birden** değişir.
 - **Bağ:** KARAR 547 · 549 (kesimler bandı düşürdü) · **B147** · **B148**
@@ -2515,6 +2564,12 @@ yerinde. Robots açıldığında Taslak sayfa sitemap üzerinden sızmaz.
 - **Ölçüm (23 Ağu, kaynak seans):** `bir-esikte-duruyorsun` 3226 · `bu-ses-kimin` 3212 ·
   `dusundugum-hissettigim-yaptigim` 3049 · `istek-mi-ihtiyac-mi` 3118 · `kokun-nerede-kaldi` 3036 ·
   `nereye-kadar-senin` 3264.
+- ⚠ **24 Ağu tazelemesi — bandın İKİ UCU birden kaydı.** `kokun-nerede-kaldi` tam çerçeve
+  yeniden yazımıyla `ates-seninle-geldi-2026-09-03` oldu: 3036 → **3330** (+294, tavanı kırdı) ·
+  `dusundugum-hissettigim-yaptigim` 3049 → **3044** (−5, tabanı indirdi).
+  **Geçerli Açık Kapı bandı `3.044–3.330`.**
+  *Tek bir gövdenin yeniden yazımı bandı iki yönde birden bozabilir — bant altı gövdenin
+  uçlarıdır, ortalaması değil.*
 - **Yer:** `SKILL.md:187` · `ornekler.md:195`
 - **Bağ:** **B144** ile aynı yazımda kapanır.
 
@@ -2602,6 +2657,10 @@ yerinde. Robots açıldığında Taslak sayfa sitemap üzerinden sızmaz.
 - **Ölçüm** (23 Ağu, arşivci turu, `grep -rn "Son Güncelleme\|Son_Guncelleme" src/`): **`0` eşleşme.**
   Property **koda hiç girmiyor** — tip değişimi kod tarafını kırmaz. *(Not: `gizlilik.astro:343`
   küçük harfle "Son güncelleme: 19 Haziran 2026" taşıyor; bu sayfa metnidir, DB alanı değil.)*
+- ⚠ **24 Ağu:** `Son Düzenleme` (`last_edited_time`) property'si **eklenemedi** — onay dönmedi.
+  `Son Güncelleme` elle alanı **donduruldu** (artık elle de güncellenmiyor). Silme kararı
+  tur sonrasına kaldı. ⚠ **Dondurulmuş alan hâlâ yanlış bilgi veriyor** — kaldırmak ya da
+  otomatikleştirmek dışında üçüncü bir hâl yok.
 - **Bağ:** **B153** aynı sınıf.
 
 ## B153 — Sayfalar DB `Versiyon` property'si aynı sınıf sorun
@@ -2613,6 +2672,7 @@ yerinde. Robots açıldığında Taslak sayfa sitemap üzerinden sızmaz.
 - **Karar gerekiyor:** alan **gerçekten kullanılıyor mu?** Kod okumuyor, elle de bakılmıyorsa
   seçenek ikidir — otomatikleştir ya da **kaldır**. Üçüncü seçenek (bakımsız bırakmak) şu
   anki hâldir ve **yanlış bilgi üretiyor.**
+- ⚠ **24 Ağu:** `Versiyon` da **donduruldu**, B152 ile aynı gerekçe ve aynı bekleyiş.
 - **Bağ:** **B152** ile aynı turda karara bağlanır.
 
 ## B154 — Gölge satır `Ritüel Tasarımı | Gölge 0210 o#2` Detay'ı bayat
@@ -2680,6 +2740,10 @@ yerinde. Robots açıldığında Taslak sayfa sitemap üzerinden sızmaz.
 - ⚠ **Bu bir karar borcudur.** Referans **iç doküman** dilidir, site metni değil — silinmesi
   gerekip gerekmediği Advaita'nın duruş kararına bağlı. **Karar verilmeden mekanik silme
   yapılmaz.**
+- ⚠ **24 Ağu: hâlâ açık, ve artık bir sayfa turu boyunca iki kez tespit edildi.**
+  23 Ağustos raporunda yakalandı, bugün C-6 kaleminde yeniden çıktı; **iki turda da karar
+  verilmedi.** Advaita görüşmesinin kalemi. Çember Rehberliği'nin **neye dayandığı**
+  yeniden yazılmalı — KARAR 551 adı değiştirdi, dayanağı değiştirmedi.
 - **Bağ:** `/mini-retreat` yaban kadın sorusu (Advaita kuyruğu, `03-sira.md`) aynı karara bakar.
 
 ## B159 — `/hikaye` section marker `bes-kadim-kaynak` → `dort-yon-bir-ocak`
@@ -2774,9 +2838,13 @@ yerinde. Robots açıldığında Taslak sayfa sitemap üzerinden sızmaz.
   **fark edilmiş tutarsızlıkların defteri** (`00-durum.md`). Notion ≠ site bir tutarsızlıktır
   ve kaydı burada durur; **sıradaki iş olarak `03-sira.md`'de yaşar.**
 
-## B164 — `Kayıt Var` işaretleme durumu doğrulanmadı
+## B164 — `Kayıt Var` işaretleme durumu doğrulanmadı ✅ KAPANDI (24 Ağu, birebir uyuştu)
 
-- [ ] **Sahip:** Kaan · **Tetikleyici:** deploy öncesi (**B163**) · **küçük ama kapıda**
+- [x] **Kapanış:** dokuz işaretli kayıt **beklentiyle birebir** uyuştu — altı Açık Kapı +
+  `hasat-ve-sukran` + `kakao-seremonisi-online` + `rituel-tasarimi`.
+- ⚠ **Aynı turda doğrulanan değer değişti:** **KARAR 558** üç seremoni işaretini kaldırdı,
+  **altı** kaldı. Kapanış ölçümün **doğruluğunu** tescil eder, değerin kalıcılığını değil.
+- [ ] ~~**Sahip:** Kaan · **Tetikleyici:** deploy öncesi (**B163**)~~
 - **Belirti:** KARAR 547 kayıt varlığının otoritesini Etkinlikler DB'sindeki **`Kayıt Var`
   checkbox'ına** verdi (Kaan açtı). Gövdelerdeki kayıt cümleleri bu alanın **anlatımıdır**.
   Alanın gerçekten doğru işaretlendiği **doğrulanmadı.**
@@ -2790,7 +2858,15 @@ yerinde. Robots açıldığında Taslak sayfa sitemap üzerinden sızmaz.
 
 ## B165 — MailerLite ve Resend şablonları kayıt doktrinini taşımıyor
 
-- [ ] **Sahip:** Kaan + Claude.ai · **Tetikleyici:** deploy'dan **önce** (**B163**) · 🔴 **DURDURUCU**
+- [ ] **Sahip:** Kaan + Claude.ai · **Tetikleyici:** **ilk gerçek kayıt açılmadan önce**
+- ⚠ **24 Ağu: DURDURUCU DEĞİL, ölçüldü.** Kayıtlar DB'sinde **iki satır var, ikisi de test** —
+  bu şablonlar şu an **kimseye gitmiyor.** Deploy engeli kalktı; kapı **ilk gerçek kayda**
+  taşındı. *(Aynı ölçüm dört slug değişiminin bedelsiz olduğunu da kanıtladı — B175.)*
+- ⚠ **Kapsam KARAR 558 ile genişledi:** site artık Çember **ve Seremoni** için istisnasız
+  "kayıt yok" diyor. Aranacak dizeler: `sonradan izlersin` · `kaydı` · `kayıt linki` ·
+  `geç kalırsan`. Açık Kapı ve Atölye'de kalabilir.
+- ⚠ **KARAR 565 uyarısı geçerli:** bu dizeler Türkçe çekimde kaçabilir; tarama okumanın
+  yerine geçmez.
 - **Belirti:** **KARAR 547** kayıt sınırını değiştirdi ama **transactional ve bülten
   şablonlarına bakılmadı.** Sayfada bir şey, e-postada başka bir şey okuyan kadında
   **güven kaybı sitedekinden büyük olur** — e-posta kişiye gelir, sayfa herkese.
@@ -2852,7 +2928,10 @@ yerinde. Robots açıldığında Taslak sayfa sitemap üzerinden sızmaz.
 - **Çözüm adayları:** (a) alanın adı/tanımı daraltılır (*"kaydedilen bölüm yüklendi"*) ·
   (b) Checkbox → Select (`yok · kısmi · tam`). **Karar `Kayıt Var` ile birlikte verilir** —
   iki alan aynı soruyu iki farklı çözünürlükte soruyor.
-- **Bağ:** KARAR 547 · **B167** · **B122** (Zoom kaydı süreci yok — *"Vimeo yok"*,
+- ⚠ **24 Ağu: belirsizlik daraldı, soru sertleşti.** KARAR 558 üç seremoninin kaydını
+  tümden kaldırdı — alan o üç kayıtta artık **anlamsız**, "kısmi" bile değil.
+  Soru ikiye indi: **alan kalkacak mı, format bazlı mı olacak?**
+- **Bağ:** KARAR 547 · **KARAR 558** · **B167** · **B122** (Zoom kaydı süreci yok — *"Vimeo yok"*,
   **alan var ama arkasında süreç yok**)
 
 ## B169 — Kart derleyicisi dosya adı şemasıyla hizalı değil
@@ -2929,3 +3008,133 @@ yerinde. Robots açıldığında Taslak sayfa sitemap üzerinden sızmaz.
 - **Neden ayrı borç:** C09'dan **üç hafta sonra** yayına giriyor ve V06 ayrıca C19'da
   tek kart olarak kullanılıyor — zemin değişirse iki kart birden etkilenir.
 - **Bağ:** KARAR 556 · **B172**
+
+## B174 — `kakao-seremonisi-online` "kayıt sonrası küçük bir gruba alınırsın" — o grubun kanalı var mı
+
+- [ ] **Sahip:** Kaan · **Tetikleyici:** `kakao-seremonisi-online` ilk gerçek kaydı
+- **Belirti:** gövde kadına **kayıt sonrası bir gruba alınacağı sözünü** veriyor. O grubun
+  kanalı, daveti ve **ilk mesajı** var mı — **taranmadı, bilinmiyor.**
+- ⚠ **Bu bir metin kusuru değil, bir vaat kusuru adayı.** Grup yoksa kadın kayıt olur,
+  bekler ve hiçbir şey gelmez. Sessiz: hata vermez, log'a düşmez.
+- ⚠ **Aynı gövde KARAR 549 gereği hazırlığı da kayıt sonrasına taşıdı.** Yani bu grup
+  yalnız bir "hoş geldin" kanalı değil, **hazırlığın taşıyıcısı.** Yoksa hazırlık hiç
+  ulaşmaz — **B165**'in üçüncü kalemiyle aynı boşluk.
+- **Kapanış şartı:** grup/kanal ve ilk mesaj gösterilir, ya da gövdedeki söz kaldırılır.
+- **Bağ:** KARAR 549 · KARAR 558 · **B165** · **B177** (söz envanteri — bu vaka o sınıfın örneği)
+
+## B175 — Slug turu devredildi: 26 kayıt, KARAR 559 uygulanmadı
+
+- [ ] **Sahip:** Kaan (taslak slug'ları) + Claude.ai (yayındakiler) · **Tetikleyici:** sıradaki tur
+- **Belirti:** **KARAR 559** slug konvansiyonunu (`{tema}-{YYYY-AA-GG}`) mühürledi; Etkinlikler
+  DB'de **26 kayıt** var ve **yayındaki ~10'una tarih eki gerekiyor.**
+- ⚠ **Adı geçen ilk kalem: `neyi-bekliyorsun`.** Dördüncü Çember'dir (16 Eylül) ve
+  **tarih eki almadı** — KARAR 560'ın dört yeniden adlandırmasından biri **değildi**
+  (o dördün biri Açık Kapı'ydı). *Yani konvansiyonun ilk uygulaması kendi örnek kümesini
+  eksik bıraktı.*
+- **İki yalan söyleyen slug:**
+  1. `istanbul-aksami-07072026` — slug **07.07.2026** diyor, `Tarih` alanı **2027-01-30**.
+     ⚠ Slug tarih taşıdığı anda **ikinci bir gerçek kaynağı** olur; KARAR 559'un
+     *"slug ile Başlık ayrışmaz"* disiplini **tarih için de geçerli olmalı.**
+  2. **Yolculuk duraklarının placeholder tarihleri** — beş durak **beş ardışık günde**
+     (21–25 Şubat). Gerçek olamaz; yer tutucu olduğu hiçbir yerde yazılı değil.
+- **Bedel ölçüldü (24 Ağu):** Kayıtlar DB'sinde **iki satır, ikisi de test** → slug değişimi
+  **bedelsiz.** Bu pencere ilk gerçek kayıtla kapanır; ondan sonra slug değişimi
+  `etkinlik_url` taşıyan e-postaları kırar.
+- **Bağ:** KARAR 559 · KARAR 560 · **B165** (aynı ölçüme dayanıyor)
+
+## B176 — `/yolculuk` `yolculuk-eksen` bölümü çıktıda hiç yok
+
+- [ ] **Sahip:** Kaan (Notion) + CC (teşhis) · **Tetikleyici:** sıradaki `/yolculuk` dokunuşu
+- **Ölçüm (24 Ağu, canlı `www.ocak.biz/yolculuk`, `data-section` sayımı):** sayfa **on iki**
+  section basıyor — `hero` · `intro` · `yolculuk-nedir` · `yolculuk-kime` · `online-yolculuk` ·
+  `buyuk-vurgu` · `son` · `mini-cta` · `iki-yolculuk` · `sonraki-bulusma` · `kayit-btn` ·
+  `siradaki-kapi`. **`yolculuk-eksen` aralarında YOK.**
+- ⚠ **Patch "section boş" diyordu — boş değil, hiç doğmamış.** Fark önemli: boş bir kap
+  render edilir ve `mini-cta` gibi meşru olabilir; **doğmamış bir kap** ya marker Notion'da
+  yok ya transform onu düşürüyor demektir. *"Kod var" ≠ "output var" (KARAR 355/408).*
+- **Not:** `yolculuk-eksen` transform'u **kodda var** (`notion-pages.ts`, al-ol-ver/yolculuk-eksen
+  paterni). Yani taşıyıcı hazır, içerik gelmiyor.
+- **Teşhis sırası:** (1) Notion `/yolculuk` gövdesinde `## section: yolculuk-eksen` var mı ·
+  (2) varsa `remark-ocak-sections` neden emit etmiyor · (3) yoksa içerik ne zaman düştü.
+- ⚠ **Marker adı değişmişse KARAR 409 devrede** — Notion ve kod atomik gider.
+
+## B177 — Söz envanteri yok: verilen söz ile arkasındaki mekanizma hiç eşleştirilmiyor
+
+- [ ] **Sahip:** Kaan + Claude.ai · **yeni kavram, tek turda kapanmaz**
+- **Belirti:** kamu metni kadına **söz veren** cümleler taşıyor — *"kaydedilmez"* ·
+  *"adres paylaşılmaz"* · *"yargılanmaz"* · *"satış yapılmaz"* · *"sana yazıyoruz"* ·
+  *"küçük bir gruba alınırsın"*. Her birinin arkasında bir mekanizma olmalı.
+  **Bu eşleşme hiçbir yerde ölçülmüyor.**
+- ⚠ **Bu turun en ciddi iki bulgusu bu sınıftandı ve hiçbir test yakalamazdı:**
+  1. `/seremoni` + `/cember` mutlak *"kaydedilmez"* diyordu, `Kayıt Var` işaretliydi
+     → **KARAR 558** (söz ile mekanizma çelişti)
+  2. `kakao-seremonisi-online` *"küçük bir gruba alınırsın"* diyor, grup **bilinmiyor**
+     → **B174**
+- ⚠ **Neden test yakalamaz:** test kodun kendine tutarlılığını ölçer; buradaki çelişki
+  **metin ile DB alanı** arasında, ikisi de testin dışında. `ocak-lint` de dize arar,
+  **söz–mekanizma eşleşmesi aramaz.**
+- **İlk adım (küçük):** kamu metnindeki söz cümlelerinin envanteri + her birine bir
+  *"arkasındaki mekanizma nerede"* sütunu. Envanter olmadan denetim yazılamaz.
+- **Bağ:** KARAR 558 · KARAR 563 (denetim satırı) · **B166** (`ocak-lint` kural sınıfları) ·
+  **B174** · **B165**
+
+## B178 — Ritüel Tasarımı ön görevi: Advaita onayı gelmedi
+
+- [ ] **Sahip:** Advaita (karar) · **Tetikleyici:** Advaita görüşmesi
+- **Belirti:** 23 Ağustos turunda Advaita *"bizim evde ne yapılırdı — silelim"* dedi.
+  Cümle silindi ama **ön görev programda bırakıldı**; gerekçe ona yazıldı
+  (`Pratik Bilgi`'de 5·6·7 işaretlenmiş, ön görevi tarif eden 2. satır bırakılmıştı),
+  **cevabı gelmedi.**
+- **İki sonuç, ikisi de meşru:** onaylarsa görev kalır · onaylamazsa **görev de kalkar.**
+- ⚠ **Cevapsız kalırsa görev sessizce kalır** — yani varsayılan hâl "onaylandı" gibi
+  davranıyor. Bu, açık bir karar değil.
+- **Not:** `03-sira.md` *"Ritüel Tasarımı gövdesinin hiçbir bölümü Advaita'ya gösterilmedi"*
+  diyor; bu borç o kalemin **tek somut sorusudur.**
+
+## B179 — `.vercel/repo.json` bayat, `.vercel/project.json` hiç yok
+
+- [ ] **Sahip:** Kaan · **küçük · tek komut**
+- **Ölçüm (24 Ağu):** `.vercel/project.json` **yok**. Elde kalan `.vercel/repo.json`
+  **27 Mayıs** tarihli ve projeye **`ocak-site`** diyor; Vercel'de gerçek ad **`ocak`**
+  (canlı teyit: deployment yanıtında `project.name = "ocak"`). Proje ID eşleşiyor
+  (`prj_CxW3Nm85TGzdrZdePCk74WLAv23f`).
+- ⚠ **Somut sonuç:** bu turda `vercel --prod --force` yolu **kullanılmadı** — bayat bir
+  dosyaya dayanarak production'a basılmaz (Kaan kararı). Deploy git push'la alındı.
+- ⚠ **Ad eşleşmese de ID eşleştiği için CLI muhtemelen doğru projeye basardı** — ama
+  "muhtemelen" bir deploy ölçütü değildir (KARAR 567).
+- **Kapanış şartı:** `vercel link` ile tazelenir **ya da** dosya silinir. Üçüncü hâl —
+  bayat bırakmak — CLI yolunu kalıcı olarak kullanılamaz kılar.
+- **Bağ:** **B64** (deploy hook ölü dala bağlı) — ikisi birlikte *"elle deploy'un iki yolu
+  da güvenilmez"* demektir; bu turda üçüncü yol (git push) kullanıldı.
+
+## B180 — `tools/ocak-kart-derleyici.html` sahipsiz: commit'siz değişiklik + adsız kopya
+
+- [ ] **Sahip:** Kaan (kimin yazdığı) · **Tetikleyici:** sıradaki commit
+- **Ölçüm (24 Ağu, `git status`):**
+  - `M tools/ocak-kart-derleyici.html` — **47 ekleme, 5 silme**, hiçbir commit'te değil
+  - `?? tools/ocak-kart-derleyici 2.html` — **takipsiz kopya**, boşluklu ad (macOS "2" eki)
+- **İçinde gerçek bir özellik var:** karusel **"Kart 1 kapak olsun"** istisnası —
+  `kapakIstisna` anahtarı · `KAPAK_ALAN` bloğu · `kaynakOlcu` göstergesi. Değişiklik
+  build sırasında (**02:45**) belirdi; **bu oturumun işi değil.**
+- ⚠ **Sahipsiz kod en kolay kaybedilen koddur.** Commit'siz olduğu için `git` onu korumuyor;
+  " 2.html" kopyası ise **hangisinin gerçek olduğu belirsiz** — iki dosya, tek isim uzayı.
+- **Karar gerekiyor:** kim yazdı · commit'lenecek mi · kopya silinecek mi.
+- **Bağ:** **B143** (aynı dosyanın font bağımlılığı) · **B181** (aynı gün paralel yüzeyler)
+
+## B181 — Aynı gün dört paralel yüzey aynı klona yazdı; yazma yetkisi kuralı yok
+
+- [ ] **Sahip:** Kaan (kural) · **Tetikleyici:** aynı gün ikinci oturum açılması
+- **Ölçüm (24 Ağu):** dört yüzey aynı klonda çalıştı —
+  (1) bu Sayfalar metin turu · (2) 23 Ağustos Advaita patch turu (B144–B168) ·
+  (3) KARAR 552–557 karusel/zemin turu (B169–B173) · (4) `tools/…html` düzenleyicisi (**B180**).
+- ✅ **KARAR 463 (tek klon) mekanik olarak korundu** — tek klon, tek aktif CC, çakışan
+  yazım olmadı.
+- ⚠ **Ama koordinasyon korunmadı:** iki oturum **aynı gün aynı kararı paralel verdi** —
+  *"Çember Rehberliği"* ve *"Çember Rehberi"*. İkisi de doğru, **ikisi de habersizdi.**
+- ⚠ **İkinci belirti aynı sınıftan:** bu oturum boyunca `ocak-docs` MCP bayat snapshot
+  servis etti (`docs_karar(547)` → "yok"), çünkü diğer turun commit'leri **push'lanmamıştı**
+  (KARAR 479). Patch bu yüzden **numara taşımadan** geldi.
+- **Gereken kural:** aynı gün birden çok oturum açılacaksa **hangisinin `docs/`'a yazma
+  yetkisi olduğu baştan belirlenir**; diğerleri patch üretir, yazmaz. Ve **yazan oturum
+  push eder** — push edilmemiş commit claude.ai için yok hükmündedir.
+- **Bağ:** KARAR 463 · KARAR 479 · KARAR 551 (paralel verilen karar) · **B180**
