@@ -59,7 +59,7 @@ glowing embers under a thin layer of grey ash, extreme close-up, single warm lig
 
 ### 0c · Seçilen görselin `--sref` URL'i nasıl alınır ve dosyaya işlenir
 1. Seçilen varyantı upscale et. Açılan görsele sağ tık → "Copy image address" (Discord'da: görsele tıkla → "Open in Browser" → adres çubuğundan URL kopyala). `.png`/`.webp` ile biten tam URL olmalı.
-2. Bu dosyada **ara-değiştir** yap: `KURUCU-URL` yazan her yeri o URL ile değiştir. (Bölüm 8'deki V01-V09 promptlarının tamamında `--sref KURUCU-URL --sw 60` geçiyor; tek ara-değiştir hepsini doldurur.)
+2. ✅ **KAPANDI (24 Ağu, B139).** Kurucu görsel `--sref` çapası olarak **Bölüm 16'daki dokuz promptun tamamında yazılıdır**; yer tutucu kalmadı. Çapa: `https://cdn.midjourney.com/b6457637-7065-4c39-b551-268b156c9408/0_2.png` (= `z01`, `31-zemin.md`). ⚠ Bu adım yalnız **yeni bir kurucu mühürlenirse** tekrar açılır — o zaman dokuz prompt birden güncellenir, tek ara-değiştir hepsini kapsar (KARAR 542: çapa değişirse seri kayar).
 3. Kurucu görselin kendisi de Gün 1 söz kartının zemini olarak kullanılabilir — ayrıca V01 üretimi şart değil, uygunsa doğrudan crop'la.
 4. Kurucu görsel + `--sref` işlenmiş dosya → Kaan onayı → yayın takvimi başlar.
 
@@ -738,7 +738,7 @@ Rapor dilinde funnel/conversion/lead kelimeleri kullanılmaz; "gelen kadın", "k
 
 ## 15 · [KAAN] LİSTESİ (bunlar dolmadan ilgili adım atılmaz)
 
-1. **Kurucu görsel:** KAPANDI (23 Ağu) — üretim → seçim → onay tamam; görsel mühürlendi (KARAR 542: `--sref` çapası + `--v 8.1` motor kilidi). ⚠ `KURUCU-URL` **ara-değiştir hâlâ açık** (Bölüm 0c → Bölüm 16 V01–V09); URL var, dosyaya işlenmedi.
+1. **Kurucu görsel:** KAPANDI (23 Ağu) — üretim → seçim → onay tamam; görsel mühürlendi (KARAR 542: `--sref` çapası + `--v 8.1` motor kilidi). ✅ **`KURUCU-URL` ara-değiştir de KAPANDI (24 Ağu, B139)** — dokuz promptun dokuzunda gerçek URL yazılı; kalem [KAAN] listesinden düştü.
 2. **WhatsApp Kanalı:** Kanal adı + davet linki (bio Link 2 ve Bölüm 10 başlığı).
 3. **Etkinlik tarihleri:** KAPANDI (v2.1) — takvim canlı ve dolu; E1-E5 ve E7 tarihleri ocak.biz/takvim'den okunur. Ay başında tek teyit yeter.
 4. **Eylül dil kapısı:** FİİLEN AÇIK (v2.1) — kayıt/başvuru route'ları canlıda doğrulandı; C05/C11/C20 caption'larına tek cümle eklendi. Kaan itiraz ederse silinecek üç cümle değişiklik günlüğünde. Sözlü teyit yine de istenir.
@@ -748,7 +748,7 @@ Rapor dilinde funnel/conversion/lead kelimeleri kullanılmaz; "gelen kadın", "k
 
 ## 16 · MJ HAZIR PROMPTLAR (V01–V09) — kopyala-yapıştır
 
-Her prompt kullanılmadan önce `KURUCU-URL` alanı Gün 0 çıktısıyla doldurulmuş olmalı (Bölüm 0c ara-değiştir). Ölçüler: feed söz kartı/karusel `--ar 4:5` (1080×1350) · reels/story `--ar 9:16`. Karusel iç kartları AYNI üretimin crop'larıdır — kart kart farklı prompt üretme, seri dağılır. Üretim işakışı: MJ üretim → seç (Bölüm 0b anti-listesiyle ele) → crop/format → renk grade'i palete çek (gölgeler #1A1210'e) → kenar karartma → tipografi bindirme (Bölüm 5 standardı) → Kaan görsel onayı. Grain şablonda tek katman.
+**Dokuz prompt kopyala-yapıştır hazır** — `--sref` çapası dolu, yer tutucu yok (24 Ağu, B139); satırlar üretimde çalıştırılan hâlleridir, kısaltılmış değil. Ölçüler: feed söz kartı/karusel `--ar 4:5` (1080×1350) · reels/story `--ar 9:16`. Karusel iç kartları AYNI üretimin crop'larıdır — kart kart farklı prompt üretme, seri dağılır. Üretim işakışı: MJ üretim → seç (Bölüm 0b anti-listesiyle ele) → crop/format → renk grade'i palete çek (gölgeler #1A1210'e) → kenar karartma → tipografi bindirme (Bölüm 5 standardı) → Kaan görsel onayı. Grain şablonda tek katman.
 
 **Dosya adı şeması.** Zemin (kaynak görsel) `ocak-zNN-slug-YYYY-AA-GG.png`, basılan kart
 `ocak-cNN-kM-YYYY-AA-GG.png` (karusel değilse `-kM` yok). Zemin adı karta bağlanmaz —
@@ -782,19 +782,29 @@ kazanan, süreklilik sapması %107–110. Üç ayrı kusur, üçü de aynı yere
 taş duvar düşmez — V01 ve V03 ilk turda bu yüzden tuttu. V10 promptu korpusa **girmedi**;
 giren ders bu. (Terk eşiği üç tur olarak **önceden** ilan edilmişti ve uygulandı.)
 
+**Doğrulama durumu.** V01 · V02 · V03 · V04 üretimde çalıştırıldı ve çıktıları ölçüldü
+(z03–z11). V05–V09 düzeltilmiş hâlleriyle yazılıdır ama **hiç çalıştırılmadı** — ilk parti
+kanarya sayılır: çip satırında `v 8.1` ve `raw` görünmeli, `--p` görünmemeli.
+
+**`--no` listeleri prompt başına farklıdır.** Ortak kuyruk `people, faces, hands, text,
+watermark`; öncesi 23 Ağustos altı tur elemesinden gelir ve her promptun kendi riskine göre
+kısaltılmıştır. Bir promptun öznesi listeye alınmaz — V05'te `flames` yoktur çünkü
+Yanartaş MEKAN değeri alev ister; V07'de `flames` yoktur çünkü mum alevi öznedir;
+V09'da `fire` yoktur. Liste kopyalanmaz, promptuna aittir.
+
 **V01 — Söz kartı ana zemini (S1/S2, en çok kullanılacak):**
 ```
-almost abstract darkness with a faint warm ember glow rising from the bottom edge, deep charcoal texture like night air near a fire, extremely minimal, vast dark negative space in upper two thirds, subtle film grain, burnt orange #C44B2F gradient dissolving into #1A1210 --ar 4:5 --style raw --stylize 90 --chaos 5 --sref KURUCU-URL --sw 60 --no people, faces, hands, text, watermark
+almost abstract darkness with a faint warm ember glow rising from the bottom edge, deep charcoal texture like night air near a fire, extremely minimal, vast dark negative space in upper two thirds, subtle film grain, burnt orange #C44B2F gradient dissolving into #1A1210 --ar 4:5 --style raw --v 8.1 --stylize 90 --chaos 5 --sref https://cdn.midjourney.com/b6457637-7065-4c39-b551-268b156c9408/0_2.png --sw 60 --no flames, fire, wildfire, burning, lava, volcano, horizon, horizontal band, bright white, blown highlights, daylight, grey light, blue tones, teal, sand, people, faces, hands, text, watermark
 ```
 
 **V02 — Söz kartı varyant: kül dokusu:**
 ```
-fine grey ash surface with hairline cracks revealing faint orange ember light beneath, top-down macro, most of the frame in shadow, tactile mineral texture, quiet, dark negative space upper half --ar 4:5 --style raw --stylize 110 --sref KURUCU-URL --sw 60 --no people, faces, hands, text, watermark
+fine grey ash surface with hairline cracks revealing faint orange ember light beneath, top-down macro, most of the frame in shadow, tactile mineral texture, quiet, dark negative space upper half --ar 4:5 --style raw --v 8.1 --stylize 110 --chaos 5 --sref https://cdn.midjourney.com/b6457637-7065-4c39-b551-268b156c9408/0_2.png --sw 60 --no flames, fire, wildfire, burning, lava, volcano, cracked earth, dry lake bed, drought, desert, sand, bright white, blown highlights, daylight, grey light, blue tones, teal, people, faces, hands, text, watermark
 ```
 
 **V03 — Eşik/kapı (S2 portre serisi):**
 ```
-old wooden door of an Anatolian village house slightly ajar at night, seen from a distance, small in the lower third of the frame, vast unlit stone wall filling the upper two thirds, warm firelight spilling through the gap onto a stone threshold, worn timber, invitation without a figure, chiaroscuro, film grain --ar 4:5 --style raw --stylize 130 --sref KURUCU-URL --sw 60 --no people, faces, hands, text, watermark
+old wooden door of an Anatolian village house slightly ajar at night, seen from a distance, small in the lower third of the frame, vast unlit stone wall filling the upper two thirds, warm firelight spilling through the gap onto a stone threshold, worn timber, invitation without a figure, chiaroscuro, film grain --ar 4:5 --style raw --v 8.1 --stylize 130 --chaos 5 --sref https://cdn.midjourney.com/b6457637-7065-4c39-b551-268b156c9408/0_2.png --sw 60 --no flames, wildfire, lava, volcano, bonfire, bright white, blown highlights, daylight, grey light, blue tones, teal, people, faces, hands, text, watermark
 ```
 
 **Gövde 24 Ağustos'ta değişti — üç tur ölçüldü.** Kapı uzaklaştırıldı ve karenin alt üçte
@@ -812,13 +822,14 @@ kadraj kuruyor. Ölçülen etki (18'er karelik iki tur, tam çözünürlüklü k
 **Ton kendiliğinden düzeldi, ayrı tur harcanmadı** — kapı küçülünce kehribar aydınlık
 pikseller çoğunluk olmaktan çıktı, medyan taş duvarın kızılına kaydı.
 
-⚠ **TEYITSIZ — bu satırın parametre kuyruğu ölçülen kuyruk değildir (B184).** Ölçüm
-`--v 8.1 --chaos 5`, gerçek `--sref` URL'i ve genişletilmiş `--no` listesiyle
-(`flames, wildfire, lava, volcano, bonfire, bright white, blown highlights, daylight,
-grey light, blue tones, teal, …`) yapıldı; **dosyadaki kuyruk bunların hiçbirini taşımıyor**
-ve `KURUCU-URL` hâlâ yer tutucu (Bölüm 16'da **12 yerde**). Gövde ölçüldüğü hâliyle yazıldı,
-kuyruk **uzlaştırılmadı** — iki kaynak çeliştiğinde kendi başına uzlaştırma yapılmaz.
-Kuyruk **ADIM 3d**'de eşitlenir; o zaman bu not kalkar.
+✅ **Kuyruk 24 Ağustos'ta eşitlendi — TEYITSIZ kalktı (B139 ✅ · B184 ✅).** Bu satır **iki
+turda** doğru hâline geldi ve arada bir gün boyunca **ne eski ne yeni** hâldeydi: gövde
+ölçüldüğü hâliyle yazılmıştı, kuyruk (`--v 8.1` · `--chaos 5` · gerçek `--sref` · genişletilmiş
+`--no`) yazılmamıştı — çünkü ölçümü getiren patch *"parametreler değişmedi"* diyordu ve
+**dosyanın gerçeği bunu yalanlıyordu.** O gün kuyruk **uzlaştırılmadı, işaretlendi**; iki
+kaynak çeliştiğinde kendi başına uzlaştırma yapılmaz (CLAUDE.md §2). Kapanışı ayrı bir brief
+getirdi. *Ders: bir promptun gövdesi ile kuyruğu tek bir ölçümün parçalarıdır — biri yazılıp
+öteki bırakıldığında satır **çalışır görünür ama üretimi tekrarlamaz.***
 
 ⚠ **Bu gövde hâlâ figür üretiyor (B183).** `invitation without a figure` — *"figure"*
 kelimesi promptun içinde ve kavramı çağırıyor; bir karede kapı aralığında oturan insan
@@ -828,34 +839,34 @@ silueti çıktı ve **beş sayısal ölçütü de geçmişti.** Hazır düzeltme
 
 **V04 — Çember soyutlaması (S3 davet postları):**
 ```
-circle of unlit candles and floor cushions around a central fire bowl in a dark room, warm ember light from the center only, hand-woven kilim texture at the light's edge, empty seats holding presence, no people, intimate protected space, chiaroscuro --ar 4:5 --style raw --stylize 110 --sref KURUCU-URL --sw 60 --no people, faces, hands, text, watermark
+circle of unlit candles and floor cushions around a central fire bowl in a dark room, warm ember light from the center only, hand-woven kilim texture at the light's edge, empty seats holding presence, no people, intimate protected space, chiaroscuro --ar 4:5 --style raw --v 8.1 --stylize 110 --chaos 5 --sref https://cdn.midjourney.com/b6457637-7065-4c39-b551-268b156c9408/0_2.png --sw 60 --no flames, wildfire, lava, volcano, window, windows, curtains, daylight, bright white, blown highlights, grey light, blue tones, teal, people, faces, hands, text, watermark
 ```
 (C14 reels için aynı prompt `--ar 9:16` ile.)
 
 **V05 — Anadolu evre serisi (S4 — MEKAN alanını değiştir):**
 ```
-[MEKAN] at last light of dusk, ancient silent atmosphere, warm ember-colored glow low on the horizon, everything else deep charcoal shadow, no people, archaeological quietness, vast dark sky as negative space, film grain, cinematic --ar 4:5 --style raw --stylize 100 --sref KURUCU-URL --sw 50 --no people, faces, hands, text, watermark
+[MEKAN] at last light of dusk, ancient silent atmosphere, warm ember-colored glow low on the horizon, everything else deep charcoal shadow, no people, archaeological quietness, vast dark sky as negative space, film grain, cinematic --ar 4:5 --style raw --v 8.1 --stylize 100 --chaos 5 --sref https://cdn.midjourney.com/b6457637-7065-4c39-b551-268b156c9408/0_2.png --sw 50 --no lava, volcano, bright white, blown highlights, daylight, grey light, blue tones, teal, people, faces, hands, text, watermark
 ```
 MEKAN değerleri: `olive grove hills of the Aegean, Urla` (Açılış) · `megalithic stone pillars of Göbeklitepe at night` (İniş) · `white travertine terraces of Pamukkale with warm steam` (Uyanış) · `endless white salt flat of Lake Tuz under dusk` (Duruş) · `eternal natural flames emerging from rock, Yanartaş Chimaera` (Geçiş) · `fairy chimney silhouettes of Cappadocia at dawn's first ember light` (Dönüş)
 
 **V06 — Yolculuk online / pencere (S4, C19-C20):**
 ```
-single candle burning on a windowsill at night, distant city lights blurred beyond the glass, warm flame against cool darkness, intimate domestic ritual, no figure, shallow focus, charcoal and ember palette --ar 4:5 --style raw --stylize 120 --sref KURUCU-URL --sw 60 --no people, faces, hands, text, watermark
+single candle burning on a windowsill at night, distant city lights blurred beyond the glass, warm flame against cool darkness, intimate domestic ritual, no figure, shallow focus, charcoal and ember palette --ar 4:5 --style raw --v 8.1 --stylize 120 --chaos 5 --sref https://cdn.midjourney.com/b6457637-7065-4c39-b551-268b156c9408/0_2.png --sw 60 --no flames, wildfire, lava, volcano, bonfire, neon, daylight, bright white, blown highlights, grey light, blue tones, teal, people, faces, hands, text, watermark
 ```
 
 **V07 — Pratik/araç kartı (S5):**
 ```
-still life on dark linen: a single white candle, a small clay bowl, a sprig of dried anatolian herbs, lit only by the candle flame, deep shadows, tactile textures, quiet composition with dark negative space above --ar 4:5 --style raw --stylize 110 --sref KURUCU-URL --sw 60 --no people, faces, hands, text, watermark
+still life on dark linen: a single white candle, a small clay bowl, a sprig of dried anatolian herbs, lit only by the candle flame, deep shadows, tactile textures, quiet composition with dark negative space above --ar 4:5 --style raw --v 8.1 --stylize 110 --chaos 5 --sref https://cdn.midjourney.com/b6457637-7065-4c39-b551-268b156c9408/0_2.png --sw 60 --no lava, volcano, blown highlights, daylight, grey light, blue tones, teal, people, faces, hands, text, watermark
 ```
 
 **V08 — Reels/story dikey atmosfer (E1/E4/E5, PS/PP zeminleri):**
 ```
-distant campfire on a dark Anatolian steppe at night, single point of warm light low in frame, embers rising faintly, vast charcoal sky above, vertical composition with enormous dark negative space, cinematic, film grain --ar 9:16 --style raw --stylize 100 --sref KURUCU-URL --sw 60 --no people, faces, hands, text, watermark
+distant campfire on a dark Anatolian steppe at night, single point of warm light low in frame, embers rising faintly, vast charcoal sky above, vertical composition with enormous dark negative space, cinematic, film grain --ar 9:16 --style raw --v 8.1 --stylize 100 --chaos 5 --sref https://cdn.midjourney.com/b6457637-7065-4c39-b551-268b156c9408/0_2.png --sw 60 --no flames, wildfire, lava, volcano, bright white, blown highlights, daylight, grey light, blue tones, teal, people, faces, hands, text, watermark
 ```
 
 **V09 — Seremoni/kakao (E2 ve seremoni dönemleri):**
 ```
-ritual still life at night: cacao in a dark clay cup, steam rising into darkness, a low flame beside it, warm tones against near-black, sacred but humble, tactile, dark negative space upper half --ar 4:5 --style raw --stylize 110 --sref KURUCU-URL --sw 60 --no people, faces, hands, text, watermark
+ritual still life at night: cacao in a dark clay cup, steam rising into darkness, a low flame beside it, warm tones against near-black, sacred but humble, tactile, dark negative space upper half --ar 4:5 --style raw --v 8.1 --stylize 110 --chaos 5 --sref https://cdn.midjourney.com/b6457637-7065-4c39-b551-268b156c9408/0_2.png --sw 60 --no lava, volcano, blown highlights, daylight, grey light, blue tones, teal, people, faces, hands, text, watermark
 ```
 
 ---

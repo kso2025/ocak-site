@@ -2461,9 +2461,27 @@ yerinde. Robots açıldığında Taslak sayfa sitemap üzerinden sızmaz.
 - **Bağ:** KARAR 469 — sır dokümanda yaşamaz. Bu defterde yalnız **hangi değerin sızdığı**
   yazılıdır, değerin kendisi değil.
 
-## B139 — V03–V09'un `--no` listeleri Gün 0 derslerini içermiyor
+## B139 — V03–V09'un `--no` listeleri Gün 0 derslerini içermiyor ✅ KAPANDI (24 Ağu, brief `ocak-brief-b139`)
 
-- [ ] **Sahip:** Claude.ai · **Tetikleyici:** o promptların ilk kullanımı
+- [x] **Kapanış:** **Dokuz prompt gövdesi çalıştırılan hâliyle Bölüm 16'ya yazıldı** —
+  `--sref` dolduruldu, `--v 8.1` ve `--chaos 5` eklendi, `--no` listeleri genişletildi,
+  V03 gövdesi kadraj patch'iyle değiştirildi. **V05–V09 yazılı ama üretimde sınanmadı.**
+  Ölçüm (9/9 satır, `python3` yapısal denetim): `--v 8.1` 9/9 · `--chaos 5` 9/9 ·
+  gerçek `--sref` 9/9 · `--sw` 60×8 + **50×1 (V05)** · `--ar` 4:5×8 + **9:16×1 (V08)** ·
+  `--stylize` 90/110/130/110/100/120/110/100/110 · `--no` öğe sayısı **12–22** (virgülle
+  ayrılmış kuyruk sayımı). `--sref KURUCU-URL` → **0**.
+- ⚠ **Borcun asıl büyüklüğü ancak kapanırken görüldü.** Kalem *"`--no` listeleri eksik"*
+  diye açılmıştı; gerçekte **z01–z11'i üreten promptların hiçbiri korpusta yoktu.**
+  On bir zeminin hiçbiri dosyadan yeniden üretilemiyordu. Düzeltilmiş set 23–24 Ağustos
+  MJ oturumunda **sohbette verildi ve MJ'de çalıştırıldı, ama dosyaya hiç yazılmadı** —
+  sonra da kapandığı varsayıldı (patch §3/§6(b), **B184**).
+- **Ders:** *sohbette verilen şey uygulanmış sayılmaz.* Bir prompt "çalıştı" ile "korpusta"
+  iki ayrı durumdur; ikincisi olmadan üretim **tek seferliktir.**
+- **Yan kazanç — B141/B170'in bir ayağı kapandı:** kurucu `--sref` URL'i artık **repoda
+  yazılı** (`z01` = `b6457637-7065-4c39-b551-268b156c9408/0_2`, `31-zemin.md` ile çapraz
+  doğrulandı). ⚠ **Görsel yedeği hâlâ yok** — URL kayıtlı, dosya değil; CDN düşerse çapa
+  yine ölür (B141'in kendi notu).
+- **Açılışındaki hâli:** Sahip Claude.ai · **Tetikleyici:** o promptların ilk kullanımı
 - **Belirti:** V01 ve V02 23 Ağustos seansında üç tur harcanarak düzeltildi; **V03–V09 aynı
   tuzakları taşıyor** — özellikle V04 *"fire bowl"*, V08 *"campfire"*, V09 *"low flame"*:
   üçü de modelden alev talep ediyor.
@@ -3225,9 +3243,18 @@ yerinde. Robots açıldığında Taslak sayfa sitemap üzerinden sızmaz.
   Tek değişken şart — aksi hâlde etkisi gövde patch'inin etkisinden ayrışmaz.
 - **Bağ:** **B139** (aynı ders, V03–V09) · KARAR 542 · `30-sosyal.md` Bölüm 16
 
-## B184 — `30-sosyal.md` Bölüm 16 parametre kuyruğu ölçülen prompttan sapıyor; `KURUCU-URL` 12 yerde yer tutucu
+## B184 — `30-sosyal.md` Bölüm 16 parametre kuyruğu ölçülen prompttan sapıyor; `KURUCU-URL` 12 yerde yer tutucu ✅ KAPANDI (24 Ağu, **B139** ile aynı yazımda)
 
-- [ ] **Sahip:** Kaan + Claude.ai · **Küçük ama bloke edici** · **Tetikleyici:** Gün 1 yayını.
+- [x] **Kapanış:** kuyruk eşitlendi — **kaynak artık tek.** Dokuz prompt satırı üretimde
+  çalıştırılan hâline getirildi (**B139**), Bölüm 16'daki `⚠ TEYITSIZ` notu **silinmedi,
+  tarihsel kayda dönüştürüldü**: satırın bir gün boyunca *ne eski ne yeni* hâlde
+  durduğunu ve neden bilerek öyle bırakıldığını anlatıyor.
+- ⚠ **Kalem doğru teşhis koymuştu ama boyutu küçük tahmin etmişti.** Başlık *"kuyruk
+  sapıyor"* diyordu; asıl mesele **kuyruk değil, kaynağın hiç yazılmamış olmasıydı**
+  (B139). Bu yüzden ADIM 3d'ye havale edilmişti; kapanış ayrı bir brief'le geldi.
+- **Değişmeyen sonuç:** iki kaynak çeliştiğinde **uzlaştırılmadı, işaretlendi** — ve
+  işaret doğru yeri gösterdi. *CLAUDE.md §2'nin işe yaradığı vaka.*
+- **Açılışındaki hâli:** Sahip Kaan + Claude.ai · **Küçük ama bloke edici** · **Tetikleyici:** Gün 1 yayını.
 - **Nasıl doğdu:** MJ patch'i (24 Ağu) V03 gövde değişimini getirirken *"Parametreler
   değişmedi"* dedi ve şu kuyruğu yazdı:
   `--ar 4:5 --style raw --v 8.1 --stylize 130 --chaos 5 --sref <kurucu> --sw 60 --no flames, wildfire, lava, volcano, bonfire, bright white, blown highlights, daylight, grey light, blue tones, teal, people, faces, hands, text, watermark`
