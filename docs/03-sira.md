@@ -117,12 +117,32 @@ açacak — **KARAR 566 gereği her metin değişikliği deploy ister.**
 8. **Brief şablonu** — KARAR **566** ve **567**'nin ölçüm kuralları:
    *SSR sayfası canlıda doğrulanır* · *doğrulamanın başarısız olabildiği önce kanıtlanır.*
 9. **B176** — `/yolculuk` `yolculuk-eksen` çıktıda yok; teşhis Notion'dan başlar.
-10. **B180** — `tools/ocak-kart-derleyici.html` sahipsiz değişiklik + adsız kopya.
-    Kimin yazdığı belirlenmeden commit'lenmez.
+10. **B180** — `tools/ocak-kart-derleyici.html`. ✅ **Kim yazdı belli:** 23–24 Ağu MJ görsel
+    oturumu (claude.ai), üç düzeltme ölçümle doğrulandı. ✅ **Adsız kopya silindi** —
+    HEAD ile birebir aynıydı, sıfır bilgi. ⏳ **Kalan: commit.** Değişiklik hâlâ
+    korumasız (`47 ekleme, 5 silme`) ve **tarayıcıda test edilmedi.** Commit turu
+    **B169** (`kartAdi()` şema hizası) ve **B143**'ü (font gömme) aynı anda kapatabilir —
+    üçü aynı dosya, tek doğrulama.
 11. **B181** — aynı gün çok oturum kuralı: `docs/`'a kim yazar, kim patch üretir.
     ⚠ **Yazan oturum push eder** — push edilmemiş commit claude.ai için yok hükmündedir
     (KARAR 479; bu tur boyunca MCP bayat snapshot servis etti).
 12. **B177** — söz envanteri. Tek turda kapanmaz; ilk adım envanterin kendisi.
+13. **Görsel hattı — 24 Ağustos MJ turundan.** İki prompt ailesi tamam (V01 · V03), on bir
+    zemin mühürlü, **kesintisiz yayın C01–C03'e kadar.** Sırayla:
+    - ⛔ **B184 / ADIM 3d — `KURUCU-URL` ara-değiştir.** Bölüm 16'da **12 yer tutucu**;
+      `--v 8.1` + `--chaos` + genişletilmiş `--no` listesi de burada eşitlenir. **Gün 1
+      bunsuz başlamaz** (KARAR 450) ve V03'ün dosyadaki kuyruğu şu an ölçülen kuyruk değil.
+    - 🎯 **V02 HD — tek işte üç kart açılır** (C06 · C09 · C16). Dört aday elde, **yeni
+      draft gerekmiyor**, eksik olan yalnız HD. Turun en yüksek kaldıraçlı işi.
+    - **B182** — z04 üstüne tek kart bas ve bak. **C05 basılmadan önce**; kirliyse z04 ile
+      z05 yer değiştirir.
+    - **B183** — V03'te `invitation without a figure` → `empty threshold, no one present`,
+      bir sonraki turda **tek değişken olarak.**
+    - Üretim sırası (ilk iki hafta ihtiyacı): **V03 ✅ → V02 → V07 (C08, 8. gün) →
+      V05 Urla (C11) → V08.** ⚠ Yorgunluk belgesinin sırası V07'yi atlıyordu, düzeltildi.
+    - **B173** — C20 zemini, **V06 üretilmeden** karara bağlanmalı. KARAR 571 emsal,
+      otomatik değil.
+    - **B170** — on bir zemin hâlâ yalnız MJ CDN'inde + Kaan'ın diskinde.
 
 ---
 

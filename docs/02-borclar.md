@@ -2942,11 +2942,18 @@ yerinde. Robots açıldığında Taslak sayfa sitemap üzerinden sızmaz.
 - **Neden bu turda yapılmadı:** kısaltma turu yalnız `docs/` kapsamındaydı; kod dokunuşu
   ayrı commit ve ayrı doğrulama ister (CLAUDE.md §6).
 - **Kapanış şartı:** `kartAdi()` KARAR 552 şemasını üretir; zemin adı karta bağlanmaz.
-- **Bağ:** KARAR 552 · `docs/31-zemin.md`
+- **24 Ağu güncelleme — hâlâ açık.** Derleyici aynı gün **üç düzeltme aldı** (crop dağıtımı ·
+  kapak istisnası · kaynak göstergesi, **B180**) ama `kartAdi()` **o üçün içinde değildi**;
+  şema hizasızlığı olduğu gibi duruyor. MJ patch'i bunu ayrı bir aday olarak getirdi
+  (*"[B-d] derleyici dosya adı şeması"*) — **yeni numara açılmadı**, kalem bu borçtur.
+- **Bağ:** KARAR 552 · `docs/31-zemin.md` · **B180** (aynı dosya, aynı sıradaki commit)
 
 ## B170 — Zemin yedeği yok (B141'in genişlemesi)
 
 - [ ] **Sahip:** Kaan · **Küçük ama kritik.**
+- ⚠ **24 Ağu güncelleme — kalem büyüdü: yedi değil, ON BİR zemin.** V03 turu z08–z11'i
+  ekledi (`31-zemin.md`). Yedeklenmemiş varlık sayısı bir günde **%57 arttı**; kapanış
+  şartı değişmedi, **maliyeti arttı.**
 - **Belirti:** yedi zemin (z01–z07) yalnız MJ CDN'inde + Kaan'ın yerel diskinde.
   Envanter ve URL şeması `docs/31-zemin.md`'de; görsellerin kendisi hiçbir kalıcı yerde
   değil.
@@ -2988,9 +2995,20 @@ yerinde. Robots açıldığında Taslak sayfa sitemap üzerinden sızmaz.
   sayılır. **Karar Kaan'ın.**
 - **Bağ:** KARAR 553 · KARAR 219 (`C-n` tireli, dördüncü homograf — o zaten notta)
 
-## B172 — C09: sekiz crop, tek odaklı zemin
+## B172 — C09: sekiz crop, tek odaklı zemin ✅ KAPANDI (24 Ağu, KARAR 571)
 
-- [ ] **Sahip:** Kaan + Claude.ai · **Orta** · ⏱ **9. gün** — V04 üretilmeden karara bağlanmalı.
+- [x] **Kapanış:** **KARAR 571 — C09 zemini V02 kül dokusudur.** İki yoldan (a) seçildi:
+  zemin yüzeye çevrildi, kart sayısı sekizde kaldı. *Gerekçe: kartın kendi başlığı
+  "Yedi kapı, **bir** ateş" — sekiz pencere, tek zemin.* V02 zaten üretildi (dört aday),
+  kül düşmez, süreklilik sorunu **yapısal olarak yok.** V04 C14 ve C18'de kalır; orada
+  tek kart, nesne doğru çalışır. `30-sosyal.md:309` V04 → V02 çevrildi.
+  ⚠ **Kapanan şey prompt ailesi seçimi.** Somut zemin karesi (V02'nin dört adayından
+  hangisi, HD var mı) **hâlâ seçilmedi** — o iş C06'nın 🟡'siyle aynı iştir ve
+  `03-sira.md` görsel kuyruğunda yaşar.
+  ⚠ **Ara çözüm V10 (kilim yüzeyi) denendi ve üç turda terk edildi** — kayıt kronolojide,
+  ders: *kumaş yüzey değildir, kumaş düşer.* Prompt korpusa girmedi.
+- **Açılışındaki hâli:** Sahip Kaan + Claude.ai · **Orta** · ⏱ **9. gün** — V04 üretilmeden
+  karara bağlanmalı.
 - **Belirti:** `30-sosyal.md` C09 (*Yedi kapı, bir ateş*) **V04 mum çemberi** zeminiyle
   **8 crop** istiyor. V04 nesne zeminidir: mum çemberi kareye bir kez girer, sekiz
   pencerenin bir kısmı onu gösterir, kalanı boş kalır. **KARAR 556'yı ihlal ediyor.**
@@ -3007,7 +3025,12 @@ yerinde. Robots açıldığında Taslak sayfa sitemap üzerinden sızmaz.
   pencere/mum** zeminiyle 6 crop istiyor. Aynı ihlal, aynı iki yol (**B172**).
 - **Neden ayrı borç:** C09'dan **üç hafta sonra** yayına giriyor ve V06 ayrıca C19'da
   tek kart olarak kullanılıyor — zemin değişirse iki kart birden etkilenir.
-- **Bağ:** KARAR 556 · **B172**
+- **24 Ağu güncelleme — emsal doğdu, karar doğmadı.** Kardeş kalem **B172 kapandı**
+  (**KARAR 571**): C09'da (a) yolu seçildi — kart sayısı korundu, zemin yüzeye çevrildi.
+  C20 için aynı yol **aday**, ama **otomatik değil**: C09'un gerekçesi kartın kendi
+  başlığıydı (*"bir ateş"*), C20'nin başlığı (*"bir durağın anatomisi"*) aynı argümanı
+  vermiyor. **V06 üretilmeden karara bağlanmalı** — üretilirse iki kart birden bağlanır.
+- **Bağ:** KARAR 556 · **KARAR 571** (emsal) · **B172 ✅**
 
 ## B174 — `kakao-seremonisi-online` "kayıt sonrası küçük bir gruba alınırsın" — o grubun kanalı var mı
 
@@ -3119,7 +3142,30 @@ yerinde. Robots açıldığında Taslak sayfa sitemap üzerinden sızmaz.
 - ⚠ **Sahipsiz kod en kolay kaybedilen koddur.** Commit'siz olduğu için `git` onu korumuyor;
   " 2.html" kopyası ise **hangisinin gerçek olduğu belirsiz** — iki dosya, tek isim uzayı.
 - **Karar gerekiyor:** kim yazdı · commit'lenecek mi · kopya silinecek mi.
-- **Bağ:** **B143** (aynı dosyanın font bağımlılığı) · **B181** (aynı gün paralel yüzeyler)
+
+**24 Ağu · MJ turu — üç sorudan ikisi ölçümle kapandı:**
+
+- ✅ **Kim yazdı: 23–24 Ağustos MJ görsel oturumu (claude.ai).** Patch §8 [B-c] üç düzeltmeyi
+  adıyla sayıyor ve üçü de çalışma ağacındaki dosyada bulundu
+  (`grep -c`, `tools/ocak-kart-derleyici.html`): `kapakIstisna` 5 · `KAPAK_ALAN` 2 ·
+  `kaynakOlcu` 2 · zoom `1.62` 2 · `1.76` 1. HEAD kopyasında **beşi de 0.** Kaynak dosya
+  o oturumun `/mnt/user-data/outputs/ocak-kart-derleyici.html` çıktısı; **02:45'te elle
+  yapıştırıldı.** Üç düzeltme: (1) `dagit` crop dağıtımı — `oy` negatife inmiyor, zoom
+  1.62/1.76, gezinme payı yatayda %18→%57 dikeyde %7→%23 · (2) **Kart 1 kapak olsun**
+  onay kutusu, `ciz()` ince sarmalayıcıya döndü, çizim kodu değişmedi ·
+  (3) ölçü şeridinde `KAYNAK en × boy` + büyütme uyarısı. `node --check` temiz,
+  **tarayıcıda test edilmedi.**
+- ✅ **Hangisi gerçek: `ocak-kart-derleyici.html`.** `ocak-kart-derleyici 2.html`
+  **HEAD ile birebir aynıydı** (`diff -q git show HEAD:… ↔ kopya` → fark yok, 53.825 bayt).
+  Yani kopya bilgi taşımıyordu — commit'li sürümün macOS indirme dubleti. **Silindi.**
+  Geri gerekirse: `git show HEAD:tools/ocak-kart-derleyici.html > "tools/ocak-kart-derleyici 2.html"`.
+- [ ] ⏳ **Kalan tek soru: commit'lenecek mi.** Bu turda **commit'lenmedi** — MJ patch'i
+  doküman işidir, `tools/` kod dosyasıdır; ayrı konu = ayrı commit (CLAUDE.md §6). Değişiklik
+  çalışma ağacında bekliyor (`47 ekleme, 5 silme`). ⚠ **Sahipsiz kod hâlâ sahipsiz:** commit
+  edilene kadar `git` onu korumuyor. Commit turu **B169**'u (`kartAdi()` şema hizası) ve
+  **B143**'ü (font gömme) aynı anda kapatabilir — üçü aynı dosya, tek doğrulama.
+- **Bağ:** **B143** (aynı dosyanın font bağımlılığı) · **B169** (aynı dosya, şema hizası) ·
+  **B181** (aynı gün paralel yüzeyler)
 
 ## B181 — Aynı gün dört paralel yüzey aynı klona yazdı; yazma yetkisi kuralı yok
 
@@ -3138,3 +3184,69 @@ yerinde. Robots açıldığında Taslak sayfa sitemap üzerinden sızmaz.
   yetkisi olduğu baştan belirlenir**; diğerleri patch üretir, yazmaz. Ve **yazan oturum
   push eder** — push edilmemiş commit claude.ai için yok hükmündedir.
 - **Bağ:** KARAR 463 · KARAR 479 · KARAR 551 (paralel verilen karar) · **B180**
+
+## B182 — z04 tek kart testi hiç yapılmadı; yorgunluk belgesi z03 ile z04'ü ters sıraladı
+
+- [ ] **Sahip:** Kaan · **Küçük** · **Tetikleyici:** C05 basılmadan önce.
+- **Belirti:** 23 Ağustos yorgunluk belgesi z03'e *"✓ orta"*, z04'e *"✗ söz kartı için değil,
+  negatif alan kirli"* diyor. **Ölçüm tersini gösterdi.** Yedi zeminin **üst yarısında**
+  parlak nokta sayımı (luma>110, bağlı bileşen ≥8px, tam çözünürlüklü kaynak dosya):
+
+  ```
+  z01: 0   z07: 0   z04: 18   z05: 22   z06: 23   z02: 108   z03: 299
+  ```
+
+  z03'ün metin bölgesinde z04'ün **on altı katı** parlak nokta var.
+- ⚠ **Ama tek metrik iki farklı olguyu aynı sayıya indiriyor:** z03'ünkiler **doku beneği**
+  (gözenekli kül), z04'ünkiler **serpilmiş kıvılcım**. Göz ikincisini *leke*, birincisini
+  *yüzey* olarak okur — sayı bu ayrımı taşımıyor. **Sayının yöntemi sayının kendisinden
+  önemli** (KARAR 470).
+- **Ampirik hakem yalnız bir tarafa düştü:** C02'nin altı kartı z03 üstünde basıldı, en uzunu
+  on iki kelimeydi, **altısında da metin temiz okundu** → **z03 doğrulandı.**
+  **z04 hiç basılmadı** → doğrulanmadı, çürütülmedi.
+- **Neden ertelenemez:** z04 şu an **C05**'e atanmış ve C05 **altı kartlık karusel**,
+  metinleri uzun.
+- **Kapanış şartı:** z04 üstüne **tek kart** basılır ve bakılır. Kirliyse **z04 ile z05
+  yer değiştirir** (z05 = 22 parlak nokta, aynı aile, C10'da).
+- **Bağ:** `docs/31-zemin.md` · KARAR 546 · KARAR 470
+
+## B183 — V03 gövdesi hâlâ figür üretiyor: `invitation without a figure`
+
+- [ ] **Sahip:** Claude.ai · **Küçük** · **Tetikleyici:** bir sonraki V03 turu.
+- **Belirti:** *"figure"* kelimesi promptun **içinde** ve kavramı çağırıyor.
+  `--no people, faces, hands` listedeydi, **tutmadı**: 24 Ağustos turunda bir karede kapı
+  aralığında **oturan insan silueti** çıktı. Kare **beş ölçütü de geçmişti**; şekil
+  taramasında elendi — yani sayısal kapılar bunu görmüyor.
+- **B139'un dersinin ikinci vakası:** *yasak liste kelimeyi engeller, kavramı engellemez.*
+  Orada *"heat seeping out"* yazıldığı sürece `--no fire` alevi durdurmuyordu; burada
+  *"without a figure"* yazıldığı sürece `--no people` figürü durdurmuyor.
+- **Düzeltme hazır:** `invitation without a figure` → `empty threshold, no one present`.
+- **Kapanış şartı:** bir sonraki V03 turunda **tek değişken olarak** uygulanır ve ölçülür.
+  Tek değişken şart — aksi hâlde etkisi gövde patch'inin etkisinden ayrışmaz.
+- **Bağ:** **B139** (aynı ders, V03–V09) · KARAR 542 · `30-sosyal.md` Bölüm 16
+
+## B184 — `30-sosyal.md` Bölüm 16 parametre kuyruğu ölçülen prompttan sapıyor; `KURUCU-URL` 12 yerde yer tutucu
+
+- [ ] **Sahip:** Kaan + Claude.ai · **Küçük ama bloke edici** · **Tetikleyici:** Gün 1 yayını.
+- **Nasıl doğdu:** MJ patch'i (24 Ağu) V03 gövde değişimini getirirken *"Parametreler
+  değişmedi"* dedi ve şu kuyruğu yazdı:
+  `--ar 4:5 --style raw --v 8.1 --stylize 130 --chaos 5 --sref <kurucu> --sw 60 --no flames, wildfire, lava, volcano, bonfire, bright white, blown highlights, daylight, grey light, blue tones, teal, people, faces, hands, text, watermark`
+  **Dosyanın gerçeği (`30-sosyal.md:779`) bu değil:**
+  `--ar 4:5 --style raw --stylize 130 --sref KURUCU-URL --sw 60 --no people, faces, hands, text, watermark`
+- **Ölçüm (24 Ağu, `grep -c` · `docs/30-sosyal.md`):** `KURUCU-URL` **12** · `--v 8.1` **2** ·
+  `--chaos` **3**. Yani V01–V09'un hiçbirinde `--sref` gerçek URL değil.
+- ⚠ **Patch'in ikinci iddiası da tutmuyor:** §6(b) *"B139 ile dokuz promptun da URL'i
+  dolduruldu"* diyor. **B139 açık**, ve B139'un kendi gövdesi tersini söylüyor:
+  *"Bölüm 16'nın V01–V09 tam set değişimi (ADIM 3d) bu borçtan **ayrıdır** — o `KURUCU-URL`
+  + `--v 8.1` + hex işidir, bu `--no` işidir."* `00-durum.md` YAYINI KİLİTLEYENLER 2. maddesi
+  de *"kalan iş `KURUCU-URL` ara-değiştir"* diyor. **Üç yüzey aynı şeyi söylüyor, patch
+  yanlış.**
+- ⚠ **Somut sonuç:** dosyadaki V03 gövdesi 24 Ağustos ölçümüyle **güncellendi**, kuyruğu
+  **güncellenmedi** — çünkü ölçülen kuyruk dosyada hiç yaşamadı. Yani Bölüm 16'daki V03
+  şu an **ölçülen kombinasyon değil.** Bölüm 16'ya bunu söyleyen bir `⚠ TEYITSIZ` notu
+  düşüldü; **uzlaştırma yapılmadı** (CLAUDE.md §2).
+- **Kapanış şartı:** ADIM 3d koşulur — dokuz promptun `KURUCU-URL`'ü gerçek `--sref` ile
+  değiştirilir, `--v 8.1` + `--chaos` + genişletilmiş `--no` listesi kararlaştırılır ve
+  **ölçülen kuyrukla dosyadaki kuyruk eşitlenir.** Sonra Bölüm 16'daki `⚠ TEYITSIZ` notu
+  kalkar.
+- **Bağ:** **B139** (`--no` ayağı) · KARAR 542 · KARAR 470 · `00-durum.md` YAYINI KİLİTLEYENLER 2

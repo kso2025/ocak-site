@@ -566,3 +566,8 @@ no	tarih	baslik	durum	iliski	kaynak
 565	2026-08-24	Notion SQL `LIKE` Türkçe çekimde kördür — `%çocuk%` "Çocuğu" içinde 0 döner; grep okumanın yerine geçmez	AKTIF	←470	2026-08.md#k565
 566	2026-08-24	`prerender = false` taze içerik demek değildir — yedi SSR sayfası içeriği build-time content collection'dan okur; her metin değişikliği deploy ister, SSR sayfası canlıda doğrulanır	KALICI	←409 · ↔567	2026-08.md#k566
 567	2026-08-24	Başarısız olamayan doğrulama yazılmaz — kontrolün başarısız olabildiği önce kanıtlanır (yol `ls` ile ya da beklenen-pozitif eşleşmeyle)	KALICI	←557 · ↔566	2026-08.md#k567
+568	2026-08-24	Kor imza değil, motiftir — imza ateşin tek ışık kaynağı olmasıdır; ışık sabit kalır, aydınlattığı şey değişir (kapı, çember, mekân, natürmort, pencere, bozkır)	AKTIF	↔569 · ↔570 · ←542	2026-08.md#k568
+569	2026-08-24	Ardışıklık kuralı doku sınıfı rotasyonudur — ardışık kartlarda doku sınıfı tekrarı yok (mat-kül · glow · partikül · dokulu-kor · duvar); "ardışık iki saf kor-zemin kare yasak" kaba kuralı IPTAL	AKTIF	↔568 · ↔570	2026-08.md#k569
+570	2026-08-24	Grid oranı ve mesafe rotasyonu — kor-zemin söz kartları feed'in en fazla yarısı; son dokuz karede altıdan fazlası makro kor ise sıradaki post motifli ya da gerçek çekim olmak zorunda	AKTIF	↔568 · ↔569	2026-08.md#k570
+571	2026-08-24	C09 zemini V02 kül dokusudur — V04 mum çemberi nesne zemindir, sekiz crop'ta KARAR 556'yı ihlal ediyordu; V04 C14 ve C18'de tek kart olarak kalır	AKTIF	←556 · B172 kapandı · ↔B173	2026-08.md#k571
+572	2026-08-24	Ölçüt eşikleri ölçek-bağımsız tanımlanır — piksel-sayısı eşiği kare boyutuna oranlanmadan kullanılmaz; yöntem beyanı ölçeği de içerir	AKTIF	←470 · ←557	2026-08.md#k572

@@ -1,6 +1,6 @@
 # OCAK — DURUM
 
-**Son güncelleme:** 24 Ağustos 2026 · **Sayfalar metin turu + DEPLOY** — KARAR 558–567; B80 ✅ · B164 ✅; B174–B181 açıldı. Aynı gün: karusel/zemin turu (552–557) · Advaita turu (547–551).
+**Son güncelleme:** 24 Ağustos 2026 · **MJ görsel turu — V03 kapanışı** — KARAR 568–572; B172 ✅; B182–B184 açıldı. Aynı gün üç tur daha: Sayfalar metin turu (558–567; B80 ✅ · B164 ✅; B174–B181 açıldı) · karusel/zemin turu (552–557) · Advaita turu (547–551).
 
 > **200 SATIR HARD CAP (KARAR 457).** Aşarsa en eski dönem bloğu `90-kronoloji/`'ye iner.
 > İçerik **silinmez, taşınır** (KIRPMA YASAĞI, KARAR 61). Bu dosya karar durumlarını ve
@@ -76,7 +76,7 @@ yapıştırması, tur içinde MCP çekmesi. MCP **git deposunu** okur, yerel dis
 
 | | |
 |---|---|
-| `main` dönem HEAD | **`6790cb1`** (24 Ağu, Sayfalar turu patch'i) — canlı HEAD değil, dönemin son commit'i · kapanış commit'inden bir önceki (KARAR 474). ⚠ **Bu dönem sıfır kod commit'i içerdi** — 19 Ağu'dan bu yana `main`'e giden her şey `docs/`. Production'a çıkan **içerik** değişti, kod değişmedi: 24 Ağu deploy'u `1b4b998` → **`9acbabb`** (10 commit, hepsi `docs/`), `dpl_Dvoo9UkkF9HVZSXQqT4BJZ8bcpTJ` · READY · sekiz canlı kontrolün sekizi tuttu. Önceki dönemin zinciri: `7fffd92 → … → fd5c44a → f7e4d73 → 7d8d301 → b926294 → 354fb14 → ae321a3 → 3676628 → cbac605 → c45332e` |
+| `main` dönem HEAD | **`465591a`** (24 Ağu, MJ görsel turu patch'i; bir önceki dönem `6790cb1`) — canlı HEAD değil, dönemin son commit'i · kapanış commit'inden bir önceki (KARAR 474). ⚠ **MJ turu da sıfır kod commit'i içerdi ve deploy almadı** — üretim MJ'de, yazım `docs/`'ta. ⚠ **Bu dönem sıfır kod commit'i içerdi** — 19 Ağu'dan bu yana `main`'e giden her şey `docs/`. Production'a çıkan **içerik** değişti, kod değişmedi: 24 Ağu deploy'u `1b4b998` → **`9acbabb`** (10 commit, hepsi `docs/`), `dpl_Dvoo9UkkF9HVZSXQqT4BJZ8bcpTJ` · READY · sekiz canlı kontrolün sekizi tuttu. Önceki dönemin zinciri: `7fffd92 → … → fd5c44a → f7e4d73 → 7d8d301 → b926294 → 354fb14 → ae321a3 → 3676628 → cbac605 → c45332e` |
 | Dal modeli | `main` = production (push otomatik canlı) · `astro-iskelet` = **ölü dal**, main'in ata'sı, 85 commit geride (KARAR 485) |
 | Çalışma dizini | **`~/Desktop/hlaorpz/ocak`** · remote `hlaorpz/ocak` (B01, 10 Ağu) — tek klon (KARAR 463) |
 | Test | **294/294** yeşil — **16 dosya** (`npx vitest run`, 24 Ağu, push öncesi KARAR 388 gereği). ⚠ Dosya 19 Ağustos'tan beri *246/13* diyordu; 246→294 farkı davet hattının beş turudur (`davet-akisi` · `davet-baglam` · `davet-kapi` + mail bağlamı). 193→246 farkı: Faz 1 (referans kodu + kara liste, havale açıklaması, soyad/`last_name`, `kadinAdiBirlestir`) + `nav-kaydir` · `gecersiz-alan-goster` |
@@ -99,7 +99,7 @@ Detay ve sahipler `02-borclar.md`'de. Burada yalnız kilit zinciri:
 1. **B19 — WhatsApp display name** (Kaan). `…5226` hattında **"Ocak Kadın Çemberi" ONAYLI** (19 Ağu). Kalan iş yalnız `…0888` hattı: ad başvurusu (KARAR 521) + bot bağlama — **B104**.
    Numara yayını buna kilitli **değil** — KARAR 396 kapandı, bot hattı `905325555226` canlı (`354fb14`). Bot hattı ≠ yasal sayfa telefonu (`+90 532 208 0888`, beş yasal sayfa) — kasıtlı iki yüzey, eşitlenmez (KARAR 518).
 2. **Sosyal v2 `[KAAN]` önkoşulları** — kurucu görsel **✅ mühürlendi** (23 Ağu, KARAR 542);
-   kalan iş `KURUCU-URL` ara-değiştir. Gün 1 yayını bunsuz başlamaz (KARAR 450).
+   kalan iş `KURUCU-URL` ara-değiştir — **12 yerde hâlâ yer tutucu** (24 Ağu ölçümü, **B184**). Gün 1 yayını bunsuz başlamaz (KARAR 450).
 3. **Yolculuk fiyat bandı → ilk Yolculuk etkinliği.** Eylül kohortu duyurusunun önkoşulu.
 
 **Kapanan halka — etkinlik tarihleri.** 15 yayında etkinlik (6 Açık Kapı · 4 Çember ·
@@ -140,6 +140,9 @@ girmez; o kuyruk başka yerde yaşar.
 
 ## BU DÖNEM NE OLDU
 
+- **24 Ağustos (MJ görsel turu — V03 kapanışı):** V03 gövdesi uzaklaştırıldı — `ustKaranlik`
+  medyanı **%52.0 → %94.8**, geçen kare 1/18 → 13/18; dört zemin mühürlendi (**z08–z11**).
+  V10 kilim üç turda **terk edildi** (568–572; ders: *kumaş yüzey değildir, düşer*). → `90-kronoloji/2026-08.md`
 - **24 Ağustos (Sayfalar metin turu + DEPLOY):** "Çember Lideri"nin Notion ayağı kapandı
   (on yer). **Deploy git push'la alındı** — `tZR9LcwJq9` hook'una dokunulmadı (ölü dal, **B64**).
   Üç bekçi bandı kaydı: Seremoni `3.571–3.686` · Açık Kapı `3.044–3.330` · Çember `3.472–3.771`.

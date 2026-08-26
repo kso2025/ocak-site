@@ -306,7 +306,7 @@ Ses: ateş çıtırtısı loop veya sessiz ambient.
 ---
 
 ### C09 · S3 · F2 — YEDİ KAPI, BİR ATEŞ (8 kart)
-**GÖRSEL:** V04 (çember soyutlaması) tek üretim → 8 crop · 4:5 · Kart metinleri (krem):
+**GÖRSEL:** **V02 (kül dokusu)** tek üretim → 8 crop · 4:5 · (24 Ağu, **KARAR 571** — eski V04 mum çemberi nesne zemindi, sekiz crop'ta KARAR 556'yı ihlal ediyordu; başlık *"bir ateş"* diyor, sekiz pencere tek zemin ister. **B172 ✅**) · Kart metinleri (krem):
 > K1: Yedi kapı, bir ateş.
 > K2: Açık Kapı — bir saat, online, taahhüt yok. Çember değil, pencere.
 > K3: Çember — aylık ritim, sekiz on altı kadın, söz değneği. OCAK'ın kalp atışı.
@@ -764,6 +764,24 @@ girer, crop'ların bir kısmı onu gösterir, kalanı boş kalır.
 Ampirik dayanak: C02'nin altı kartı z03 (gözenekli kül) üstünde basıldı, altısında da
 metin temiz okundu — 23 Ağustos.
 
+**Karşıt dayanak ve ikinci kural: kumaş yüzey değildir, kumaş düşer.** 24 Ağustos'ta C09
+için sürekli bir kilim yüzeyi denendi (V10) ve **üç turda terk edildi** — 54 kare, sıfır
+kazanan, süreklilik sapması %107–110. Üç ayrı kusur, üçü de aynı yere çıktı:
+
+- **Nesne adı sahneleme çağırır.** `kilim` bir *nesne* adıdır; model onu sahneledi —
+  katladı, astı, yanına tahta merdiven koydu, bir karede İskoç ekosesi verdi. V01'in
+  `fine grey ash surface`'i bunu yapmıyor çünkü **yüzey adı.**
+- **`extreme close-up` ölçeği serbest bırakır.** Nesne adı kalkınca model *"ne kadar
+  yakın?"* sorusuna *"iplik lifi kadar"* cevabı verdi; set halat üretti. O ölçekte her ip
+  ayrı bir silindir ve ışık her birinin üstünde ayrı parlıyor — sapmanın kaynağı bu.
+- **Malzemenin fiziği yasak listesini yener.** Halat `--no rope, cord, yarn` ile gitti,
+  yerine kumaş kıvrımı geldi. `--no folds, drapery` **üç turdur listede, üç turdur
+  tutmuyor** — çünkü kıvrım bezin fiziğidir, kelimesi değil.
+
+**Kural:** sürekli zemin arayan bir karusel için **düşmeyen malzeme** seçilir. Kül düşmez,
+taş duvar düşmez — V01 ve V03 ilk turda bu yüzden tuttu. V10 promptu korpusa **girmedi**;
+giren ders bu. (Terk eşiği üç tur olarak **önceden** ilan edilmişti ve uygulandı.)
+
 **V01 — Söz kartı ana zemini (S1/S2, en çok kullanılacak):**
 ```
 almost abstract darkness with a faint warm ember glow rising from the bottom edge, deep charcoal texture like night air near a fire, extremely minimal, vast dark negative space in upper two thirds, subtle film grain, burnt orange #C44B2F gradient dissolving into #1A1210 --ar 4:5 --style raw --stylize 90 --chaos 5 --sref KURUCU-URL --sw 60 --no people, faces, hands, text, watermark
@@ -776,8 +794,37 @@ fine grey ash surface with hairline cracks revealing faint orange ember light be
 
 **V03 — Eşik/kapı (S2 portre serisi):**
 ```
-old wooden door of an Anatolian village house slightly ajar at night, warm firelight spilling through the gap onto a stone threshold, worn timber, surrounding wall dissolving into charcoal darkness, invitation without a figure, chiaroscuro, film grain --ar 4:5 --style raw --stylize 130 --sref KURUCU-URL --sw 60 --no people, faces, hands, text, watermark
+old wooden door of an Anatolian village house slightly ajar at night, seen from a distance, small in the lower third of the frame, vast unlit stone wall filling the upper two thirds, warm firelight spilling through the gap onto a stone threshold, worn timber, invitation without a figure, chiaroscuro, film grain --ar 4:5 --style raw --stylize 130 --sref KURUCU-URL --sw 60 --no people, faces, hands, text, watermark
 ```
+
+**Gövde 24 Ağustos'ta değişti — üç tur ölçüldü.** Kapı uzaklaştırıldı ve karenin alt üçte
+birine indirildi; boşalan üst üçte iki **aydınlatılmamış taş duvarla** dolduruldu.
+*"surrounding wall dissolving into charcoal darkness"* çıktı — duvar artık kaybolmuyor,
+kadraj kuruyor. Ölçülen etki (18'er karelik iki tur, tam çözünürlüklü kaynak dosya):
+
+| | patch öncesi | patch sonrası |
+|---|---|---|
+| `ustKaranlik` medyanı | %52.0 | **%94.8** |
+| beş ölçütü geçen kare | 1/18 | **13/18** |
+| ton medyanı | 24.0° | **12.7°** |
+| palet dışı kare | 2 | **0** |
+
+**Ton kendiliğinden düzeldi, ayrı tur harcanmadı** — kapı küçülünce kehribar aydınlık
+pikseller çoğunluk olmaktan çıktı, medyan taş duvarın kızılına kaydı.
+
+⚠ **TEYITSIZ — bu satırın parametre kuyruğu ölçülen kuyruk değildir (B184).** Ölçüm
+`--v 8.1 --chaos 5`, gerçek `--sref` URL'i ve genişletilmiş `--no` listesiyle
+(`flames, wildfire, lava, volcano, bonfire, bright white, blown highlights, daylight,
+grey light, blue tones, teal, …`) yapıldı; **dosyadaki kuyruk bunların hiçbirini taşımıyor**
+ve `KURUCU-URL` hâlâ yer tutucu (Bölüm 16'da **12 yerde**). Gövde ölçüldüğü hâliyle yazıldı,
+kuyruk **uzlaştırılmadı** — iki kaynak çeliştiğinde kendi başına uzlaştırma yapılmaz.
+Kuyruk **ADIM 3d**'de eşitlenir; o zaman bu not kalkar.
+
+⚠ **Bu gövde hâlâ figür üretiyor (B183).** `invitation without a figure` — *"figure"*
+kelimesi promptun içinde ve kavramı çağırıyor; bir karede kapı aralığında oturan insan
+silueti çıktı ve **beş sayısal ölçütü de geçmişti.** Hazır düzeltme:
+`invitation without a figure` → `empty threshold, no one present`, bir sonraki turda
+**tek değişken olarak.**
 
 **V04 — Çember soyutlaması (S3 davet postları):**
 ```
